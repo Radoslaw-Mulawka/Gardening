@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceef9e92-ed5b-4894-bc2e-083c774b979c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/.sass-cache/c91d94d33dbd4618eb34ec18675790a214c56ef2/style.scssc" afterPath="$PROJECT_DIR$/style/.sass-cache/c91d94d33dbd4618eb34ec18675790a214c56ef2/style.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/script.js" afterPath="$PROJECT_DIR$/script/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/style.css.map" afterPath="$PROJECT_DIR$/style/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/style.css" afterPath="$PROJECT_DIR$/style/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/style.scss" afterPath="$PROJECT_DIR$/style/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Gardening.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,10 +38,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.6045455">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="43" column="0" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.98320895">
+                <state line="35" column="6" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.7294776">
                   <folding />
                 </state>
               </provider>
@@ -49,7 +51,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="style.scss" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="style.scss" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style/style.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="92" column="0" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.68342644">
@@ -70,7 +72,7 @@
           <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/style/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="91" column="0" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.0">
+                <state line="91" column="0" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -331,7 +333,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.0">
+        <state line="91" column="0" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -343,16 +345,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/style/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.98320895">
+        <state line="92" column="0" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.68342644">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/style.scss">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="0" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.68342644">
+        <state line="35" column="6" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.7294776">
           <folding />
         </state>
       </provider>
