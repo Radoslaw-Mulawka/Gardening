@@ -65,4 +65,19 @@ nav {
   border-bottom: 2px solid black;
 }
 
+.videobackground {
+  position: relative;
+}
+.videobackground video {
+  max-width: 100%;
+}
+.videobackground span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6em;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */

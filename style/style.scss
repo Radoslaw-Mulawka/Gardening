@@ -66,3 +66,17 @@ nav {
          }
       }
 }
+.videobackground {
+    position:relative;
+    video {
+      max-width: 100%;
+    }
+    span {
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      font-size:6em;
+      color:white;
+    }
+}

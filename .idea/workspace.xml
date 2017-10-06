@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceef9e92-ed5b-4894-bc2e-083c774b979c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/.sass-cache/c91d94d33dbd4618eb34ec18675790a214c56ef2/style.scssc" afterPath="$PROJECT_DIR$/style/.sass-cache/c91d94d33dbd4618eb34ec18675790a214c56ef2/style.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/style.css.map" afterPath="$PROJECT_DIR$/style/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/style.css" afterPath="$PROJECT_DIR$/style/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/style.scss" afterPath="$PROJECT_DIR$/style/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Gardening.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="ceef9e92-ed5b-4894-bc2e-083c774b979c" time="1507326465264" ignored="false" />
-    <file path="/style.scss" changelist="ceef9e92-ed5b-4894-bc2e-083c774b979c" time="1507327145814" ignored="false" />
-    <file path="/index.html" changelist="ceef9e92-ed5b-4894-bc2e-083c774b979c" time="1507324805096" ignored="false" />
+    <file path="/style.scss" changelist="ceef9e92-ed5b-4894-bc2e-083c774b979c" time="1507327640400" ignored="false" />
+    <file path="/index.html" changelist="ceef9e92-ed5b-4894-bc2e-083c774b979c" time="1507327549516" ignored="false" />
     <file path="/dummy.xml" changelist="ceef9e92-ed5b-4894-bc2e-083c774b979c" time="1507324756606" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +39,7 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="13" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.8208955">
+                <state line="40" column="17" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.7574627">
                   <folding />
                 </state>
               </provider>
@@ -49,7 +52,7 @@
           <file leaf-file-name="style.scss" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="24" selection-start="551" selection-end="551" vertical-scroll-proportion="0.39851025">
+                <state line="77" column="37" selection-start="1441" selection-end="1441" vertical-scroll-proportion="0.9050279">
                   <folding />
                 </state>
               </provider>
@@ -58,7 +61,7 @@
           <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/style/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="67" column="0" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0">
+                <state line="82" column="0" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -261,7 +264,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0">
+        <state line="82" column="0" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -275,14 +278,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="13" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.8208955">
+        <state line="40" column="17" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.7574627">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="24" selection-start="551" selection-end="551" vertical-scroll-proportion="0.39851025">
+        <state line="77" column="37" selection-start="1441" selection-end="1441" vertical-scroll-proportion="0.9050279">
           <folding />
         </state>
       </provider>
