@@ -3,10 +3,6 @@ img[alt="Logo"] {
   height: 100px;
 }
 
-* {
-  border: 1px solid red;
-}
-
 nav {
   position: relative;
 }
@@ -15,25 +11,40 @@ nav {
   display: inline-block;
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(30px, -50%);
 }
 .phone p {
   display: block;
   margin: 10px;
+  font-size: 20px;
 }
 
 .social {
   display: inline-block;
   position: absolute;
-  left: 300px;
+  left: 400px;
   top: 50%;
   transform: translate(0, -50%);
+}
+.social a:link, .social a:visited {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+.social a:link i, .social a:visited i {
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 8px 0;
+  border: 2px solid black;
+  border-radius: 50px;
 }
 
 .menu {
   display: inline-block;
   position: absolute;
-  right: 0;
+  right: 20px;
   top: 50%;
   transform: translate(0, -50%);
 }
@@ -43,6 +54,15 @@ nav {
 .menu ul li {
   display: inline;
   list-style: none;
+}
+.menu ul li a:link, .menu ul li a:visited {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+.menu ul li a:link:hover, .menu ul li a:visited:hover {
+  border-bottom: 2px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */
