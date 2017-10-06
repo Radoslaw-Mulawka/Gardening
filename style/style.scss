@@ -1,43 +1,46 @@
 @mixin v-align() {
-	display:flex;
-	align-items:center;
+    display: flex;
+    align-items:center;
 }
-.v-align{
-	@include v-align;
+img[alt="Logo"] {
+  width:100px;
+  height:100px;
 }
-a, a:visited, a:link {
-				text-decoration:none;
-				color:black;
-}
-#main-menu {
-	padding:30px 0;
-	ul {
-		margin:0;
 
-		li {
-		list-style:none;
-		display:inline-block;
-			a, a:visited, a:link {
-				padding:10px 20px;
-				margin:0 10px;
-				&:hover {
-					border-bottom:2px solid black;
-				}
-			}
-		}
-	}
-	
+* {
+  border:1px solid red;
 }
-.social { 	
-	span {
-		font-size:30px;
-		border:2px solid black;
-		
-		padding:14px 14px;
-		text-align: center;
-		border-radius:30px;
-	}
+nav {
+  position:relative;
 }
-// * {
-// 	border:1px solid red;
-// }
+.phone {
+  display:inline-block;
+  position:absolute;
+  top:50%;
+  transform:translate(0, -50%);
+      p {
+        display:block;
+        margin:10px;
+      }
+}
+.social {
+    display:inline-block;
+    position:absolute;
+    left:300px;
+    top:50%;
+    transform:translate(0, -50%);
+}
+.menu {
+      display:inline-block;
+      position:absolute;
+      right:0;
+      top:50%;
+      transform:translate(0, -50%);
+      ul {
+        margin:0;
+         li {
+           display:inline;
+           list-style:none;
+         }
+      }
+}
