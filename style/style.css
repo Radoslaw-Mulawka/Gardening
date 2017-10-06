@@ -5,6 +5,7 @@ img[alt="Logo"] {
 
 nav {
   position: relative;
+  background-color: #ffffff;
 }
 
 .phone {
@@ -78,6 +79,13 @@ nav {
   transform: translate(-50%, -50%);
   font-size: 6em;
   color: white;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
