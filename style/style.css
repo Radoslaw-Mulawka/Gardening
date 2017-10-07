@@ -68,19 +68,18 @@ nav {
 
 .videobackground {
   position: relative;
-  height: 700px;
-  max-width: 100%;
-  background-color: red;
+  text-align: center;
 }
 .videobackground video {
-  width: 100%;
+  height: inherit;
+  padding: 0;
 }
-.videobackground span {
+.videobackground p {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 6em;
+  font-size: 8em;
   color: white;
 }
 
@@ -92,7 +91,24 @@ nav {
 }
 
 .services-container {
-  background-color: green;
+  background-color: #7eba5e;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.services-container a:link, .services-container a:visited {
+  text-decoration: none;
+  color: white;
+}
+.services-container p a:link, .services-container p a:visited {
+  text-decoration: none;
+  color: white;
+}
+.services-container p a:link:hover, .services-container p a:visited:hover {
+  border-bottom: 2px solid black;
+}
+
+.service-item {
+  padding: 25px 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
