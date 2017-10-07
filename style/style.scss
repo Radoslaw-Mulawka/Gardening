@@ -1,41 +1,129 @@
-@mixin v-align() {
-	display:flex;
-	align-items:center;
+
+img[alt="Logo"] {
+  width:80px;
+  height:80px;
 }
-.v-align{
-	@include v-align;
-}
+
+//  GŁÓWNE MENU
 nav {
-  height:100px;
+  position:relative;
+  background-color:#ffffff;
 }
-img {
-  width:100px;
+.phone {
+  display:inline-block;
+  position:absolute;
+  top:50%;
+  transform:translate(30px, -50%);
+      p {
+        display:block;
+        margin:10px;
+        font-size:17px;
+      }
 }
-.top-menu {
-        background-color:white;
-        border:none;
-        img {
-            position:absolute;
-            top:50%;
-            transform:translate(0, -50%);
-        }
-        ul {
-          position:absolute;
-          top:50%;
-          right:40px;
-          transform:translate(0, -50%);
-            a:link, a:visited {
-              text-decoration:none;
-              color:black;
-              &:hover {
-                color:black;
-                border-bottom:2px solid black;
+.social {
+    display:inline-block;
+    position:absolute;
+    left:400px;
+    top:50%;
+    transform:translate(0, -50%);
+    a:link, a:visited {
+      text-decoration:none;
+      color:black;
+      margin-right:10px;
+      i {
+        font-size:30px;
+        width:50px;
+        height:50px;
+        text-align: center;
+        padding:8px 0;
+        border:2px solid black;
+        border-radius: 50px;
+      }
+    }
+}
+.menu {
+      display:inline-block;
+      position:absolute;
+      right:20px;
+      top:50%;
+      transform:translate(0, -50%);
+      ul {
+        margin:0;
+         li {
+           display:inline;
+           list-style:none;
+           a:link, a:visited {
+             text-decoration: none;
+             color:black;
+             padding:10px 20px;
+             margin:0 10px;
+             &:hover {
+               border-bottom:2px solid black;
+             }
+           }
+         }
+      }
+}
+// GŁÓWNE MENU END
 
-              }
-            }
+// VIDEO SECTION
+.videobackground { 
+    position:relative;
+    text-align: center;
+    video {
+      height:inherit;
+      padding:0;
+    }
+    p {
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      font-size:8em;
+      color:white;
+    }
+}
+// VIDEO SECTION END 
+
+
+//  FIXED NAV ( style for fixed menu script)
+.fixed {
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:1;
+}
+// FIXED NAV END
+
+
+// USŁUGI SECTION
+.services-container {
+    background-color:#7eba5e;
+    padding-left:60px;
+    padding-right:60px;
+    a:link,a:visited {
+      text-decoration:none;
+      color:white;
+    }
+    p {
+      a:link,a:visited {
+      text-decoration:none;
+      color:white;
+        &:hover {
+          border-bottom:2px solid black;
         }
+      }
+    }
 }
 
-* {
-  border: 1px solid red;
+.service-item {
+  padding:25px 100px;
 }
+
+
+
+
+
+// * {
+//  border:1px solid red;
+// }

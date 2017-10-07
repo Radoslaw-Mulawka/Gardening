@@ -1,42 +1,114 @@
-.v-align {
-  display: flex;
-  align-items: center;
+img[alt="Logo"] {
+  width: 80px;
+  height: 80px;
 }
 
 nav {
-  height: 100px;
+  position: relative;
+  background-color: #ffffff;
 }
 
-img {
-  width: 100px;
-}
-
-.top-menu {
-  background-color: white;
-  border: none;
-}
-.top-menu img {
+.phone {
+  display: inline-block;
   position: absolute;
+  top: 50%;
+  transform: translate(30px, -50%);
+}
+.phone p {
+  display: block;
+  margin: 10px;
+  font-size: 17px;
+}
+
+.social {
+  display: inline-block;
+  position: absolute;
+  left: 400px;
   top: 50%;
   transform: translate(0, -50%);
 }
-.top-menu ul {
-  position: absolute;
-  top: 50%;
-  right: 40px;
-  transform: translate(0, -50%);
-}
-.top-menu ul a:link, .top-menu ul a:visited {
+.social a:link, .social a:visited {
   text-decoration: none;
   color: black;
+  margin-right: 10px;
 }
-.top-menu ul a:link:hover, .top-menu ul a:visited:hover {
+.social a:link i, .social a:visited i {
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 8px 0;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.menu {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.menu ul {
+  margin: 0;
+}
+.menu ul li {
+  display: inline;
+  list-style: none;
+}
+.menu ul li a:link, .menu ul li a:visited {
+  text-decoration: none;
   color: black;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+.menu ul li a:link:hover, .menu ul li a:visited:hover {
   border-bottom: 2px solid black;
 }
 
-* {
-  border: 1px solid red;
+.videobackground {
+  position: relative;
+  text-align: center;
+}
+.videobackground video {
+  height: inherit;
+  padding: 0;
+}
+.videobackground p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8em;
+  color: white;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.services-container {
+  background-color: #7eba5e;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.services-container a:link, .services-container a:visited {
+  text-decoration: none;
+  color: white;
+}
+.services-container p a:link, .services-container p a:visited {
+  text-decoration: none;
+  color: white;
+}
+.services-container p a:link:hover, .services-container p a:visited:hover {
+  border-bottom: 2px solid black;
+}
+
+.service-item {
+  padding: 25px 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
