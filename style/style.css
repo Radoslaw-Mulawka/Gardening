@@ -108,7 +108,10 @@ nav {
 }
 
 .service-item {
-  padding: 25px 100px;
+  padding: 25px 50px;
+}
+.service-item img {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
