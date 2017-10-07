@@ -107,4 +107,11 @@ nav {
   border-bottom: 2px solid black;
 }
 
+.service-item {
+  padding: 25px 50px;
+}
+.service-item a {
+  margin-bottom: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
