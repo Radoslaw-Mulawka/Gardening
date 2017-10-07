@@ -3,11 +3,11 @@
     align-items:center;
 }
 img[alt="Logo"] {
-  width:100px;
-  height:100px;
+  width:80px;
+  height:80px;
 }
 
-
+//  GŁÓWNE MENU
 nav {
   position:relative;
   background-color:#ffffff;
@@ -20,7 +20,7 @@ nav {
       p {
         display:block;
         margin:10px;
-        font-size:20px;
+        font-size:17px;
       }
 }
 .social {
@@ -67,10 +67,16 @@ nav {
          }
       }
 }
+// GŁÓWNE MENU END
+
+// VIDEO SECTION
 .videobackground {
     position:relative;
+    height:700px;
+    max-width:100%;
+    background-color:red;
     video {
-      max-width: 100%;
+      width: 100%;
     }
     span {
       position:absolute;
@@ -81,17 +87,31 @@ nav {
       color:white;
     }
 }
+// VIDEO SECTION END 
 
-//  FIXED NAV
+
+//  FIXED NAV ( style for fixed menu script)
 .fixed {
   position:fixed;
   width:100%;
   top:0;
   z-index:1;
 }
+// FIXED NAV END
 
 
-//
-//* {
+// USŁUGI SECTION
+.services-container {
+    background-color:green;
+}
+
+
+
+
+
+
+
+
+// * {
 //  border:1px solid red;
-//}
+// }

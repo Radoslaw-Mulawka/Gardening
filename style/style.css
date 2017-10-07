@@ -1,6 +1,6 @@
 img[alt="Logo"] {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 nav {
@@ -17,7 +17,7 @@ nav {
 .phone p {
   display: block;
   margin: 10px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .social {
@@ -68,9 +68,12 @@ nav {
 
 .videobackground {
   position: relative;
+  height: 700px;
+  max-width: 100%;
+  background-color: red;
 }
 .videobackground video {
-  max-width: 100%;
+  width: 100%;
 }
 .videobackground span {
   position: absolute;
@@ -86,6 +89,10 @@ nav {
   width: 100%;
   top: 0;
   z-index: 1;
+}
+
+.services-container {
+  background-color: green;
 }
 
 /*# sourceMappingURL=style.css.map */
