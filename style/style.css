@@ -3,69 +3,67 @@ img[alt="Logo"] {
   height: 80px;
 }
 
-nav {
-  position: relative;
-  background-color: #ffffff;
-}
-
-.phone {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  transform: translate(30px, -50%);
-}
-.phone p {
-  display: block;
-  margin: 10px;
-  font-size: 17px;
-}
-
-.social {
-  display: inline-block;
-  position: absolute;
-  left: 400px;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-.social a:link, .social a:visited {
+a, a:visited, a:active, a:link, a:hover {
   text-decoration: none;
   color: black;
-  margin-right: 10px;
-}
-.social a:link i, .social a:visited i {
-  font-size: 30px;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  padding: 8px 0;
-  border: 2px solid black;
-  border-radius: 50px;
 }
 
-.menu {
-  display: inline-block;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translate(0, -50%);
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
 }
-.menu ul {
+.top-bar .contact-top-block {
+  display: flex;
+  align-items: center;
+}
+.top-bar .contact-top-block img {
+  float: left;
+  margin-right: 20px;
+}
+.top-bar .contact-top-block p {
+  margin: 0;
+  margin-right: 20px;
+  min-width: 130px;
+}
+.top-bar .contact-top-block a {
+  margin-right: 20px;
+}
+.top-bar .contact-top-block i {
+  font-size: 2em;
+  width: 40px;
+  padding: 5px 0;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.top-bar .menu ul {
+  list-style: none;
   margin: 0;
 }
-.menu ul li {
-  display: inline;
-  list-style: none;
-}
-.menu ul li a:link, .menu ul li a:visited {
-  text-decoration: none;
-  color: black;
+.top-bar .menu ul li {
   padding: 10px 20px;
-  margin: 0 10px;
 }
-.menu ul li a:link:hover, .menu ul li a:visited:hover {
-  border-bottom: 2px solid black;
+.top-bar .menu ul li a {
+  font-size: 1.2em;
+}
+.top-bar .menu ul li a:hover {
+  text-decoration: underline;
 }
 
+@media screen and (max-width: 901px) {
+  .top-bar {
+    display: block;
+    height: auto;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+}
 .videobackground {
   position: relative;
   text-align: center;
@@ -79,12 +77,13 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 8em;
+  font-size: 10vw;
   color: white;
 }
 
 .fixed {
   position: fixed;
+  background-color: white;
   width: 100%;
   top: 0;
   z-index: 1;
@@ -94,17 +93,7 @@ nav {
   background-color: #7eba5e;
   padding-left: 60px;
   padding-right: 60px;
-}
-.services-container a:link, .services-container a:visited {
-  text-decoration: none;
-  color: white;
-}
-.services-container p a:link, .services-container p a:visited {
-  text-decoration: none;
-  color: white;
-}
-.services-container p a:link:hover, .services-container p a:visited:hover {
-  border-bottom: 2px solid black;
+  text-align: center;
 }
 
 .service-item {
@@ -113,6 +102,15 @@ nav {
 .service-item img {
   margin-bottom: 20px;
   cursor: pointer;
+}
+.service-item p {
+  text-decoration: none;
+  color: white;
+  display: inline;
+  cursor: pointer;
+}
+.service-item p:hover {
+  border-bottom: 2px solid black;
 }
 
 .hidden-service-block {
