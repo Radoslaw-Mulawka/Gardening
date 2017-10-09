@@ -25,25 +25,6 @@ $(".service-item").eq(0).find('img').on("click",function(){
 	}
 	
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $(".service-item").eq(1).find('img').on("click",function(){
 	if($(".hidden-service-block").eq(0).css('display') == 'none' && $(".hidden-service-block").eq(2).css('display') == 'none' && $(".hidden-service-block").eq(3).css('display') == 'none' && $(".hidden-service-block").eq(4).css('display') == 'none' && $(".hidden-service-block").eq(5).css('display') == 'none' && $(".hidden-service-block").eq(6).css('display') == 'none' && $(".hidden-service-block").eq(7).css('display') == 'none' && $(".hidden-service-block").eq(8).css('display') == 'none'){
 		 $(".hidden-service-block").eq(1).fadeIn(500);
@@ -115,5 +96,5 @@ $(".service-item").eq(8).find('img').on("click",function(){
 
 
 $(".close-button").click(function(){
-	$(this).parent().fadeOut(1000);
+	$(this).parent().fadeOut(300);
 });
