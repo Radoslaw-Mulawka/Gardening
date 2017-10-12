@@ -69,6 +69,17 @@ a, a:visited, a:active, a:link, a:hover {
 }
 // GŁÓWNE MENU END
 
+
+//  FIXED NAV ( style for fixed menu script)
+.fixed {
+  position:fixed;
+  background-color:white;
+  width:100%;
+  top:0;
+  z-index:1;
+}
+// FIXED NAV END
+
 // VIDEO SECTION
 .videobackground { 
     position:relative;
@@ -89,17 +100,45 @@ a, a:visited, a:active, a:link, a:hover {
 }
 // VIDEO SECTION END 
 
-
-//  FIXED NAV ( style for fixed menu script)
-.fixed {
-  position:fixed;
-  background-color:white;
-  width:100%;
-  top:0;
-  z-index:1;
+// O NAS SECTION - about us
+.about-us {
+   padding-bottom:40px;
+   padding-left:30px;
+   padding-right:30px;
+   h2 {
+     font-size:4em;
+     margin-bottom: 20px;
+   }
+   .text-block{
+      p {
+        margin-bottom:0;
+        text-indent: 20px;
+        // justify-content: justify;
+      }
+   }
+   .logo-block{
+       // margin-top:50px;
+       img {
+          height:200px;
+          width:200px;
+          margin-bottom:30px;
+       }
+       .about-us-buttons {
+          width:200px;
+          padding:10px 0;
+          margin:0 auto;
+          background-color: #9bf2ab;
+          border-radius:10px;
+          font-size:20px;
+          cursor:pointer;
+          transition: box-shadow 1s;
+          &:hover {
+            box-shadow:0 0 10px black;
+          }
+       }
+   }
 }
-// FIXED NAV END
-
+// O NAS SECTION END 
 
 // USŁUGI SECTION
 .services-container {
@@ -165,9 +204,9 @@ a, a:visited, a:active, a:link, a:hover {
 
 
 
-// * {
-//  border:1px solid red;
-// }
+* {
+ border:1px solid red;
+}
 
 
 
