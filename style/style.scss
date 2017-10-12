@@ -14,12 +14,16 @@ a, a:visited, a:active, a:link, a:hover {
   align-items:center;
   justify-content: space-between;
   overflow: hidden;
+  background-color:white;
+  transition:background-color 2s;
   .contact-top-block {
     display:flex;
     align-items:center;
     img {
       float:left;
       margin-right:20px;
+      width:40px;
+      height:40px;
     }
     p {
       margin:0;
@@ -30,8 +34,8 @@ a, a:visited, a:active, a:link, a:hover {
       margin-right:20px;
     }
     i {
-        font-size:2em;
-        width:40px;
+        font-size:1.3em;
+        width:30px;
         padding:5px 0;
         text-align: center;
         border:1px solid black;
@@ -39,6 +43,7 @@ a, a:visited, a:active, a:link, a:hover {
     }
   }
   .menu {
+
     ul {
       list-style: none;
       margin:0;
@@ -60,8 +65,6 @@ a, a:visited, a:active, a:link, a:hover {
     height:auto;
   }
   
-    
-  
   .menu {
     display:flex;
     justify-content: center;
@@ -73,10 +76,16 @@ a, a:visited, a:active, a:link, a:hover {
 //  FIXED NAV ( style for fixed menu script)
 .fixed {
   position:fixed;
-  background-color:white;
+  background-color:rgba(13, 29, 53,0.8);
   width:100%;
   top:0;
   z-index:1;
+  p, i , a {
+    color:white;
+  }
+  i {
+    border-color:white !important;
+  }
 }
 // FIXED NAV END
 
@@ -147,7 +156,6 @@ a, a:visited, a:active, a:link, a:hover {
     padding-right:60px;
     text-align:center;
 }
-
 .service-item {
   padding:25px 50px;
   img{
@@ -203,13 +211,6 @@ a, a:visited, a:active, a:link, a:hover {
 // USŁUGI SECTION END
 
 
-
-* {
- border:1px solid red;
-}
-
-
-
 /* carousel */
 .opinion-wrap {
   padding:60px 0;
@@ -248,4 +249,37 @@ p {
 }
 .avatar-photo {
   border-radius:50%;
+}
+
+
+
+* {
+ border:1px solid red;
+}
+footer {
+  padding-top:20px;
+  padding-bottom:10px;
+
+  .footer-item {
+     p {
+       font-style:normal;
+     }
+     a {
+        
+        i {
+          margin-bottom:14px;
+          font-size:1.7em;
+          width:40px;
+          padding:7px 0;
+          text-align: center;
+          border:1px solid black;
+          border-radius:10px;
+          transition:background-color 1.5s, color;
+          &:hover {
+            background-color:black;
+            color:white;
+          }
+      }
+      }
+  }
 }
