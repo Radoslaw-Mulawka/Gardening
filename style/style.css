@@ -238,30 +238,37 @@ p {
   border-radius: 50%;
 }
 
-* {
-  border: 1px solid red;
-}
-
 footer {
-  padding-top: 20px;
-  padding-bottom: 10px;
+  background-color: white;
 }
-footer .footer-item p {
-  font-style: normal;
+footer > div {
+  padding: 20px 0;
 }
-footer .footer-item a i {
-  margin-bottom: 14px;
+footer strong {
   font-size: 1.7em;
-  width: 40px;
-  padding: 7px 0;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 10px;
-  transition: background-color 1.5s, color;
 }
-footer .footer-item a i:hover {
+footer .partners .partner-logo {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
   background-color: black;
   color: white;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 10px;
+}
+footer .footer-contacts {
+  text-align: center;
+}
+footer .footer-contacts a {
+  overflow: hidden;
+  margin-right: 10px;
+}
+footer .footer-contacts i {
+  font-size: 1.5em;
+  width: 30px;
+  padding: 3px 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
