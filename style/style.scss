@@ -76,16 +76,16 @@ a, a:visited, a:active, a:link, a:hover {
 //  FIXED NAV ( style for fixed menu script)
 .fixed {
   position:fixed;
-  background-color:rgba(13, 29, 53,0.8);
+  background-color:rgba(156, 219, 127,0.8);
   width:100%;
   top:0;
   z-index:1;
   p, i , a {
-    color:white;
+    color:rgb(40, 51, 35);
   }
-  i {
-    border-color:white !important;
-  }
+  // i {
+    // border-color:white !important;
+  // }
 }
 // FIXED NAV END
 
@@ -136,7 +136,7 @@ a, a:visited, a:active, a:link, a:hover {
           width:200px;
           padding:10px 0;
           margin:0 auto;
-          background-color: #9bf2ab;
+          background-color: rgb(156, 219, 127);
           border-radius:10px;
           font-size:20px;
           cursor:pointer;
@@ -211,6 +211,7 @@ a, a:visited, a:active, a:link, a:hover {
 // USŁUGI SECTION END
 
 
+// OPINIE SECTION 
 /* carousel */
 .opinion-wrap {
   padding:60px 0;
@@ -250,7 +251,9 @@ p {
 .avatar-photo {
   border-radius:50%;
 }
+// OPINIE SECTION END
 
+//FOOTER SECTION 
 footer {
    background-color: white;
    &>div {
@@ -285,8 +288,8 @@ footer {
         text-align: center;
       }
   }
-   
 }
+//FOOTER SECTION END
 
 
 // * {
