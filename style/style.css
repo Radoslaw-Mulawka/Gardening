@@ -8,6 +8,10 @@ a, a:visited, a:active, a:link, a:hover {
   color: black;
 }
 
+p {
+  font-style: normal !important;
+}
+
 .top-bar {
   display: flex;
   flex-direction: row;
@@ -136,11 +140,16 @@ a, a:visited, a:active, a:link, a:hover {
   text-align: center;
 }
 
+h1 {
+  color: white;
+  font-size: 5em;
+}
+
 .service-item {
-  padding: 25px 50px;
+  padding: 35px 80px;
 }
 .service-item img {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   cursor: pointer;
 }
 .service-item p {
@@ -266,6 +275,36 @@ footer .footer-contacts i {
   width: 30px;
   padding: 3px 0;
   text-align: center;
+}
+
+.gallery-section {
+  background-color: #edefef;
+  position: relative;
+}
+.gallery-section h1 {
+  color: black;
+  text-align: center;
+  margin: 30px 0;
+}
+.gallery-section div[class^="col"] {
+  margin-bottom: 20px;
+}
+.gallery-section div[class^="col"] .image-container {
+  overflow: hidden;
+}
+.gallery-section div[class^="col"] .image-container img {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+.gallery-section div[class^="col"] .image-container img:hover {
+  opacity: 0.7;
+}
+.gallery-section p {
+  margin-bottom: 5px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

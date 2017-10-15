@@ -7,15 +7,6 @@ $(window).bind('scroll', function () {
 });
 
 
-
-
-
-
-
-
-
-
-
 $(".service-item").eq(0).find('img, p').on("click",function(){
 	if($(".hidden-service-block").eq(1).css('display') == 'none' && $(".hidden-service-block").eq(2).css('display') == 'none' && $(".hidden-service-block").eq(3).css('display') == 'none' && $(".hidden-service-block").eq(4).css('display') == 'none' && $(".hidden-service-block").eq(5).css('display') == 'none' && $(".hidden-service-block").eq(6).css('display') == 'none' && $(".hidden-service-block").eq(7).css('display') == 'none' && $(".hidden-service-block").eq(8).css('display') == 'none'){
 		 $(".hidden-service-block").eq(0).fadeIn(500);
@@ -106,3 +97,4 @@ $(document).ready(function() {
     pause: true, interval: 10000,
   });
 });
+
