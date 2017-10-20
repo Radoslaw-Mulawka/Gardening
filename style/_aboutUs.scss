@@ -1,0 +1,37 @@
+.about-us {
+   padding-bottom:40px;
+   padding-left:30px;
+   padding-right:30px;
+   h2 {
+     font-size:4em;
+     margin-bottom: 20px;
+   }
+   .text-block{
+      p {
+        margin-bottom:0;
+        text-indent: 20px;
+        // justify-content: justify;
+      }
+   }
+   .logo-block{
+       // margin-top:50px;
+       img {
+          height:200px;
+          width:200px;
+          margin-bottom:30px;
+       }
+       .about-us-buttons {
+          width:200px;
+          padding:10px 0;
+          margin:0 auto;
+          background-color: rgb(156, 219, 127);
+          border-radius:10px;
+          font-size:20px;
+          cursor:pointer;
+          transition: box-shadow 1s;
+          &:hover {
+            box-shadow:0 0 10px black;
+          }
+       }
+   }
+}

@@ -1,8 +1,8 @@
 $(window).bind('scroll', function () {
-    if ($(window).scrollTop() > 50) {
-        $('.top-bar').addClass('fixed');
+    if ($(window).scrollTop() > 20) {
+        $('.top-menu').addClass('fixed');
     } else {
-        $('.top-bar').removeClass('fixed');
+        $('.top-menu').removeClass('fixed');
     }
 });
 

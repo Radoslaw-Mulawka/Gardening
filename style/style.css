@@ -1,83 +1,20 @@
-img[alt="Logo"] {
-  width: 80px;
-  height: 80px;
-}
-
-a, a:visited, a:active, a:link, a:hover {
-  text-decoration: none;
-  color: black;
-}
-
-p {
-  font-style: normal !important;
-}
-
-.top-bar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+nav.top-menu {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border: none;
+  transition: background-color 1s;
   overflow: hidden;
-  background-color: white;
-  transition: background-color 2s;
 }
-.top-bar .contact-top-block {
-  display: flex;
-  align-items: center;
+nav.top-menu .navbar-brand {
+  padding: 0;
 }
-.top-bar .contact-top-block img {
-  float: left;
-  margin-right: 20px;
-  width: 40px;
-  height: 40px;
-}
-.top-bar .contact-top-block p {
-  margin: 0;
-  margin-right: 20px;
-  min-width: 130px;
-}
-.top-bar .contact-top-block a {
-  margin-right: 20px;
-}
-.top-bar .contact-top-block i {
-  font-size: 1.3em;
-  width: 30px;
-  padding: 5px 0;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-.top-bar .menu ul {
-  list-style: none;
-  margin: 0;
-}
-.top-bar .menu ul li {
-  padding: 10px 20px;
-}
-.top-bar .menu ul li a {
-  font-size: 1.2em;
-}
-.top-bar .menu ul li a:hover {
-  text-decoration: underline;
+nav.top-menu .navbar-brand img {
+  width: 50px;
+  height: 50px;
 }
 
-@media screen and (max-width: 901px) {
-  .top-bar {
-    display: block;
-    height: auto;
-  }
-
-  .menu {
-    display: flex;
-    justify-content: center;
-  }
-}
 .fixed {
-  position: fixed;
   background-color: rgba(156, 219, 127, 0.8);
-  width: 100%;
-  top: 0;
-  z-index: 1;
 }
 .fixed p, .fixed i, .fixed a {
   color: #283323;
@@ -142,7 +79,9 @@ p {
 
 h1 {
   color: white;
-  font-size: 5em;
+  font-size: 3em;
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
 
 .service-item {
@@ -281,7 +220,26 @@ footer .footer-contacts i {
   margin-top: 100px;
 }
 #lightgallery img {
-  width: 400px;
+  width: 40%;
+  height: auto;
+  margin-bottom: 10px;
+}
+#lightgallery img:nth-child(odd) {
+  margin-right: 5px;
+}
+
+img[alt="Logo"] {
+  width: 80px;
+  height: 80px;
+}
+
+a, a:visited, a:active, a:link, a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  font-style: normal !important;
 }
 
 /*# sourceMappingURL=style.css.map */
