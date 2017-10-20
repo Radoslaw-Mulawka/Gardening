@@ -1,12 +1,21 @@
-#lightgallery {
-        margin-top:100px;
-        img {
-          width:40%;
-		  height:auto;
-		  margin-bottom: 10px;
-		  &:nth-child(odd) {
-		  	margin-right:5px;
-		  }
-        }
-      }
+// #lightgallery {
+//         margin-top:100px;
+//         img {
+//           width:40%;
+// 		  height:auto;
+// 		  margin-bottom: 10px;
+// 		  &:nth-child(odd) {
+// 		  	margin-right:5px;
+// 		  }
+//         }
+//       }
 
+
+
+	
+	.gallery-container {
+		margin-top:100px;
+		a {
+		max-width:40% !important;
+	}
+	}

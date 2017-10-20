@@ -216,16 +216,11 @@ footer .footer-contacts i {
   text-align: center;
 }
 
-#lightgallery {
+.gallery-container {
   margin-top: 100px;
 }
-#lightgallery img {
-  width: 40%;
-  height: auto;
-  margin-bottom: 10px;
-}
-#lightgallery img:nth-child(odd) {
-  margin-right: 5px;
+.gallery-container a {
+  max-width: 40% !important;
 }
 
 img[alt="Logo"] {
