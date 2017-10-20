@@ -43,10 +43,6 @@ nav.top-menu .navbar-brand img {
   padding-left: 30px;
   padding-right: 30px;
 }
-.about-us h2 {
-  font-size: 4em;
-  margin-bottom: 20px;
-}
 .about-us .text-block p {
   margin-bottom: 0;
   text-indent: 20px;
@@ -75,13 +71,7 @@ nav.top-menu .navbar-brand img {
   padding-left: 60px;
   padding-right: 60px;
   text-align: center;
-}
-
-h1 {
-  color: white;
-  font-size: 3em;
-  margin-top: 100px;
-  margin-bottom: 30px;
+  padding-top: 50px;
 }
 
 .service-item {
@@ -105,7 +95,8 @@ h1 {
   background-color: white;
   opacity: 0.95;
   height: 50%;
-  width: 400px;
+  width: 30em;
+  overflow: hidden;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -136,6 +127,42 @@ h1 {
   font-size: 1em;
 }
 
+@media screen and (max-width: 500px) {
+  .hidden-service-block {
+    background-color: white;
+    opacity: 0.95;
+    height: 50%;
+    width: 70%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: none;
+  }
+  .hidden-service-block span {
+    font-size: 20px;
+    display: block;
+    text-align: right;
+    width: 100%;
+    cursor: pointer;
+  }
+  .hidden-service-block span:hover {
+    color: red;
+  }
+  .hidden-service-block .to-calc-button {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    font-size: 1em;
+  }
+}
 /* carousel */
 .opinion-wrap {
   padding: 60px 0;
@@ -171,16 +198,12 @@ h1 {
 
 /* typography */
 .opinion-wrap h1 {
-  text-align: center;
-  margin-bottom: -20px !important;
-}
-
-p {
-  font-style: italic;
+  margin-top: 0 !important;
 }
 
 .avatar-photo {
   border-radius: 50%;
+  margin-bottom: 15px;
 }
 
 footer {
@@ -235,6 +258,17 @@ a, a:visited, a:active, a:link, a:hover {
 
 p {
   font-style: normal !important;
+}
+
+.videobackground p {
+  font-family: 'Merriweather', serif;
+}
+
+.about-us h2, .opinion-wrap h1, .services-container h1 {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  font-size: 4em;
+  margin: 20px 0 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
