@@ -11,6 +11,7 @@
 	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,500" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="bower_components/lightgallery/dist/css/lightgallery.css" /> 
 	<link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -18,7 +19,7 @@
 <div class="container-fluid">
     <div class="row">
         <!-- GŁÓWNE MENU -->
-        <nav class="top-bar">
+        <nav class="col-xs-12 top-bar">
             <div class="contact-top-block">
                 <img src="images/Tree_logo.png" alt="Logo"/>
                 <p>+48 533 88 06 05 <br>
@@ -41,102 +42,46 @@
 
         <!-- GALLERY SECTION -->
 
-        <div class="col-xs-12 gallery-section">
-            <h1>Wykonane Prace</h1>
-            <div class="col-md-2 col-md-offset-2  col-sm-offset-0 col-xs-4 col-xs-offset-2">
-                <div class="image-container">
-                    <img src="images/work-item-img.jpg" alt="Work image">
-                </div>
-                <p>Some description</p>
-                <p>2015</p>
-            </div>
-            <div class="col-md-2 col-xs-4">
-                <div class="image-container">
-                    <img src="images/work-item-img.jpg" alt="Work image">
-                </div>
-                <p>Some description</p>
-                <p>2015</p>
-            </div>
-            <div class="col-md-2 col-xs-4 col-xs-offset-2 col-sm-offset-0 ">
-                <div class="image-container">
-                    <img src="images/work-item-img.jpg" alt="Work image">
-                </div>
-                <p>Some description</p>
-                <p>2015</p>
-            </div>
-            <div class="col-md-2 col-xs-4 ">
-                <div class="image-container">
-                    <img src="images/work-item-img.jpg" alt="Work image">
-                </div>
-                <p>Some description</p>
-                <p>2015</p>
-            </div>
-
-            <div class="col-md-2 col-md-offset-2 col-xs-4 col-xs-offset-2 col-sm-offset-0 ">
-                <div class="image-container">
-                    <img src="images/work-item-img.jpg" alt="Work image">
-                </div>
-                <p>Some description</p>
-                <p>2015</p>
-            </div>
-            <div class="col-md-2 col-xs-4 ">
-                <div class="image-container">
-                    <img src="images/work-item-img.jpg" alt="Work image">
-                </div>
-                <p>Some description</p>
-                <p>2015</p>
-            </div>
-            <div class="col-md-2 col-xs-4 col-xs-offset-2 col-sm-offset-0 ">
-                <div class="image-container">
-                    <img src="images/work-item-img.jpg" alt="Work image">
-                </div>
-                <p>Some description</p>
-                <p>2015</p>
-            </div>
-            <div class="col-md-2 col-xs-4 ">
-                <div class="image-container">
-                    <img src="images/work-item-img.jpg" alt="Work image">
-                </div>
-                <p>Some description</p>
-                <p>2015</p>
-            </div>
-
-            <div class="col-md-2 col-md-offset-2 col-xs-4 col-xs-offset-2 col-sm-offset-0 ">
-                <div class="image-container">
-                    <img src="images/work-item-img.jpg" alt="Work image">
-                </div>
-                <p>Some description</p>
-                <p>2015</p>
-            </div>
-            <div class="col-md-2 col-xs-4 ">
-                <div class="image-container">
-                    <img src="images/work-item-img.jpg" alt="Work image">
-                </div>
-                <p>Some description</p>
-                <p>2015</p>
-            </div>
-            <div class="col-md-2 col-xs-4 col-xs-offset-2 col-sm-offset-0 ">
-                <div class="image-container">
-                    <img src="images/work-item-img.jpg" alt="Work image">
-                </div>
-                <p>Some description</p>
-                <p>2015</p>
-            </div>
-            <div class="col-md-2 col-xs-4 ">
-                <div class="image-container">
-                    <img src="images/work-item-img.jpg" alt="Work image">
-                </div>
-                <p>Some description</p>
-                <p>2015</p>
-            </div>
-
+        
+        
+        <div  id="lightgallery" class="gallery-container col-xs-12 text-center">
+                    <a href="images/img1.jpg" >
+                         <img  src="images/img1.jpg" alt="Work image">
+                    </a>
+                    <a href="images/img2.jpg" >
+                         <img  src="images/img2.jpg" alt="Work image">
+                    </a>
+                
+                    <a href="images/img3.jpg" >
+                         <img  src="images/img3.jpg" alt="Work image">
+                    </a>
+                
+                    <a href="images/img4.jpg" >
+                         <img  src="images/img4.jpg" alt="Work image">
+                    </a>
+                
+                    <a href="images/img5.jpg" >
+                         <img  src="images/img5.jpg" alt="Work image">
+                    </a>
+                
+                    <a href="images/img6.jpg" >
+                         <img  src="images/img6.jpg" alt="Work image">
+                    </a>
+                
+            
         </div>
+
+
+
+
+
+        
         <!-- GALLERY SECTION END -->
 
       
 
     <!-- FOOTER SECTION -->
-        <footer class="col-xs-12">
+        <footer class="col-xs-12 ">   <!-- footer navbar-fixed-bottom  -->
             <div class="adres  col-md-4  col-md-offset-0 col-xs-8 col-xs-offset-2  text-center">
                 <strong>Adres:</strong><br><br>
                 Polska, Legnica 59-220<br>
@@ -163,8 +108,14 @@
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/lightgallery/dist/js/lightgallery.min.js"></script>
+<script src="bower_components/lightgallery/modules/lg-thumbnail.min.js"></script>
+<script src="bower_components/lightgallery/modules/lg-fullscreen.min.js"></script>
+<script src="bower_components/lightgallery/modules/lg-zoom.min.js"></script>
+<script src="bower_components/lightgallery/modules/lg-share.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 <script src="script/script.js"></script>
 </body>
 </html>

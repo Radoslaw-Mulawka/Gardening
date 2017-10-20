@@ -84,8 +84,6 @@ $(".service-item").eq(8).find('img, p').on("click",function(){
 
 
 
-
-
 $(".close-button").click(function(){
 	$(this).parent().fadeOut(300);
 });
@@ -98,3 +96,7 @@ $(document).ready(function() {
   });
 });
 
+
+$(document).ready(function() {
+     $("#lightgallery").lightGallery(); 
+});
