@@ -114,10 +114,6 @@ nav.top-menu .navbar-brand img {
   z-index: 1;
   display: none;
 }
-<<<<<<< HEAD
-.service-item a {
-  margin-bottom: 20px;
-=======
 .hidden-service-block span {
   font-size: 20px;
   display: block;
@@ -251,7 +247,6 @@ footer .footer-contacts i {
   width: 30px;
   padding: 3px 0;
   text-align: center;
->>>>>>> WithoutBootstrap
 }
 
 .center-line-footer {
