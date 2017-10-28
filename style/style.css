@@ -21,8 +21,10 @@ nav.top-menu .navbar-brand img {
 }
 
 .videobackground {
+  margin-top: 50px;
   position: relative;
   text-align: center;
+  z-index: 0;
 }
 .videobackground video {
   height: inherit;
@@ -30,10 +32,9 @@ nav.top-menu .navbar-brand img {
 }
 .videobackground p {
   position: absolute;
-  font-style: normal;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(0, -50%);
+  font-style: normal;
   font-size: 10vw;
   color: white;
 }
