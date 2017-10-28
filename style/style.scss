@@ -1,4 +1,12 @@
 
+@import 'nav';
+@import 'videoSection';
+@import 'aboutUs';
+@import 'services';
+@import 'opinion';
+@import 'footer';
+@import 'gallery';
+
 img[alt="Logo"] {
   width:80px;
   height:80px;
@@ -7,6 +15,7 @@ a, a:visited, a:active, a:link, a:hover {
   text-decoration:none;
   color:black;
 }
+<<<<<<< HEAD
 //  GŁÓWNE MENU
 .top-bar {
   display:flex;
@@ -245,51 +254,22 @@ a, a:visited, a:active, a:link, a:hover {
   text-align:center;
   margin-bottom:-20px !important;
 }
+=======
+>>>>>>> galleryEffects
 p {
-  font-style:italic;
+  font-style:normal !important;
 }
-.avatar-photo {
-  border-radius:50%;
+.videobackground p {
+  font-family: 'Merriweather', serif;
 }
-// OPINIE SECTION END
 
-//FOOTER SECTION 
-footer {
-   background-color: white;
-   &>div {
-     // height:130px;
-     padding:20px 0;
-   }
-   strong {
-     font-size:1.7em;
-   }
-   .partners  {
-      .partner-logo {
-        display:inline-block;
-        width:50px;
-        height:50px;
-        background-color:black;
-        color:white;
-        text-align:center;
-        line-height: 50px;
-        margin-right:10px;
-     }
-   }
-   .footer-contacts {
-      text-align: center;
-      a {
-        overflow:hidden;
-        margin-right:10px;
-      }
-      i {
-        font-size:1.5em;
-        width:30px;
-        padding:3px 0;
-        text-align: center;
-      }
-  }
+ .about-us h2, .opinion-wrap h1, .services-container h1 {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  font-size:4em;
+  margin:20px 0 !important;
 }
-//FOOTER SECTION END
+
 
 
 // * {

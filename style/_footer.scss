@@ -1,0 +1,45 @@
+footer {
+   background-color: white;
+   &>div {
+     // height:130px;
+     padding:20px 0;
+   }
+   strong {
+     font-size:1.7em;
+   }
+   .partners  {
+      .partner-logo {
+        display:inline-block;
+        width:50px;
+        height:50px;
+        background-color:black;
+        color:white;
+        text-align:center;
+        line-height: 50px;
+        margin-right:10px;
+     }
+   }
+   .footer-contacts {
+      text-align: center;
+      a {
+        overflow:hidden;
+        margin-right:10px;
+      }
+      i {
+        font-size:1.5em;
+        width:30px;
+        padding:3px 0;
+        text-align: center;
+      }
+  }
+}
+
+
+.center-line-footer{
+  width:80%;
+  height:1px;
+  margin:0 auto;
+  margin-top:30px;
+
+  background-image: linear-gradient(to right, white, black, white);
+}

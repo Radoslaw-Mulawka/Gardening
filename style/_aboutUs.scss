@@ -1,0 +1,43 @@
+.about-us {
+   padding-bottom:40px;
+   padding-left:30px;
+   padding-right:30px;
+   background-color:#f1ffea;
+   // border-bottom:1px solid rgba(79, 79, 79,0.1);
+   .text-block{
+      p {
+        margin-bottom:0;
+        text-indent: 20px;
+        
+      }
+   }
+   .logo-block{
+       // margin-top:50px;
+       img {
+          height:200px;
+          width:200px;
+          margin-bottom:30px;
+       }
+       .about-us-buttons {
+          width:200px;
+          padding:10px 0;
+          margin:0 auto;
+          background-color: rgb(156, 219, 127);
+          border-radius:10px;
+          font-size:20px;
+          cursor:pointer;
+          transition: box-shadow 1s;
+          &:hover {
+            box-shadow:0 0 10px black;
+          }
+       }
+   }
+}
+
+.center-line {
+  width:60%;
+  height:1px;
+  margin:0 auto;
+  margin-top:120px;
+  background-image: linear-gradient(to right, white, black, white);
+}

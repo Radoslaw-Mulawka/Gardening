@@ -1,0 +1,18 @@
+.videobackground { 
+    margin-top:50px;
+    position:relative;
+    text-align: center;
+    z-index:0;
+    video {
+      height:inherit;
+      padding:0;
+    }
+    p {
+      position:absolute;
+      top:50%;
+      transform:translate(0,-50%);
+      font-style:normal;
+      font-size:10vw;
+      color:white;
+    }
+}

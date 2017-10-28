@@ -1,19 +1,10 @@
 $(window).bind('scroll', function () {
-    if ($(window).scrollTop() > 50) {
-        $('.top-bar').addClass('fixed');
+    if ($(window).scrollTop() > 20) {
+        $('.top-menu').addClass('fixed');
     } else {
-        $('.top-bar').removeClass('fixed');
+        $('.top-menu').removeClass('fixed');
     }
 });
-
-
-
-
-
-
-
-
-
 
 
 $(".service-item").eq(0).find('img, p').on("click",function(){
@@ -93,8 +84,6 @@ $(".service-item").eq(8).find('img, p').on("click",function(){
 
 
 
-
-
 $(".close-button").click(function(){
 	$(this).parent().fadeOut(300);
 });
@@ -106,3 +95,10 @@ $(document).ready(function() {
     pause: true, interval: 10000,
   });
 });
+
+
+$(document).ready(function() {
+     $("#lightgallery").lightGallery(); 
+});
+
+$('.videobackground p').hide().fadeIn(3500);
