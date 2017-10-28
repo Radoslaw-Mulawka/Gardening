@@ -1,5 +1,8 @@
+$firstColor: #ddffbf;
+$firstColorDarken: darken($firstColor,10%);
 .services-container {
-    background-color:#7eba5e;
+    // background-color:#7eba5e;
+    background-image: linear-gradient(to bottom,$firstColor,$firstColorDarken);
     padding-left:60px;
     padding-right:60px;
     text-align:center;
@@ -14,7 +17,7 @@
   }
   p {
       text-decoration:none;
-      color:white;
+      color:black;
       display:inline;
       cursor:pointer;
       &:hover {

@@ -14,7 +14,7 @@ nav.top-menu .navbar-brand img {
 }
 
 .fixed {
-  background-color: rgba(156, 219, 127, 0.8);
+  background-color: rgba(207, 255, 183, 0.8);
 }
 .fixed p, .fixed i, .fixed a {
   color: #283323;
@@ -42,6 +42,7 @@ nav.top-menu .navbar-brand img {
   padding-bottom: 40px;
   padding-left: 30px;
   padding-right: 30px;
+  background-color: #f1ffea;
 }
 .about-us .text-block p {
   margin-bottom: 0;
@@ -66,8 +67,16 @@ nav.top-menu .navbar-brand img {
   box-shadow: 0 0 10px black;
 }
 
+.center-line {
+  width: 60%;
+  height: 1px;
+  margin: 0 auto;
+  margin-top: 120px;
+  background-image: linear-gradient(to right, white, black, white);
+}
+
 .services-container {
-  background-color: #7eba5e;
+  background-image: linear-gradient(to bottom, #ddffbf, #c2ff8c);
   padding-left: 60px;
   padding-right: 60px;
   text-align: center;
@@ -83,7 +92,7 @@ nav.top-menu .navbar-brand img {
 }
 .service-item p {
   text-decoration: none;
-  color: white;
+  color: black;
   display: inline;
   cursor: pointer;
 }
@@ -166,7 +175,7 @@ nav.top-menu .navbar-brand img {
 /* carousel */
 .opinion-wrap {
   padding: 60px 0;
-  background-color: #e8f3ff;
+  background-image: linear-gradient(to bottom, #f1ffea, #cfffb7);
 }
 
 #quote-carousel {

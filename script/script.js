@@ -100,3 +100,5 @@ $(document).ready(function() {
 $(document).ready(function() {
      $("#lightgallery").lightGallery(); 
 });
+
+$('.videobackground p').hide().fadeIn(3500);

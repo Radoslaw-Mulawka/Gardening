@@ -1,3 +1,7 @@
+$firstColor: #f1ffea;
+$firstColorDarken: darken($firstColor,10%);
+
+
 nav.top-menu{
   margin-bottom: 0;
   padding-bottom:0;
@@ -18,7 +22,7 @@ nav.top-menu{
 
 //  FIXED NAV ( style for fixed menu script)
 .fixed {
-  background-color:rgba(156, 219, 127,0.8);
+  background-color:rgba($firstColorDarken,0.8);
   p, i , a {
     color:rgb(40, 51, 35);
   }
