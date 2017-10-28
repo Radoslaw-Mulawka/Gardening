@@ -248,6 +248,14 @@ footer .footer-contacts i {
   text-align: center;
 }
 
+.center-line-footer {
+  width: 80%;
+  height: 1px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-image: linear-gradient(to right, white, black, white);
+}
+
 .gallery-container {
   margin-top: 100px;
 }

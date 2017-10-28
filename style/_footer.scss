@@ -33,3 +33,13 @@ footer {
       }
   }
 }
+
+
+.center-line-footer{
+  width:80%;
+  height:1px;
+  margin:0 auto;
+  margin-top:30px;
+
+  background-image: linear-gradient(to right, white, black, white);
+}
