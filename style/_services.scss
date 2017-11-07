@@ -1,104 +1,75 @@
 $firstColor: #ddffbf;
 $firstColorDarken: darken($firstColor,10%);
+
+
+
+
+
+
 .services-container {
-    // background-color:#7eba5e;
     background-image: linear-gradient(to bottom,$firstColor,$firstColorDarken);
-    padding-left:60px;
-    padding-right:60px;
+    margin-top:50px;
     text-align:center;
     padding-top:50px;
-}
-
-.service-item {
-  padding:35px 80px;
-  img{
-    margin-bottom:30px;
-    cursor:pointer;
-  }
-  p {
-      text-decoration:none;
-      color:black;
-      display:inline;
-      cursor:pointer;
-      &:hover {
-        border-bottom:2px solid black;
-      }  
-      
+    .service-item{
+      margin-bottom:50px;
+      border:1px solid black;
+        .flex-wrap {
+          display:flex;
+          height:100%;
+          flex-direction:column;
+          align-items:center;
+          justify-content:space-between;
+        }
+              .round-logo-wrap {
+            height:80px;
+            width:80px;
+            border:1px solid black;
+            position:relative;
+            border-radius: 50%;
+            display:inline-block;
+            margin-bottom:20px;
+            span {
+              font-size:2em;
+              position:absolute;
+              top:50%;
+              left:50%;
+              transform:translate(-50%,-50%);
+            }
+          }
+          p{
+            font-size:2em;
+           
+          }
+          .buttons-wrap {
+                margin-top:100px;
+                width:100%;
+                display:flex;
+                flex-direction:column;
+                .service-desc {
+                  display:inline;
+                  padding:2px 20px;
+                  line-height: 40px;
+                  margin:0 auto;
+                  margin-bottom: 4px;
+                  background-color: #165900;
+                  color:white;
+                  cursor:pointer;
+              }
+                  .toGallery {
+                    display:inline;
+                    padding:2px 30px;
+                    line-height: 40px;
+                    margin:0 auto;
+                    background-color: #165900;
+                    color:white;
+                    cursor:pointer;
+              }
+          }
+          
+          
     }
-}
-.hidden-service-block {
-  background-color:white;
-  opacity:0.95;
-  height:50%;
-  width:30em;
-  overflow: hidden;
-  position:fixed;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  z-index:1;
-  display:none;
-      span {
-        font-size:20px;
-          display:block;
-          text-align: right;
-          width:100%;
-          cursor:pointer;
-           &:hover {
-          color:red;
-          }
-      }
-      .to-calc-button{
-        position:absolute;
-        bottom:20px;
-        right:10px;
-        padding:10px 20px;
-        text-align: center;
-        background-color:black;
-        border-radius:10px;
-        overflow: hidden;
-        color:white;
-        font-size:1em;
-
-      }
-}
-
-
-@media screen and (max-width: 500px) {
-  .hidden-service-block {
-  background-color:white;
-  opacity:0.95;
-  height:50%;
-  width:70%;
-  position:fixed;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  z-index:1;
-  display:none;
-      span {
-        font-size:20px;
-          display:block;
-          text-align: right;
-          width:100%;
-          cursor:pointer;
-           &:hover {
-          color:red;
-          }
-      }
-      .to-calc-button{
-        position:absolute;
-        bottom:20px;
-        right:10px;
-        padding:10px 20px;
-        text-align: center;
-        background-color:black;
-        border-radius:10px;
-        overflow: hidden;
-        color:white;
-        font-size:1em;
-
-      }
+    
 }
 
 
@@ -109,5 +80,135 @@ $firstColorDarken: darken($firstColor,10%);
 
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .services-container {
+//     background-image: linear-gradient(to bottom,$firstColor,$firstColorDarken);
+//     margin-top:50px;
+//     text-align:center;
+//     padding-top:50px;
+// }
+
+// .service-item {
+//   padding:35px 80px;
+//   img{
+//     margin-bottom:30px;
+//     cursor:pointer;
+//   }
+//   p {
+//       text-decoration:none;
+//       color:black;
+//       display:inline;
+//       cursor:pointer;
+//       &:hover {
+//         border-bottom:2px solid black;
+//       }  
+      
+//     }
+// }
+// .hidden-service-block {
+//   background-color:white;
+//   opacity:0.95;
+//   height:50%;
+//   width:30em;
+//   overflow: hidden;
+//   position:fixed;
+//   top:50%;
+//   left:50%;
+//   transform:translate(-50%,-50%);
+//   z-index:1;
+//   display:none;
+//       span {
+//         font-size:20px;
+//           display:block;
+//           text-align: right;
+//           width:100%;
+//           cursor:pointer;
+//            &:hover {
+//           color:red;
+//           }
+//       }
+//       .to-calc-button{
+//         position:absolute;
+//         bottom:20px;
+//         right:10px;
+//         padding:10px 20px;
+//         text-align: center;
+//         background-color:black;
+//         border-radius:10px;
+//         overflow: hidden;
+//         color:white;
+//         font-size:1em;
+
+//       }
+// }
+
+
+// @media screen and (max-width: 500px) {
+//   .hidden-service-block {
+//   background-color:white;
+//   opacity:0.95;
+//   height:50%;
+//   width:70%;
+//   position:fixed;
+//   top:50%;
+//   left:50%;
+//   transform:translate(-50%,-50%);
+//   z-index:1;
+//   display:none;
+//       span {
+//         font-size:20px;
+//           display:block;
+//           text-align: right;
+//           width:100%;
+//           cursor:pointer;
+//            &:hover {
+//           color:red;
+//           }
+//       }
+//       .to-calc-button{
+//         position:absolute;
+//         bottom:20px;
+//         right:10px;
+//         padding:10px 20px;
+//         text-align: center;
+//         background-color:black;
+//         border-radius:10px;
+//         overflow: hidden;
+//         color:white;
+//         font-size:1em;
+
+//       }
+// }
+
+
+
+
+
+
+
+
+
+// }
 
