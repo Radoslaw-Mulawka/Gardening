@@ -45,13 +45,32 @@ nav.top-menu .navbar-brand img {
   padding-right: 30px;
   background-color: #f1ffea;
 }
+.about-us h2 {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  font-size: 4em;
+  margin: 20px 0 !important;
+  margin-bottom: 50px !important;
+}
+.about-us .about-us-flex-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-us .text-block {
+  width: 50%;
+  margin-left: 100px;
+}
 .about-us .text-block p {
   margin-bottom: 0;
   text-indent: 20px;
 }
+.about-us .logo-block {
+  margin-right: 200px;
+}
 .about-us .logo-block img {
-  height: 200px;
-  width: 200px;
+  height: 100%;
+  width: 300px;
   margin-bottom: 30px;
 }
 .about-us .logo-block .about-us-buttons {
@@ -76,6 +95,48 @@ nav.top-menu .navbar-brand img {
   background-image: linear-gradient(to right, white, black, white);
 }
 
+@media screen and (max-width: 1420px) {
+  .logo-block {
+    margin-right: 100px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about-us-flex-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .text-block {
+    margin-left: 0 !important;
+  }
+  .text-block p {
+    margin-bottom: 0;
+    text-indent: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about-us-flex-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .text-block {
+    width: 80% !important;
+    margin-bottom: 40px;
+  }
+  .text-block p {
+    margin-bottom: 0;
+    text-indent: 20px;
+  }
+
+  .logo-block {
+    margin-right: 0 !important;
+  }
+}
 .services-container {
   background-image: linear-gradient(to bottom, #ddffbf, #c2ff8c);
   padding-left: 60px;
@@ -282,7 +343,7 @@ p {
   font-family: 'Merriweather', serif;
 }
 
-.about-us h2, .opinion-wrap h1, .services-container h1 {
+.opinion-wrap h1, .services-container h1 {
   font-family: 'Merriweather', serif;
   text-align: center;
   font-size: 4em;
