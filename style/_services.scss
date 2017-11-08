@@ -38,7 +38,7 @@ $firstColorDarken: darken($firstColor,10%);
 
 
 .services-container {
-    // background-image: linear-gradient(to bottom,$firstColor,$firstColorDarken);
+    background-image: linear-gradient(to bottom,#f7ffea,darken(#f7ffea,10%));
     margin-top:50px;
     text-align:center;
     padding-top:50px;
@@ -96,7 +96,7 @@ $firstColorDarken: darken($firstColor,10%);
                     padding:10px 20px;
                     border-radius:5px;
                     margin:0 auto;
-                    margin-bottom: 4px;
+                    margin-bottom: 3px;
                     background-color: #165900;
                     color:white;
                     cursor:pointer;
@@ -104,7 +104,7 @@ $firstColorDarken: darken($firstColor,10%);
                     .toGallery {
                       display:inline;
                       padding:10px 30px;
-                      border-radius:5px;
+                      border-radius:3px;
                       margin:0 auto;
                       background-color: #165900;
                       color:white;

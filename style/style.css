@@ -166,6 +166,7 @@ nav.top-menu .navbar-brand img {
   }
 }
 .services-container {
+  background-image: linear-gradient(to bottom, #f7ffea, #e4ffb7);
   margin-top: 50px;
   text-align: center;
   padding-top: 50px;
@@ -217,7 +218,7 @@ nav.top-menu .navbar-brand img {
   padding: 10px 20px;
   border-radius: 5px;
   margin: 0 auto;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   background-color: #165900;
   color: white;
   cursor: pointer;
@@ -225,7 +226,7 @@ nav.top-menu .navbar-brand img {
 .services-container .service-item .buttons-wrap .toGallery {
   display: inline;
   padding: 10px 30px;
-  border-radius: 5px;
+  border-radius: 3px;
   margin: 0 auto;
   background-color: #165900;
   color: white;
