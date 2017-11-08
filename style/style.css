@@ -137,15 +137,41 @@ nav.top-menu .navbar-brand img {
     margin-right: 0 !important;
   }
 }
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(219, 219, 219, 0.4);
+    background-color: rgba(219, 219, 219, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 20px rgba(219, 219, 219, 0);
+    background-color: rgba(219, 219, 219, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(219, 219, 219, 0);
+    background-color: rgba(219, 219, 219, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(219, 219, 219, 0.4);
+    background-color: rgba(219, 219, 219, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 20px rgba(219, 219, 219, 0);
+    background-color: rgba(219, 219, 219, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(219, 219, 219, 0);
+    background-color: rgba(219, 219, 219, 0);
+  }
+}
 .services-container {
-  background-image: linear-gradient(to bottom, #ddffbf, #c2ff8c);
   margin-top: 50px;
   text-align: center;
   padding-top: 50px;
 }
 .services-container .service-item {
   margin-bottom: 50px;
-  border: 1px solid black;
 }
 .services-container .service-item .flex-wrap {
   display: flex;
@@ -154,16 +180,22 @@ nav.top-menu .navbar-brand img {
   align-items: center;
   justify-content: space-between;
 }
-.services-container .service-item .round-logo-wrap {
+.services-container .service-item .logo-wrap:hover .round-logo-wrap {
+  animation: pulse 2s infinite;
+}
+.services-container .service-item .logo-wrap:hover p {
+  color: #dbdbdb;
+}
+.services-container .service-item .logo-wrap .round-logo-wrap {
   height: 80px;
   width: 80px;
-  border: 1px solid black;
   position: relative;
   border-radius: 50%;
   display: inline-block;
   margin-bottom: 20px;
 }
-.services-container .service-item .round-logo-wrap span {
+.services-container .service-item .logo-wrap .round-logo-wrap span {
+  color: #165900;
   font-size: 2em;
   position: absolute;
   top: 50%;
@@ -172,17 +204,18 @@ nav.top-menu .navbar-brand img {
 }
 .services-container .service-item p {
   font-size: 2em;
+  color: #165900;
 }
 .services-container .service-item .buttons-wrap {
-  margin-top: 100px;
+  margin-top: 55px;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 .services-container .service-item .buttons-wrap .service-desc {
   display: inline;
-  padding: 2px 20px;
-  line-height: 40px;
+  padding: 10px 20px;
+  border-radius: 5px;
   margin: 0 auto;
   margin-bottom: 4px;
   background-color: #165900;
@@ -191,8 +224,8 @@ nav.top-menu .navbar-brand img {
 }
 .services-container .service-item .buttons-wrap .toGallery {
   display: inline;
-  padding: 2px 30px;
-  line-height: 40px;
+  padding: 10px 30px;
+  border-radius: 5px;
   margin: 0 auto;
   background-color: #165900;
   color: white;

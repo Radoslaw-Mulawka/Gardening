@@ -5,70 +5,115 @@ $firstColorDarken: darken($firstColor,10%);
 
 
 
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(219, 219, 219, 0.4);
+    background-color: rgba(219, 219, 219, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 20px rgba(219, 219, 219, 0);
+      background-color: rgba(219, 219, 219, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(219, 219, 219, 0);
+      background-color: rgba(219, 219, 219, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(219, 219, 219, 0.4);
+    background-color: rgba(219, 219, 219, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 20px rgba(219, 219, 219, 0);
+      background-color: rgba(219, 219, 219, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(219, 219, 219, 0);
+      background-color: rgba(219, 219, 219, 0);
+  }
+}
+
+
+
 
 .services-container {
-    background-image: linear-gradient(to bottom,$firstColor,$firstColorDarken);
+    // background-image: linear-gradient(to bottom,$firstColor,$firstColorDarken);
     margin-top:50px;
     text-align:center;
     padding-top:50px;
-    .service-item{
-      margin-bottom:50px;
-      border:1px solid black;
-        .flex-wrap {
-          display:flex;
-          height:100%;
-          flex-direction:column;
-          align-items:center;
-          justify-content:space-between;
-        }
-              .round-logo-wrap {
-            height:80px;
-            width:80px;
-            border:1px solid black;
-            position:relative;
-            border-radius: 50%;
-            display:inline-block;
-            margin-bottom:20px;
-            span {
-              font-size:2em;
-              position:absolute;
-              top:50%;
-              left:50%;
-              transform:translate(-50%,-50%);
-            }
+      .service-item{
+        margin-bottom:50px;
+        // border:1px solid black;
+          .flex-wrap {
+            display:flex;
+            height:100%;
+            flex-direction:column;
+            align-items:center;
+            justify-content:space-between;
           }
-          p{
-            font-size:2em;
-           
-          }
-          .buttons-wrap {
-                margin-top:100px;
-                width:100%;
-                display:flex;
-                flex-direction:column;
-                .service-desc {
-                  display:inline;
-                  padding:2px 20px;
-                  line-height: 40px;
-                  margin:0 auto;
-                  margin-bottom: 4px;
-                  background-color: #165900;
-                  color:white;
-                  cursor:pointer;
+            .logo-wrap {
+              &:hover .round-logo-wrap {
+                animation: pulse 2s infinite;  
               }
-                  .toGallery {
+              &:hover p {
+                color: #dbdbdb;
+              }
+              
+              .round-logo-wrap {
+                  height:80px;
+                  width:80px;
+                  // border:1px solid black;
+                  position:relative;
+                  border-radius: 50%;
+                  display:inline-block;
+                  margin-bottom:20px;
+                  
+                  
+                  span {
+                    color: #165900;
+                    font-size:2em;
+                    position:absolute;
+                    top:50%;
+                    left:50%;
+                    transform:translate(-50%,-50%);
+                  }
+               }
+            }
+                
+            p{
+              font-size:2em;
+              color: #165900;
+              
+            }
+            .buttons-wrap {
+                  margin-top:55px;
+                  width:100%;
+                  display:flex;
+                  flex-direction:column;
+                  .service-desc {
                     display:inline;
-                    padding:2px 30px;
-                    line-height: 40px;
+                    padding:10px 20px;
+                    border-radius:5px;
                     margin:0 auto;
+                    margin-bottom: 4px;
                     background-color: #165900;
                     color:white;
                     cursor:pointer;
-              }
-          }
+                }
+                    .toGallery {
+                      display:inline;
+                      padding:10px 30px;
+                      border-radius:5px;
+                      margin:0 auto;
+                      background-color: #165900;
+                      color:white;
+                      cursor:pointer;
+                }
+            }
+            
           
-          
-    }
+       }
     
 }
 
