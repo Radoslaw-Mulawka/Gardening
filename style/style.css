@@ -5,9 +5,11 @@ nav.top-menu {
   transition: background-color 1s;
   overflow: hidden;
 }
+
 nav.top-menu .navbar-brand {
   padding: 0;
 }
+
 nav.top-menu .navbar-brand img {
   width: 50px;
   height: 50px;
@@ -16,6 +18,7 @@ nav.top-menu .navbar-brand img {
 .fixed {
   background-color: rgba(207, 255, 183, 0.8);
 }
+
 .fixed p, .fixed i, .fixed a {
   color: #283323;
 }
@@ -26,10 +29,12 @@ nav.top-menu .navbar-brand img {
   text-align: center;
   z-index: 0;
 }
+
 .videobackground video {
   height: inherit;
   padding: 0;
 }
+
 .videobackground p {
   position: absolute;
   top: 50%;
@@ -45,6 +50,7 @@ nav.top-menu .navbar-brand img {
   padding-right: 30px;
   background-color: #f1ffea;
 }
+
 .about-us h2 {
   font-family: 'Merriweather', serif;
   text-align: center;
@@ -52,27 +58,33 @@ nav.top-menu .navbar-brand img {
   margin: 20px 0 !important;
   margin-bottom: 50px !important;
 }
+
 .about-us .about-us-flex-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .about-us .text-block {
   width: 50%;
   margin-left: 100px;
 }
+
 .about-us .text-block p {
   margin-bottom: 0;
   text-indent: 20px;
 }
+
 .about-us .logo-block {
   margin-right: 200px;
 }
+
 .about-us .logo-block img {
   height: 100%;
   width: 300px;
   margin-bottom: 30px;
 }
+
 .about-us .logo-block .about-us-buttons {
   width: 200px;
   padding: 10px 0;
@@ -83,6 +95,7 @@ nav.top-menu .navbar-brand img {
   cursor: pointer;
   transition: box-shadow 1s;
 }
+
 .about-us .logo-block .about-us-buttons:hover {
   box-shadow: 0 0 10px black;
 }
@@ -111,6 +124,7 @@ nav.top-menu .navbar-brand img {
   .text-block {
     margin-left: 0 !important;
   }
+
   .text-block p {
     margin-bottom: 0;
     text-indent: 20px;
@@ -128,6 +142,7 @@ nav.top-menu .navbar-brand img {
     width: 80% !important;
     margin-bottom: 40px;
   }
+
   .text-block p {
     margin-bottom: 0;
     text-indent: 20px;
@@ -171,9 +186,11 @@ nav.top-menu .navbar-brand img {
   text-align: center;
   padding-top: 50px;
 }
+
 .services-container .service-item {
   margin-bottom: 50px;
 }
+
 .services-container .service-item .flex-wrap {
   display: flex;
   height: 100%;
@@ -181,12 +198,15 @@ nav.top-menu .navbar-brand img {
   align-items: center;
   justify-content: space-between;
 }
+
 .services-container .service-item .logo-wrap:hover .round-logo-wrap {
   animation: pulse 2s infinite;
 }
+
 .services-container .service-item .logo-wrap:hover p {
   color: #dbdbdb;
 }
+
 .services-container .service-item .logo-wrap .round-logo-wrap {
   height: 80px;
   width: 80px;
@@ -195,6 +215,7 @@ nav.top-menu .navbar-brand img {
   display: inline-block;
   margin-bottom: 20px;
 }
+
 .services-container .service-item .logo-wrap .round-logo-wrap span {
   color: #165900;
   font-size: 2em;
@@ -203,16 +224,19 @@ nav.top-menu .navbar-brand img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .services-container .service-item p {
   font-size: 2em;
   color: #165900;
 }
+
 .services-container .service-item .buttons-wrap {
   margin-top: 55px;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
+
 .services-container .service-item .buttons-wrap .service-desc {
   display: inline;
   padding: 10px 20px;
@@ -223,6 +247,7 @@ nav.top-menu .navbar-brand img {
   color: white;
   cursor: pointer;
 }
+
 .services-container .service-item .buttons-wrap .toGallery {
   display: inline;
   padding: 10px 30px;
@@ -279,12 +304,15 @@ nav.top-menu .navbar-brand img {
 footer {
   background-color: white;
 }
+
 footer > div {
   padding: 20px 0;
 }
+
 footer strong {
   font-size: 1.7em;
 }
+
 footer .partners .partner-logo {
   display: inline-block;
   width: 50px;
@@ -295,13 +323,16 @@ footer .partners .partner-logo {
   line-height: 50px;
   margin-right: 10px;
 }
+
 footer .footer-contacts {
   text-align: center;
 }
+
 footer .footer-contacts a {
   overflow: hidden;
   margin-right: 10px;
 }
+
 footer .footer-contacts i {
   font-size: 1.5em;
   width: 30px;
@@ -320,6 +351,7 @@ footer .footer-contacts i {
 .gallery-container {
   margin-top: 100px;
 }
+
 .gallery-container a {
   max-width: 40% !important;
 }
@@ -348,5 +380,7 @@ p {
   font-size: 4em;
   margin: 20px 0 !important;
 }
+
+/*# sourceMappingURL=style.scss.map */
 
 /*# sourceMappingURL=style.css.map */

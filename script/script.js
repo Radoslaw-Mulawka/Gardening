@@ -107,12 +107,3 @@ $('.videobackground p').hide().fadeIn(3500);
 
 // service section shadow animation 
 
-$('.round-logo-wrap span').on("mouseenter", 
-
-	function(){
-		$(this).animate({
-		    backgroundColor: rgb(117, 117, 117)
-		  }, 1500 );
-
-	}
-	);
