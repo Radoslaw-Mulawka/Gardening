@@ -1,13 +1,7 @@
-/* carousel */
-$firstColor: #f1ffea;
-$firstColorDarken: darken($firstColor,10%);
 
-
-.opinion-wrap {
-  padding:60px 0;
-  // background-color:#e8f3ff;
-  // background-color: rgba(234, 185, 112,0.8);
-  background-image: linear-gradient(to bottom,$firstColor,$firstColorDarken);
+.testimonials {
+  padding: 60px 10px;
+  background-image: linear-gradient(to bottom, #f1ffea, #cfffb7);
 }
 #quote-carousel {
   padding: 0 10px 30px 10px;

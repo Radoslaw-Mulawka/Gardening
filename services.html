@@ -16,360 +16,328 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900" rel="stylesheet">
 
     <link type="text/css" rel="stylesheet" href="bower_components/lightgallery/dist/css/lightgallery.css" /> 
+
     <link rel="stylesheet" type="text/css" href="style/set1.css" />
     <link rel="stylesheet" type="text/css" href="style/set2.css" />
+
+    <link rel="stylesheet" href="bower_components/remodal/dist/remodal.css">
+    <link rel="stylesheet" href="bower_components/remodal/dist/remodal-default-theme.css">
+
+
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
 
 <div class="container-fluid">
-<div class="row">
- <!-- GŁÓWNE MENU -->
-        <nav class="top-menu navbar navbar-default navbar-fixed-top">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><img src="images/Tree_logo.png" alt="Logo"/></a>
-            </div>
+    <div class="row">
+         <nav class="top-navigation">
+                <div class="visible-wrap">
+                    <div class="nav-logo">
+                        <img src="images/Tree_logo.png" alt="Logo" />
+                    </div>
+                    <div class="nav-items">
+                        <ul>
+                            <li><a href="index.html">Główna</a></li>
+                            <li><a href="services.html">Usługi</a></li>
+                            <li><a href="gallery.html">Galeria</a></li>
+                            <li><a href="calculator.html">Kalkulator ogrodniczy</a></li>
+                            <li><a href="contact.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div> <!--  .hamburger -->   
+                </div> 
+                <div class="hidden-wrap">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div> 
+                </div>
+            </nav>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
-              <ul class="links-menu nav navbar-nav navbar-right">
-                <li><a href="index.html">Główna</a></li>
-                <li><a href="services.html">Usługi</a></li>
-                <li><a href="gallery.html">Galeria</a></li>
-                <li><a href="">Kalkulator</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-        <!-- GŁÓWNE MENU END -->
 
-<!-- USŁUGI SECTION -->
-
-<div class="col-xs-12 services-container">
-
-<div class="row">
-    <div class="service-item col-sm-4 col-sm-offset-2 col-lg-2 col-lg-offset-2  text-center">
-        <div class="flex-wrap">
-            <div class="logo-wrap">
-                <div class="round-logo-wrap">
-                    <span class="fa fa-shield"></span>
-                </div> <!--  .round-logo-wrap -->
-                <p>
-                 Lorem ipsum <br>dolor sit.
-                </p>
-            </div> <!--  .logo-wrap -->
-            
-            
-            
-            <div class="buttons-wrap">
-                <div class="service-desc" type="button" data-toggle="modal" data-target=".bs-example-modal-lg">
-                    Opis Usługi
-                </div> <!--  .service-desc -->
-                 <div class="toGallery">
-                    Zobacz w galerii
-                </div> <!--  .service-desc -->
-            </div> <!--  .buttons-wrap -->
-        </div> <!--  .flex-wrap -->
-    </div> <!--  .col-md-2 -->
+            <div class="hidden-nav">
+                <ul>
+                    <li><a href="index.html">Główna</a></li>
+                    <li><a href="services.html">Usługi</a></li>
+                    <li><a href="gallery.html">Galeria</a></li>
+                    <li><a href="calculator.html">Kalkulator ogrodniczy</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div> 
 
 
 
-    <div class="service-item col-sm-4 col-lg-2   text-center">
-        <div class="flex-wrap">
-            <div class="logo-wrap">
-                <div class="round-logo-wrap">
-                    <span class="fa fa-shield"></span>
-                </div> <!--  .round-logo-wrap -->
-                <p>
-                 Lorem ipsum <br>dolor sit.
-                </p>
-            </div> <!--  .logo-wrap -->
-            
-            
-            
-            <div class="buttons-wrap">
-                <div class="service-desc">
-                    Opis Usługi
-                </div> <!--  .service-desc -->
-                 <div class="toGallery">
-                    Zobacz w galerii
-                </div> <!--  .service-desc -->
-            </div> <!--  .buttons-wrap -->
-        </div> <!--  .flex-wrap -->
-    </div> <!--  .col-md-2 -->
 
 
-    <div class="service-item col-sm-4 col-sm-offset-2 col-lg-offset-0 col-lg-2   text-center">
-         <div class="flex-wrap">
-            <div class="logo-wrap">
-                <div class="round-logo-wrap">
-                    <span class="fa fa-shield"></span>
-                </div> <!--  .round-logo-wrap -->
-                <p>
-                 Lorem ipsum <br>dolor sit.
-                </p>
-            </div> <!--  .logo-wrap -->
-            
-            
-            
-            <div class="buttons-wrap">
-                <div class="service-desc">
-                    Opis Usługi
-                </div> <!--  .service-desc -->
-                 <div class="toGallery">
-                    Zobacz w galerii
-                </div> <!--  .service-desc -->
-            </div> <!--  .buttons-wrap -->
-        </div> <!--  .flex-wrap -->
-    </div> <!--  .col-md-2 -->
+            <div class="services remodal-bg">
+                <div class="services__first-wrap">
+                    
+                    <div>
+                        <div class="service-item">
+                            <div class="hover-wrap">
+                                <div>
+                                    <i class="fa fa-shield" aria-hidden="true"></i>
+                                </div>
+                                <span>
+                                    Lorem ipsum dolor sit
+                                </span>
+                            </div> <!--  .hover-wrap -->
+
+                            <a href="#modal" class="service-desc">Opis usługi</a>
+                            <a href="gallery.html" class="toGallery">Zobacz w galerii</a>
+                        </div> <!--  .service-item -->
 
 
-    <div class="service-item col-lg-2  col-sm-4 text-center">
-         <div class="flex-wrap">
-            <div class="logo-wrap">
-                <div class="round-logo-wrap">
-                    <span class="fa fa-shield"></span>
-                </div> <!--  .round-logo-wrap -->
-                <p>
-                 Lorem ipsum <br>dolor sit.
-                </p>
-            </div> <!--  .logo-wrap -->
-            
-            
-            
-            <div class="buttons-wrap">
-                <div class="service-desc">
-                    Opis Usługi
-                </div> <!--  .service-desc -->
-                 <div class="toGallery">
-                    Zobacz w galerii
-                </div> <!--  .service-desc -->
-            </div> <!--  .buttons-wrap -->
-        </div> <!--  .flex-wrap -->
-    </div> <!--  .col-md-2 -->
 
+                        <div class="service-item">
+                            <div class="hover-wrap">
+                                <div>
+                                    <i class="fa fa-shield" aria-hidden="true"></i>
+                                </div>
+                                <span>
+                                    Lorem ipsum dolor sit
+                                </span>
+                            </div> <!--  .hover-wrap -->
+
+                            <a href="#modal2" class="service-desc">Opis usługi</a>
+                            <a href="gallery.html" class="toGallery">Zobacz w galerii</a>
+                        </div> <!--  .service-item -->      
+                    </div>
+
+
+                    <div>
+                        <div class="service-item">
+                            <div class="hover-wrap">
+                                <div>
+                                    <i class="fa fa-shield" aria-hidden="true"></i>
+                                </div>
+                                <span>
+                                    Lorem ipsum dolor sit
+                                </span>
+                            </div> <!--  .hover-wrap -->
+
+                            <a href="#modal3" class="service-desc">Opis usługi</a>
+                            <a href="gallery.html" class="toGallery">Zobacz w galerii</a>
+                        </div> <!--  .service-item -->
+
+
+
+                        <div class="service-item">
+                            <div class="hover-wrap">
+                                <div>
+                                    <i class="fa fa-shield" aria-hidden="true"></i>
+                                </div>
+                                <span>
+                                    Lorem ipsum dolor sit
+                                </span>
+                            </div> <!--  .hover-wrap -->
+
+                            <a href="#modal4" class="service-desc">Opis usługi</a>
+                            <a href="gallery.html" class="toGallery">Zobacz w galerii</a>
+                        </div> <!--  .service-item -->      
+                    </div>
+
+                </div> <!--  .services__first-wrap -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="services__second-wrap">
+                    <div>
+                        <div class="service-item">
+                            <div class="hover-wrap">
+                                <div>
+                                    <i class="fa fa-shield" aria-hidden="true"></i>
+                                </div>
+                                <span>
+                                    Lorem ipsum dolor sit
+                                </span>
+                            </div> <!--  .hover-wrap -->
+
+                            <a href="#modal5" class="service-desc">Opis usługi</a>
+                            <a href="gallery.html" class="toGallery">Zobacz w galerii</a>
+                        </div> <!--  .service-item -->
+
+
+
+                        <div class="service-item">
+                            <div class="hover-wrap">
+                                <div>
+                                    <i class="fa fa-shield" aria-hidden="true"></i>
+                                </div>
+                                <span>
+                                    Lorem ipsum dolor sit
+                                </span>
+                            </div> <!--  .hover-wrap -->
+
+                            <a href="#modal6" class="service-desc">Opis usługi</a>
+                            <a href="gallery.html" class="toGallery">Zobacz w galerii</a>
+                        </div> <!--  .service-item -->  
+                    </div>
+
+                    <div class="service-item">
+                            <div class="hover-wrap">
+                                <div>
+                                    <i class="fa fa-shield" aria-hidden="true"></i>
+                                </div>
+                                <span>
+                                    Lorem ipsum dolor sit
+                                </span>
+                            </div> <!--  .hover-wrap -->
+
+                            <a href="#modal7" class="service-desc">Opis usługi</a>
+                            <a href="gallery.html" class="toGallery">Zobacz w galerii</a>
+                    </div> <!--  .service-item -->  
+                    
+                </div> <!--  .services__second-wrap -->
+                <div class="gradient-line"></div> <!--  .gradient-line -->
+            </div> <!--  .services -->
+
+
+
+
+
+
+
+
+<div class="remodal" data-remodal-id="modal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <h1>Remodal</h1>
+  <p>
+    Usługa 1
+  </p>
+  <br>
+  <form>
+    <button data-remodal-action="confirm" class="remodal-confirm" onClick='location.href="gallery.html"'>Zamów usługę !</button>
+  </form>
 </div>
 
 
-<div class="row">
-    <div class="service-item col-sm-4 col-sm-offset-2 col-lg-3 col-lg-offset-3  text-center">
-        <div class="flex-wrap">
-            <div class="logo-wrap">
-                <div class="round-logo-wrap">
-                    <span class="fa fa-shield"></span>
-                </div> <!--  .round-logo-wrap -->
-                <p>
-                 Lorem ipsum <br>dolor sit.
-                </p>
-            </div> <!--  .logo-wrap -->
-            
-            
-            
-            <div class="buttons-wrap">
-                <div class="service-desc">
-                    Opis Usługi
-                </div> <!--  .service-desc -->
-                 <div class="toGallery">
-                    Zobacz w galerii
-                </div> <!--  .service-desc -->
-            </div> <!--  .buttons-wrap -->
-        </div> <!--  .flex-wrap -->
-    </div> <!--  .col-md-2 -->
 
-
-
-    <div class="service-item col-sm-4 col-lg-3   text-center">
-        <div class="flex-wrap">
-            <div class="logo-wrap">
-                <div class="round-logo-wrap">
-                    <span class="fa fa-shield"></span>
-                </div> <!--  .round-logo-wrap -->
-                <p>
-                 Lorem ipsum <br>dolor sit.
-                </p>
-            </div> <!--  .logo-wrap -->
-            
-            
-            
-            <div class="buttons-wrap">
-                <div class="service-desc">
-                    Opis Usługi
-                </div> <!--  .service-desc -->
-                 <div class="toGallery">
-                    Zobacz w galerii
-                </div> <!--  .service-desc -->
-            </div> <!--  .buttons-wrap -->
-        </div> <!--  .flex-wrap -->
-
-
-         
-    </div> <!--  .col-md-2 -->
-
-           
-        </div> <!--  .flex-wrap -->
-
-    </div> <!--  .col-md-2 -->
-
-</div> <!--  .row -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- 
-    <div class="service-item col-xs-10 col-xs-offset-1  col-sm-6 col-sm-offset-0 col-md-4">
-            <img src="images/ogrodnictwo2.jpg" alt="Ludzie" class="img-responsive">
-            <p class="text-center">
-                Jakiś text co dotyczy usługi
-            </p>
-    </div>
-    <div class="service-item col-xs-10 col-xs-offset-1  col-sm-6 col-sm-offset-0 col-md-4">
-            <img src="images/ogrodnictwo2.jpg" alt="Ludzie" class="img-responsive">
-            <p class="text-center">
-                Jakiś text co dotyczy usługi
-            </p>
-    </div>
-    <div class="service-item col-xs-10 col-xs-offset-1  col-sm-6 col-sm-offset-0 col-md-4">
-            <img src="images/ogrodnictwo2.jpg" alt="Ludzie" class="img-responsive">
-            <p class="text-center">
-                Jakiś text co dotyczy usługi
-            </p>
-    </div>
-    <div class="service-item col-xs-10 col-xs-offset-1  col-sm-6 col-sm-offset-0 col-md-4">
-            <img src="images/ogrodnictwo2.jpg" alt="Ludzie" class="img-responsive">
-            <p class="text-center">
-                Jakiś text co dotyczy usługi
-            </p>
-    </div>
-    <div class="service-item col-xs-10 col-xs-offset-1  col-sm-6 col-sm-offset-0 col-md-4">
-            <img src="images/ogrodnictwo2.jpg" alt="Ludzie" class="img-responsive">
-            <p class="text-center">
-              Jakiś text co dotyczy usługi
-            </p>
-    </div>
-    <div class="service-item col-xs-10 col-xs-offset-1  col-sm-6 col-sm-offset-0 col-md-4">
-            <img src="images/ogrodnictwo2.jpg" alt="Ludzie" class="img-responsive">
-            <p class="text-center">
-                Jakiś text co dotyczy usługi
-            </p>
-    </div>
-    <div class="service-item col-xs-10 col-xs-offset-1  col-sm-6 col-sm-offset-0 col-md-4">
-            <img src="images/ogrodnictwo2.jpg" alt="Ludzie" class="img-responsive">
-            <p class="text-center">
-                Jakiś text co dotyczy usługi
-            </p>
-    </div>
-    <div class="service-item col-xs-10 col-xs-offset-1  col-sm-6 col-sm-offset-0 col-md-4">
-            <img src="images/ogrodnictwo2.jpg" alt="Ludzie" class="img-responsive">
-            <p class="text-center">
-                Jakiś text co dotyczy usługi
-            </p>
-    </div>
-    <div class="service-item col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
-            <img src="images/ogrodnictwo2.jpg" alt="Ludzie" class="img-responsive">
-            <p class="text-center">
-                Jakiś text co dotyczy usługi
-            </p>
-    </div> -->
-<!-- </div> -->
-
+<div class="remodal" data-remodal-id="modal2">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <h1>Remodal</h1>
+  <p>
+    Usługa 2
+  </p>
+  <br>
+  <form>
+    <button data-remodal-action="confirm" class="remodal-confirm" onClick='location.href="gallery.html"'>Zamów usługę !</button>
+  </form>
 </div>
 
-<!-- 
-<div class="hidden-service-block" id="first-hidden">
-            <span class="close-button fa fa-times"></span>
-            <p>111111111111111111111111111111111</p>
-            <div class="to-calc-button">Zrób wycenę!</div>
 
+<div class="remodal" data-remodal-id="modal3">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <h1>Remodal</h1>
+  <p>
+    Usługa 3
+  </p>
+  <br>
+  <form>
+    <button data-remodal-action="confirm" class="remodal-confirm" onClick='location.href="gallery.html"'>Zamów usługę !</button>
+  </form>
 </div>
-<div class="hidden-service-block" id="second-hidden">
-            <span class="close-button fa fa-times"></span>
-            222222222222222222222222222222222
+
+<div class="remodal" data-remodal-id="modal4">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <h1>Remodal</h1>
+  <p>
+    Usługa 4
+  </p>
+  <br>
+  <form>
+    <button data-remodal-action="confirm" class="remodal-confirm" onClick='location.href="gallery.html"'>Zamów usługę !</button>
+  </form>
 </div>
-<div class="hidden-service-block" id="third-hidden">
-            <span class="close-button fa fa-times"></span>
-            3333333333333333333333333333333333
+
+<div class="remodal" data-remodal-id="modal5">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <h1>Remodal</h1>
+  <p>
+    Usługa 5
+  </p>
+  <br>
+  <form>
+    <button data-remodal-action="confirm" class="remodal-confirm" onClick='location.href="gallery.html"'>Zamów usługę !</button>
+  </form>
 </div>
-<div class="hidden-service-block" id="fourth-hidden">
-            <span class="close-button fa fa-times"></span>
-            4444444444444444444444444444444444
+
+<div class="remodal" data-remodal-id="modal6">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <h1>Remodal</h1>
+  <p>
+    Usługa 6
+  </p>
+  <br>
+  <form>
+    <button data-remodal-action="confirm" class="remodal-confirm" onClick='location.href="gallery.html"'>Zamów usługę !</button>
+  </form>
 </div>
-<div class="hidden-service-block" id="fifth-hidden">
-            <span class="close-button fa fa-times"></span>
-            5555555555555555555555555555555555
-</div>
-<div class="hidden-service-block" id="sixth-hidden">
-            <span class="close-button fa fa-times"></span>
-            6666666666666666666666666666666666666
-</div>
-<div class="hidden-service-block" id="seventh-hidden">
-            <span class="close-button fa fa-times"></span>
-            777777777777777777777777777777777777
-</div>
-<div class="hidden-service-block" id="eighth-hidden">
-            <span class="close-button fa fa-times"></span>
-            8888888888888888888888888888888888888
-</div>
-<div class="hidden-service-block" id="ninth-hidden">
-            <span class="close-button fa fa-times"></span>
-            999999999999999999999999999999999999999
-</div> -->
-<!-- USŁUGI SECTION END -->
 
 
-
+<div class="remodal" data-remodal-id="modal7">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <h1>Remodal</h1>
+  <p>
+    Usługa 7
+  </p>
+  <br>
+  <form>
+    <button data-remodal-action="confirm" class="remodal-confirm" onClick='location.href="gallery.html"'>Zamów usługę !</button>
+  </form>
+</div>
 <!-- FOOTER SECTION -->
-        <div class="clearfix"></div>
-        <div class="services-line center-line-footer"></div>
-        <div class="clearfix"></div>
-        <footer class="col-xs-12 services-footer">
-            <div class="adres  col-md-4  col-md-offset-0 col-xs-8 col-xs-offset-2  text-center">
-                <strong>Adres:</strong><br><br>
-                Polska, Legnica 59-220<br>
-                ul.Paderewskiego 1/14
+        <footer>
+            <div class="adress">
+                <strong>Adres:</strong>
+                <span>Polska, Legnica 59-220</span>
+                <span>ul.Paderewskiego 1/14</span>
             </div>
-            <div class="partners col-md-4 col-md-offset-0  col-xs-8 col-xs-offset-2  text-center">
-                <strong>Partnerzy:</strong><br><br>
-                <div class="partner-logo">Logo</div>
-                <div class="partner-logo">Logo</div>
-                <div class="partner-logo">Logo</div>
-                <div class="partner-logo">Logo</div>
+            <div class="partners">
+                <strong>Partnerzy:</strong>
+                <div class="partners-wrap">
+                    <div class="partner-logo">Logo</div>
+                    <div class="partner-logo">Logo</div>
+                    <div class="partner-logo">Logo</div>
+                    <div class="partner-logo">Logo</div>
+                </div> <!--  .partners-wrap -->
             </div>
-            <div class="footer-contacts col-md-4 col-md-offset-0  col-xs-10 col-xs-offset-1 text-center">
-                        <strong>Contacts:</strong> <br><br>
-                        tel: +48 533 88 06 05 <br>
-                        email: radoslaw.mulawka@gmail.com <br>
-                        social media: <a href="#"><i class="fa fa-vk"></i></a> 
-                        <a href="#"><i class="fa fa-instagram"></i></a>
+            <div class="footer-contacts">
+                <strong>Contacts:</strong> 
+                <span>tel: +48 533 88 06 05</span>
+                <span>email: radoslaw.mulawka@gmail.com </span>
+                <span>social media: 
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </span>        
+                        
             </div>
         </footer>
     <!-- FOOTER SECTION END-->
 
-</div>
+    </div>
 </div>
 
 
@@ -381,6 +349,8 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/lightgallery/dist/js/lightgallery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+<script src="bower_components/remodal/dist/remodal.min.js"></script>
 <script src="script/script.js"></script>
 </body>
 </html>

@@ -25,42 +25,52 @@
 <div class="container-fluid">
     <div class="row">
         <!-- GŁÓWNE MENU -->
-        <nav class="top-menu navbar navbar-default navbar-fixed-top">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><img src="images/Tree_logo.png" alt="Logo"/></a>
+        <nav class="top-navigation">
+            <div class="visible-wrap">
+                <div class="nav-logo">
+                    <img src="images/Tree_logo.png" alt="Logo" />
+                </div>
+                <div class="nav-items">
+                    <ul>
+                        <li><a href="index.html">Główna</a></li>
+                        <li><a href="services.html">Usługi</a></li>
+                        <li><a href="gallery.html">Galeria</a></li>
+                        <li><a href="calculator.html">Kalkulator ogrodniczy</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> <!--  .hamburger -->   
+            </div> 
+            <div class="hidden-wrap">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> 
             </div>
+        </nav>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
-              <ul class="links-menu nav navbar-nav navbar-right">
+
+        <div class="hidden-nav">
+            <ul>
                 <li><a href="index.html">Główna</a></li>
                 <li><a href="services.html">Usługi</a></li>
                 <li><a href="gallery.html">Galeria</a></li>
-                <li><a href="">Kalkulator</a></li>
+                <li><a href="calculator.html">Kalkulator ogrodniczy</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-        <!-- GŁÓWNE MENU END -->
+            </ul>
+        </div> 
 
         <!-- GALLERY SECTION -->
-
-        
-     
         <div class="gallery-container col-xs-12 text-center">        
             <div id="lightgallery" class="grid">
                     
                     <a href="images/1.jpg" >
-                    <figure class="effect-layla">
+                    <figure class="effect-oscar">
                         
                         <img src="images/1.jpg" alt="img01"/>
                         
@@ -73,7 +83,7 @@
                     </a>
 
                     <a href="images/2.jpg" >
-                    <figure class="effect-oscar">
+                    <figure class="effect-apollo">
                         
                         <img src="images/2.jpg" alt="img01"/>
                         
@@ -86,7 +96,7 @@
                     </a>
 
                     <a href="images/3.jpg" >
-                    <figure class="effect-marley">
+                    <figure class="effect-apollo">
                         
                         <img src="images/3.jpg" alt="img01"/>
                         
@@ -99,7 +109,7 @@
                     </a>
 
                     <a href="images/4.jpg" >
-                    <figure class="effect-bubba">
+                    <figure class="effect-oscar">
                         
                         <img src="images/4.jpg" alt="img01"/>
                         
@@ -112,20 +122,7 @@
                     </a>
 
                     <a href="images/4.jpg" >
-                    <figure class="effect-romeo">
-                        
-                        <img src="images/4.jpg" alt="img01"/>
-                        
-                        <figcaption>
-                            <h2>Nice <span>Lily</span></h2>
-                            <p>Lily likes to play with crayons and pencils</p>
-                            
-                        </figcaption>           
-                    </figure>
-                    </a>
-
-                    <a href="images/4.jpg" >
-                    <figure class="effect-milo">
+                    <figure class="effect-oscar">
                         
                         <img src="images/4.jpg" alt="img01"/>
                         
@@ -150,76 +147,51 @@
                     </figure>
                     </a>
 
-           </div>         
-
-                   <!--  <a href="images/img1.jpg" >
-                         <img  src="images/img1.jpg" alt="Work image">
+                    <a href="images/4.jpg" >
+                    <figure class="effect-apollo">
+                        
+                        <img src="images/4.jpg" alt="img01"/>
+                        
+                        <figcaption>
+                            <h2>Nice <span>Lily</span></h2>
+                            <p>Lily likes to play with crayons and pencils</p>
+                            
+                        </figcaption>           
+                    </figure>
                     </a>
-                    <a href="images/img2.jpg" >
-                         <img  src="images/img2.jpg" alt="Work image">
-                    </a>
-                
-                    <a href="images/img3.jpg" >
-                         <img  src="images/img3.jpg" alt="Work image">
-                    </a>
-                
-                    <a href="images/img4.jpg" >
-                         <img  src="images/img4.jpg" alt="Work image">
-                    </a>
-                
-                    <a href="images/img5.jpg" >
-                         <img  src="images/img5.jpg" alt="Work image">
-                    </a>
-                
-                    <a href="images/img6.jpg" >
-                         <img  src="images/img6.jpg" alt="Work image">
-                    </a> -->
-                
-            
+           </div>      
+           <div class="gradient-line"></div> <!--  .gradient-line -->   
         </div>
-
-
-
-
-
-
-    
-
-
-
-
-        
         <!-- GALLERY SECTION END -->
 
-      
 
-    <!-- FOOTER SECTION -->
-        <div class="clearfix"></div>
-        <div class="center-line-footer"></div>
-        <div class="clearfix"></div>
-        <footer class="col-xs-12 ">   <!-- footer navbar-fixed-bottom  -->
 
-            <div class="adres  col-md-4  col-md-offset-0 col-xs-8 col-xs-offset-2  text-center">
-                <strong>Adres:</strong><br><br>
-                Polska, Legnica 59-220<br>
-                ul.Paderewskiego 1/14
+        <footer>
+            <div class="adress">
+                <strong>Adres:</strong>
+                <span>Polska, Legnica 59-220</span>
+                <span>ul.Paderewskiego 1/14</span>
             </div>
-            <div class="partners col-md-4 col-md-offset-0  col-xs-8 col-xs-offset-2  text-center">
-                <strong>Partnerzy:</strong><br><br>
-                <div class="partner-logo">Logo</div>
-                <div class="partner-logo">Logo</div>
-                <div class="partner-logo">Logo</div>
-                <div class="partner-logo">Logo</div>
+            <div class="partners">
+                <strong>Partnerzy:</strong>
+                <div class="partners-wrap">
+                    <div class="partner-logo">Logo</div>
+                    <div class="partner-logo">Logo</div>
+                    <div class="partner-logo">Logo</div>
+                    <div class="partner-logo">Logo</div>
+                </div> <!--  .partners-wrap -->
             </div>
-            <div class="footer-contacts col-md-4 col-md-offset-0  col-xs-8 col-xs-offset-2 text-center">
-                        <strong>Contacts:</strong> <br><br>
-                        tel: +48 533 88 06 05 <br>
-                        email: radoslaw.mulawka@gmail.com <br>
-                        social media: <a href="#"><i class="fa fa-vk"></i></a> 
-                        <a href="#"><i class="fa fa-instagram"></i></a>
+            <div class="footer-contacts">
+                <strong>Contacts:</strong> 
+                <span>tel: +48 533 88 06 05</span>
+                <span>email: radoslaw.mulawka@gmail.com </span>
+                <span>social media: 
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </span>        
+                        
             </div>
         </footer>
-    <!-- FOOTER SECTION END-->
     </div>
 </div>
 
