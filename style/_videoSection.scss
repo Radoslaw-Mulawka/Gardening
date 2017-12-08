@@ -14,4 +14,17 @@
 		text-transform: uppercase;
 		font-family: Merriweather, serif;
 	}
+	img {
+		display:none;
+	}
+}
+@media screen and(max-width:600px){
+	video{
+		display:none;
+	}
+	.video-wrap {
+		img{
+			display:block;
+		}
+	}
 }

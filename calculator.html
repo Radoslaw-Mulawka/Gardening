@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Radoslaw Mulawka radoslaw.mulawka@gmail.com">
+
+    <meta name="description" content="Zajmujemy się szeroko pojętą pielęgnacją, utrzymaniem ogrodów: zakładaniem koszeniem i pielęgnacją trawników, dostarczaniem i montażem mebli ogrodowych (np. hamaki, huśtawki), altan, ogrodzeń z drewna, czy budową elementów małej architektury (np. miejsca na ognisko z kamienia granitowego, murki z kamienia).">
+
+    <meta name="keywords" content="rzemiosło ogrodu, utrzymanie ogrodu, wertykulacja, koszenie trawy, montaż altan ogrodowych">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gardening</title>
+    
+	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="bower_components/lightgallery/dist/css/lightgallery.css" /> 
+    <link rel="stylesheet" type="text/css" href="style/set1.css" />
+    <link rel="stylesheet" type="text/css" href="style/set2.css" />
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- GŁÓWNE MENU -->
+        <nav class="top-navigation">
+            <div class="visible-wrap">
+                <div class="nav-logo">
+                    <img src="images/Tree_logo.png" alt="Logo" />
+                </div>
+                <div class="nav-items">
+                    <ul>
+                        <li><a href="index.html">Główna</a></li>
+                        <li><a href="services.html">Usługi</a></li>
+                        <li><a href="gallery.html">Galeria</a></li>
+                        <li><a href="calculator.html">Kalkulator ogrodniczy</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> <!--  .hamburger -->   
+            </div> 
+            <div class="hidden-wrap">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> 
+            </div>
+        </nav>
+
+
+        <div class="hidden-nav">
+            <ul>
+                <li><a href="index.html">Główna</a></li>
+                <li><a href="services.html">Usługi</a></li>
+                <li><a href="gallery.html">Galeria</a></li>
+                <li><a href="calculator.html">Kalkulator ogrodniczy</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div> 
+
+        
+
+        <div class="calculator-wrap">
+            <div class="services-calc-wrap">
+                <div class="service-1">
+                    <h4>Glebogryzowanie</h4>
+                    <div class="input-wrap">
+                        <span>Wielkość terenu, m<sup>2</sup></span>
+                            <div class="count-input space-bottom">
+                                <a class="incr-btn" data-action="decrease" href="#">–</a>
+                                <input class="quantity" type="text" name="quantity" value="0"/>
+                                <a class="incr-btn" data-action="increase" href="#">&plus;</a>
+                            </div>
+                    </div> <!--  .input-outer-wrap -->
+                </div> <!--  .service-1 -->    
+                <div class="service-2">
+                    <h4>Koszenie</h4>
+                    <div class="input-wrap">
+                        <span>Wielkość terenu, m<sup>2</sup></span>
+                            <div class="count-input space-bottom">
+                                <a class="incr-btn" data-action="decrease" href="#">–</a>
+                                <input class="quantity" type="text" name="quantity" value="0"/>
+                                <a class="incr-btn" data-action="increase" href="#">&plus;</a>
+                            </div>
+                        <div class="label-wrap">
+                            <label ><input type="checkbox" />Kosa</label>
+                            <label ><input type="checkbox" />Kosiarka</label>
+                            <label ><input type="checkbox" />Traktorek</label>   
+                        </div> 
+                    </div> 
+                </div>    
+                <div class="service-3">
+                    <h4>Wertykulacja</h4>
+                    <div class="input-wrap">
+                        <span>Wielkość terenu, m<sup>2</sup></span>
+                            <div class="count-input space-bottom">
+                                <a class="incr-btn" data-action="decrease" href="#">–</a>
+                                <input class="quantity" type="text" name="quantity" value="0"/>
+                                <a class="incr-btn" data-action="increase" href="#">&plus;</a>
+                            </div>
+                        <div class="label-wrap">
+                            <label ><input type="checkbox" />Coś tam trawy</label>
+                            <label ><input type="checkbox" />Aeracja</label>
+                        </div> 
+                    </div> 
+                </div>  
+
+
+                <div class="service-4">
+                    <h4>Zrywanie darni</h4>
+                    <div class="input-wrap">
+                        <span>Ilość mb.</span>
+                            <div class="count-input space-bottom">
+                                <a class="incr-btn" data-action="decrease" href="#">–</a>
+                                <input class="quantity" type="text" name="quantity" value="0"/>
+                                <a class="incr-btn" data-action="increase" href="#">&plus;</a>
+                            </div>
+                    </div> 
+                </div>  
+
+                <div class="service-5">
+                    <h4>Sadzenie roślin wieloletnich: drzewa, krzewy</h4>
+                    <div class="input-wrap">
+                        <span>Wielkość sztuk</span>
+                            <div class="count-input space-bottom">
+                                <a class="incr-btn" data-action="decrease" href="#">–</a>
+                                <input class="quantity" type="text" name="quantity" value="0"/>
+                                <a class="incr-btn" data-action="increase" href="#">&plus;</a>
+                            </div>
+                    </div> 
+                </div>  
+
+
+                <div class="service-6">
+                    <h4>Podcinanie żywopłotów</h4>
+                    <div class="input-wrap">
+                        <span>Ilość mb.</span>
+                            <div class="count-input space-bottom">
+                                <a class="incr-btn" data-action="decrease" href="#">–</a>
+                                <input class="quantity" type="text" name="quantity" value="0"/>
+                                <a class="incr-btn" data-action="increase" href="#">&plus;</a>
+                            </div>
+                    </div> 
+                </div>  
+                <h2>Cena: <span></span></h2>  
+            </div> <!--  .services -->
+            
+            
+            <div class="contact-form">
+                <div id="panel">
+
+                    <div class="form-area col-xs-8 col-xs-offset-2">  
+                        <form role="form">
+                        <br style="clear:both">
+                                    <h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="address" name="address" placeholder="Address" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                    </div>
+                                    <div class="form-group">
+                                    <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+                                        <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>                    
+                                    </div>
+                            
+                        <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div> <!--  .contact-form -->
+            
+        </div> <!--  .calculator-wrap -->
+
+
+
+        <footer>
+            <div class="adress">
+                <strong>Adres:</strong>
+                <span>Polska, Legnica 59-220</span>
+                <span>ul.Paderewskiego 1/14</span>
+            </div>
+            <div class="partners">
+                <strong>Partnerzy:</strong>
+                <div class="partners-wrap">
+                    <div class="partner-logo">Logo</div>
+                    <div class="partner-logo">Logo</div>
+                    <div class="partner-logo">Logo</div>
+                    <div class="partner-logo">Logo</div>
+                </div> <!--  .partners-wrap -->
+            </div>
+            <div class="footer-contacts">
+                <strong>Contacts:</strong> 
+                <span>tel: +48 533 88 06 05</span>
+                <span>email: radoslaw.mulawka@gmail.com </span>
+                <span>social media: 
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </span>        
+                        
+            </div>
+        </footer>
+    </div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script>
+    $(document).ready(function(){
+         
+        $(".hamburger").on("click", function(){
+            if($(".hidden-nav").css("display") == "none") {
+                $(".hidden-nav").slideDown();
+            }
+            else {
+                $(".hidden-nav").slideUp();
+            }
+
+        });
+
+
+
+
+        
+        // CALC 
+        // $(".plus").on("click", function(){
+        //     let glebo = parseInt($(this).next("input").val());
+
+        //     alert(typeof glebo);
+        // });
+
+
+
+
+
+            $(".incr-btn").on("click", function (e) {
+                var $button = $(this);
+                var oldValue = $button.parent().find('.quantity').val();
+                $button.parent().find('.incr-btn[data-action="decrease"]').removeClass('inactive');
+                if ($button.data('action') == "increase") {
+                    var newVal = parseFloat(oldValue) + 1;
+                } else {
+                    // Don't allow decrementing below 1
+                    if (oldValue > 0) {
+                        var newVal = parseFloat(oldValue) - 1;
+                    } 
+                    else {
+                        newVal = 1;
+                        $button.addClass('inactive');
+                    }
+                }
+                $button.parent().find('.quantity').val(newVal);
+                e.preventDefault();
+            });
+
+
+
+            let glebo = parseInt($(".quantity").first().val());
+            let koszenie = parseInt($(".quantity").eq(2).val());
+            let wertykulacja = parseInt($(".quantity").eq(3).val());
+            let zrywanieDarni = parseInt($(".quantity").eq(4).val());
+            let sadzenieRoslin = parseInt($(".quantity").eq(5).val());
+            let Podcinanie = parseInt($(".quantity").last().val());
+            let total = 0;
+            
+            $(".service-1 .incr-btn").on('click', function(){
+                glebo = parseInt($(".quantity").first().val());
+                total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
+                $(".services-calc-wrap h2 span").text(total);
+           // $(".quantity").first().val() * CENA;  
+                // $(".services-calc-wrap h2 span").text(total);
+            });
+
+            $(".service-2 .incr-btn").on('click', function(){
+                koszenie = parseInt($(".quantity").eq(1).val());
+                total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
+                $(".services-calc-wrap h2 span").text(total);
+                  // $(".quantity").first().val() * CENA;  
+                // $(".services-calc-wrap h2 span").text(total);
+            });
+
+            $(".service-3 .incr-btn").on('click', function(){
+                wertykulacja = parseInt($(".quantity").eq(2).val());
+                total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
+                $(".services-calc-wrap h2 span").text(total);
+                            // $(".quantity").first().val() * CENA;  
+                // $(".services-calc-wrap h2 span").text(total);
+            });
+        
+            $(".service-4 .incr-btn").on('click', function(){
+                zrywanieDarni = parseInt($(".quantity").eq(3).val()); 
+                total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
+                $(".services-calc-wrap h2 span").text(total);
+                         // $(".quantity").first().val() * CENA;  
+                // $(".services-calc-wrap h2 span").text(total);
+            });
+
+
+            $(".service-5 .incr-btn").on('click', function(){
+               sadzenieRoslin = parseInt($(".quantity").eq(4).val());
+               total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
+                $(".services-calc-wrap h2 span").text(total);
+                        // $(".quantity").first().val() * CENA;  
+                // $(".services-calc-wrap h2 span").text(total);
+            });
+
+
+            $(".service-6 .incr-btn").on('click', function(){
+               Podcinanie = parseInt($(".quantity").last().val());
+               total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
+                $(".services-calc-wrap h2 span").text(total);
+                         // $(".quantity").first().val() * CENA;  
+                // $(".services-calc-wrap h2 span").text(total);
+            });
+    });
+</script>
+<script src="script/script.js"></script>
+
+</body>
+</html>

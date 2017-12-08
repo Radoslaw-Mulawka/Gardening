@@ -60,7 +60,7 @@
             display: flex;
             align-items: center;
             justify-content:center;
-            min-width: 135px;
+            min-width: 80px;
             margin:0 10px;
             &:hover {
               background-color: rgba(255,255,255,0.04);
@@ -102,7 +102,7 @@
     display:none;
     width: 100%;
     position: fixed;
-    top: 49px;
+    top: 50px;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
