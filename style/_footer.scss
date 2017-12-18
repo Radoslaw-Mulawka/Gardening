@@ -1,68 +1,69 @@
 footer {
-	  position: absolute;
-    bottom: 10px;
+    position: absolute;
+    bottom: 0px;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    height: 100px;
-    &>div {
-    	width: 33%;
-    	text-align:center;
+    height: 120px;
+    padding-top:10px;
+    .adress, .partners, .footer-contacts{
+       width:100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media screen and(max-width:850px){
+        & {
+            margin-bottom: 20px;
+        }
+      }
     }
-    strong, span  {
-    	display: block;
+    .footer-email {
+      min-width:235px;
     }
-    strong {
-    	text-align:center;
-    	margin-bottom: 10px;
+    .social-media {
+        display:flex;
+        justify-content:center;
+        margin-top:10px;
+        i.fa {
+            width: 30px;
+            text-align: center;
+            font-size:2em;
+            margin: 0 10px;
+        }
     }
 
+    strong {
+      display:block;
+      width:100%;
+      text-align:center;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
     .partners-wrap{
        display:flex;
        justify-content: center;
        .partner-logo {
-       	  width:50px;
-       	  height:50px;
-       	  background-color:black;
-       	  color:white;
-       	  display:flex;
-       	  align-items:center;
-       	  justify-content:center;
-       	  margin-right:10px;
-       	  &:last-child{
-       	  	margin-right:0;
-       	  }
+          width:50px;
+          height:50px;
+          background-color:black;
+          color:white;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          margin-right:10px;
+          &:last-child{
+            margin-right:0;
+          }
        }
     }
 
-}
-
-@media screen and (max-width:760px){
-  footer{
-    flex-direction:column;
-    align-items: center;
-    justify-content: flex-start;
-    &>div{
-      width:100%;
-      margin-bottom:20px;
-    }
-  }
-}
-
-.footer-contacts {
-      &>span:last-child{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-      }
-      a{
-        margin-right:10px;
-        &:last-child{
-          margin-right:0;
-        }
-      }
-      a i {
-        font-size:30px !important;
+  @media screen and (max-width:850px){
+      &{
+        position:static;
+        display:block;
+        height:auto;
       }
   }
+
+}

@@ -168,20 +168,20 @@
                         <br style="clear:both">
                                     <h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Imię" required>
                                     </div>
                                     <div class="form-group">
                                         <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="address" name="address" placeholder="Address" required>
+                                        <input type="text" class="form-control" id="address" name="address" placeholder="Adres" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                        <input type="text" class="form-price form-control" id="subject" name="price" placeholder="Cena"  value="" disabled>
                                     </div>
                                     <div class="form-group">
-                                    <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
-                                        <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>                    
+                                    <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="600" rows="7"></textarea>
+                                       <!--  <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>   -->                  
                                     </div>
                             
                         <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
@@ -190,7 +190,7 @@
 
                 </div>
             </div> <!--  .contact-form -->
-            
+            <div class="gradient-line"></div> <!--  .gradient-line -->   
         </div> <!--  .calculator-wrap -->
 
 
@@ -198,8 +198,11 @@
         <footer>
             <div class="adress">
                 <strong>Adres:</strong>
-                <span>Polska, Legnica 59-220</span>
-                <span>ul.Paderewskiego 1/14</span>
+                <div>
+                  <div>Polska</div>
+                  <div>Dolnyśląsk</div>
+                  <div>Legnica 59-220 ul.Paderewskiego 1/14</div>
+                </div>
             </div>
             <div class="partners">
                 <strong>Partnerzy:</strong>
@@ -212,13 +215,14 @@
             </div>
             <div class="footer-contacts">
                 <strong>Contacts:</strong> 
-                <span>tel: +48 533 88 06 05</span>
-                <span>email: radoslaw.mulawka@gmail.com </span>
-                <span>social media: 
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                </span>        
-                        
+                <div>
+                  <div>tel: +48 533 88 06 05</div>
+                  <div class="footer-email">email: radoslaw.mulawka@gmail.com </div>
+                  <div class="social-media">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                      <a href="#"><i class="fa fa-instagram"></i></a>
+                  </div>            
+                </div>           
             </div>
         </footer>
     </div>
@@ -241,7 +245,6 @@
             }
 
         });
-
 
 
 
@@ -288,9 +291,11 @@
             let total = 0;
             
             $(".service-1 .incr-btn").on('click', function(){
-                glebo = parseInt($(".quantity").first().val());
+                glebo = parseInt($(".quantity").first().val()) * 0.15;
                 total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
-                $(".services-calc-wrap h2 span").text(total);
+
+                $(".services-calc-wrap h2 span").text(total.toFixed(2));
+                $(".form-price").attr("value", "Cena: " + total.toFixed(2) +" zł");
            // $(".quantity").first().val() * CENA;  
                 // $(".services-calc-wrap h2 span").text(total);
             });
@@ -298,7 +303,8 @@
             $(".service-2 .incr-btn").on('click', function(){
                 koszenie = parseInt($(".quantity").eq(1).val());
                 total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
-                $(".services-calc-wrap h2 span").text(total);
+                $(".services-calc-wrap h2 span").text(total.toFixed(2));
+                $(".form-price").attr("value", "Cena: " + total.toFixed(2) +" zł");
                   // $(".quantity").first().val() * CENA;  
                 // $(".services-calc-wrap h2 span").text(total);
             });
@@ -306,7 +312,8 @@
             $(".service-3 .incr-btn").on('click', function(){
                 wertykulacja = parseInt($(".quantity").eq(2).val());
                 total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
-                $(".services-calc-wrap h2 span").text(total);
+                $(".services-calc-wrap h2 span").text(total.toFixed(2));
+                $(".form-price").attr("value", "Cena: " + total.toFixed(2) +" zł");
                             // $(".quantity").first().val() * CENA;  
                 // $(".services-calc-wrap h2 span").text(total);
             });
@@ -314,7 +321,8 @@
             $(".service-4 .incr-btn").on('click', function(){
                 zrywanieDarni = parseInt($(".quantity").eq(3).val()); 
                 total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
-                $(".services-calc-wrap h2 span").text(total);
+                $(".services-calc-wrap h2 span").text(total.toFixed(2));
+                $(".form-price").attr("value", "Cena: " + total.toFixed(2) +" zł");
                          // $(".quantity").first().val() * CENA;  
                 // $(".services-calc-wrap h2 span").text(total);
             });
@@ -323,7 +331,8 @@
             $(".service-5 .incr-btn").on('click', function(){
                sadzenieRoslin = parseInt($(".quantity").eq(4).val());
                total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
-                $(".services-calc-wrap h2 span").text(total);
+                $(".services-calc-wrap h2 span").text(total.toFixed(2));
+                $(".form-price").attr("value", "Cena: " + total.toFixed(2) +" zł");
                         // $(".quantity").first().val() * CENA;  
                 // $(".services-calc-wrap h2 span").text(total);
             });
@@ -332,7 +341,9 @@
             $(".service-6 .incr-btn").on('click', function(){
                Podcinanie = parseInt($(".quantity").last().val());
                total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
-                $(".services-calc-wrap h2 span").text(total);
+                $(".services-calc-wrap h2 span").text(total.toFixed(2));
+                 // $(".form-price").attr("placeholder", );
+                 $(".form-price").attr("value", "Cena: " + total.toFixed(2) +" zł");
                          // $(".quantity").first().val() * CENA;  
                 // $(".services-calc-wrap h2 span").text(total);
             });

@@ -11,6 +11,11 @@ body{
 	position:relative;
 	padding-bottom: 120px;
 	min-height: 100vh !important;
+  @media screen and (max-width:850px){
+      &{
+        padding-bottom:0;
+      }
+  }
 }
 
 .container-fluid {
