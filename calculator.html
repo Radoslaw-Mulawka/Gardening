@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900" rel="stylesheet">
 
+
     <link type="text/css" rel="stylesheet" href="bower_components/lightgallery/dist/css/lightgallery.css" /> 
     <link rel="stylesheet" type="text/css" href="style/set1.css" />
     <link rel="stylesheet" type="text/css" href="style/set2.css" />
@@ -164,7 +165,7 @@
                 <div id="panel">
 
                     <div class="form-area ">  
-                        <form role="form">
+                       <form role="form" id="ajax_form"  action=""  method="get">
                         <br style="clear:both">
                                     <h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>
                                     <div class="form-group">
@@ -180,20 +181,46 @@
                                         <input type="text" class="form-price form-control" id="subject" name="price" placeholder="Cena"  value="" disabled>
                                     </div>
                                     <div class="form-group">
-                                    <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="600" rows="7"></textarea>
-                                       <!--  <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>   -->                  
+                                    <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Message" maxlength="600" rows="7"></textarea>
+                                           
                                     </div>
-                            
-                        <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
-                        </form>
+                                    
+                                    
+                                    <input type="button" id="btn" name="submit" class="btn btn-primary pull-right" value="Wyślij">
+                                    
+                        </form> 
+                        
+                        
                     </div>
+
+
 
                 </div>
             </div> <!--  .contact-form -->
             <div class="gradient-line"></div> <!--  .gradient-line -->   
         </div> <!--  .calculator-wrap -->
 
-
+        <div style="display:none;">
+<!-- Формы в модальных окнах -->
+    <div class="box-modal" id="small-modal">
+        <div class="modal-close arcticmodal-close">x</div>
+        <div class="modal-content-box">
+            <legend>Пример формы 1</legend>
+            <form action="" method="get" name="form-1">
+                <div class="input-prepend">
+                    <span class="add-on"><i class="icon-user"></i></span>
+                    <input class="input-medium focused" name="name" type="text" placeholder="Ваше имя">
+                </div>
+                <div class="input-prepend">
+                    <span class="add-on"><i class="icon-book"></i></span>
+                    <input class="input-medium focused" name="tell" type="text" placeholder="Ваш телефон">
+                </div>
+                <input class="feedback btn btn-block btn-success" name="send" type="button" value="Тест формы !">
+            </form>
+        </div>
+    </div>
+<!-- // Формы в модальных окнах -->
+</div>
 
         <footer>
             <div class="adress">
@@ -233,123 +260,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-<script>
-    $(document).ready(function(){
-         
-        $(".hamburger").on("click", function(){
-            if($(".hidden-nav").css("display") == "none") {
-                $(".hidden-nav").slideDown();
-            }
-            else {
-                $(".hidden-nav").slideUp();
-            }
-
-        });
+<script src="bower_components/lightgallery/dist/js/lightgallery.min.js"></script>
+<script src="bower_components/lightgallery/modules/lg-thumbnail.min.js"></script>
+<script src="bower_components/lightgallery/modules/lg-fullscreen.min.js"></script>
+<script src="bower_components/lightgallery/modules/lg-zoom.min.js"></script>
+<script src="bower_components/lightgallery/modules/lg-share.min.js"></script>
 
 
 
-        
-        // CALC 
-        // $(".plus").on("click", function(){
-        //     let glebo = parseInt($(this).next("input").val());
-
-        //     alert(typeof glebo);
-        // });
-
-
-
-
-
-            $(".incr-btn").on("click", function (e) {
-                var $button = $(this);
-                var oldValue = $button.parent().find('.quantity').val();
-                $button.parent().find('.incr-btn[data-action="decrease"]').removeClass('inactive');
-                if ($button.data('action') == "increase") {
-                    var newVal = parseFloat(oldValue) + 1;
-                } else {
-                    // Don't allow decrementing below 1
-                    if (oldValue > 0) {
-                        var newVal = parseFloat(oldValue) - 1;
-                    } 
-                    else {
-                        newVal = 1;
-                        $button.addClass('inactive');
-                    }
-                }
-                $button.parent().find('.quantity').val(newVal);
-                e.preventDefault();
-            });
-
-
-
-            let glebo = parseInt($(".quantity").first().val());
-            let koszenie = parseInt($(".quantity").eq(2).val());
-            let wertykulacja = parseInt($(".quantity").eq(3).val());
-            let zrywanieDarni = parseInt($(".quantity").eq(4).val());
-            let sadzenieRoslin = parseInt($(".quantity").eq(5).val());
-            let Podcinanie = parseInt($(".quantity").last().val());
-            let total = 0;
-            
-            $(".service-1 .incr-btn").on('click', function(){
-                glebo = parseInt($(".quantity").first().val()) * 0.15;
-                total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
-
-                $(".services-calc-wrap h2 span").text(total.toFixed(2));
-                $(".form-price").attr("value", "Cena: " + total.toFixed(2) +" zł");
-           // $(".quantity").first().val() * CENA;  
-                // $(".services-calc-wrap h2 span").text(total);
-            });
-
-            $(".service-2 .incr-btn").on('click', function(){
-                koszenie = parseInt($(".quantity").eq(1).val());
-                total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
-                $(".services-calc-wrap h2 span").text(total.toFixed(2));
-                $(".form-price").attr("value", "Cena: " + total.toFixed(2) +" zł");
-                  // $(".quantity").first().val() * CENA;  
-                // $(".services-calc-wrap h2 span").text(total);
-            });
-
-            $(".service-3 .incr-btn").on('click', function(){
-                wertykulacja = parseInt($(".quantity").eq(2).val());
-                total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
-                $(".services-calc-wrap h2 span").text(total.toFixed(2));
-                $(".form-price").attr("value", "Cena: " + total.toFixed(2) +" zł");
-                            // $(".quantity").first().val() * CENA;  
-                // $(".services-calc-wrap h2 span").text(total);
-            });
-        
-            $(".service-4 .incr-btn").on('click', function(){
-                zrywanieDarni = parseInt($(".quantity").eq(3).val()); 
-                total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
-                $(".services-calc-wrap h2 span").text(total.toFixed(2));
-                $(".form-price").attr("value", "Cena: " + total.toFixed(2) +" zł");
-                         // $(".quantity").first().val() * CENA;  
-                // $(".services-calc-wrap h2 span").text(total);
-            });
-
-
-            $(".service-5 .incr-btn").on('click', function(){
-               sadzenieRoslin = parseInt($(".quantity").eq(4).val());
-               total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
-                $(".services-calc-wrap h2 span").text(total.toFixed(2));
-                $(".form-price").attr("value", "Cena: " + total.toFixed(2) +" zł");
-                        // $(".quantity").first().val() * CENA;  
-                // $(".services-calc-wrap h2 span").text(total);
-            });
-
-
-            $(".service-6 .incr-btn").on('click', function(){
-               Podcinanie = parseInt($(".quantity").last().val());
-               total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
-                $(".services-calc-wrap h2 span").text(total.toFixed(2));
-                 // $(".form-price").attr("placeholder", );
-                 $(".form-price").attr("value", "Cena: " + total.toFixed(2) +" zł");
-                         // $(".quantity").first().val() * CENA;  
-                // $(".services-calc-wrap h2 span").text(total);
-            });
-    });
-</script>
 <script src="script/script.js"></script>
+
 
 </body>
 </html>

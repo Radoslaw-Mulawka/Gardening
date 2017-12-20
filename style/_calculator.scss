@@ -77,11 +77,12 @@
 	}
 }
 .contact-form{
-	width:50%;
+	// width:50%;  
 	padding: 0 50px;
+	margin:0 auto;
 	@media screen and (max-width:750px){
 		&{
-			width:100%; // CONTACT FORM FULL WIDTH
+			// width:100%; // CONTACT FORM FULL WIDTH
 			margin-top: 20px;
 		}
 
