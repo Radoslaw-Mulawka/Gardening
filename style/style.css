@@ -316,35 +316,78 @@ footer {
 
 .services {
   width: 100%;
-  padding: 20px 10px;
   margin-top: 50px;
   position: relative; }
 
-.services__first-wrap {
+.pair-wrap {
   display: flex;
   justify-content: center; }
-  .services__first-wrap > div {
-    display: flex; }
-    @media screen and (max-width: 490px) {
-      .services__first-wrap > div {
-        flex-direction: column; } }
-  @media screen and (max-width: 900px) {
-    .services__first-wrap {
+  @media screen and (max-width: 1030px) {
+    .pair-wrap {
+      flex-direction: column;
+      align-items: center; } }
+
+.pair-wrap2 {
+  display: flex;
+  justify-content: center; }
+  @media screen and (max-width: 1030px) {
+    .pair-wrap2 {
+      flex-direction: column;
+      align-items: center; } }
+
+.first-two, .second-two {
+  position: relative;
+  display: inline-block; }
+  @media screen and (max-width: 1030px) {
+    .first-two, .second-two {
+      position: relative;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin: 0px 40px; } }
+  @media screen and (max-width: 660px) {
+    .first-two, .second-two {
+      flex-direction: column;
+      align-items: center; } }
+
+.third-two {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px; }
+  @media screen and (max-width: 1030px) {
+    .third-two {
+      justify-content: center; } }
+  @media screen and (max-width: 660px) {
+    .third-two {
       flex-direction: column;
       align-items: center; } }
 
 .service-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 10px;
-  color: #165900; }
+  margin: 0px 40px;
+  display: inline-block;
+  color: #165900;
+  height: 350px;
+  position: relative;
+  width: 230px; }
+  @media screen and (max-width: 1270px) {
+    .service-item {
+      margin: 0px 20px; } }
+  @media screen and (max-width: 1110px) {
+    .service-item {
+      margin: 0px 10px; } }
+  @media screen and (max-width: 1030px) {
+    .service-item {
+      margin: 0px 40px; } }
   .service-item .hover-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 0; }
     .service-item .hover-wrap:hover div {
       background-color: #dbdbdb !important;
       border-color: #dbdbdb !important; }
@@ -362,39 +405,27 @@ footer {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%); }
-  .service-item span {
-    width: 70%;
-    font-size: 35px;
-    margin: 20px 0 30px;
-    text-align: center; }
-  .service-item a {
-    background-color: #165900;
-    margin-bottom: 5px;
-    padding: 10px 20px;
-    color: white !important;
-    border-radius: 3px;
-    text-transform: uppercase;
-    text-align: center; }
-    .service-item a:hover {
-      background-color: #515151; }
-    .service-item a.service-desc {
-      min-width: 145px !important; }
-    .service-item a.toGallery {
-      min-width: 195px !important; }
-
-.services__second-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  @media screen and (max-width: 900px) {
-    .services__second-wrap {
-      flex-direction: column; } }
-  .services__second-wrap > div:first-child {
+    .service-item .hover-wrap span {
+      font-size: 3rem;
+      text-align: center; }
+  .service-item .buttons-wrap {
     display: flex;
-    justify-content: center; }
-    @media screen and (max-width: 490px) {
-      .services__second-wrap > div:first-child {
-        flex-direction: column; } }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+    .service-item .buttons-wrap a {
+      background-color: #165900;
+      margin-bottom: 5px;
+      padding: 10px 20px;
+      color: white !important;
+      border-radius: 3px;
+      text-transform: uppercase;
+      text-align: center; }
+      .service-item .buttons-wrap a:hover {
+        background-color: #515151; }
 
 .remodal p {
   text-align: left; }
@@ -403,7 +434,9 @@ footer {
   padding-left: 0;
   list-style-position: inside; }
 .remodal ul {
-  list-style-type: disc; }
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 30px; }
 
 .calculator-wrap {
   margin-top: 50px;
@@ -542,9 +575,19 @@ footer {
   height: 70px;
   border-radius: 3px; }
 
+.quantity {
+  padding: 0 30px; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */ }
+
 body {
   position: relative;
-  padding-bottom: 140px;
+  padding-bottom: 150px;
   min-height: 100vh !important; }
   @media screen and (max-width: 850px) {
     body {

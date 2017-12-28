@@ -54,9 +54,10 @@ $(document).ready(function() {
             let sadzenieRoslin = parseInt($(".quantity").eq(5).val());
             let Podcinanie = parseInt($(".quantity").last().val());
             let total = 0;
-
-            $(".service-1 .incr-btn").on('click', function(){
+            let varsArray = [glebo, koszenie, wertykulacja, zrywanieDarni, Podcinanie, sadzenieRoslin];
+            $(".service-1 .incr-btn").on('click ', function(){
                 glebo = parseInt($(".quantity").first().val()) * 0.15;
+
                 total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
 
                 $(".services-calc-wrap h2 span").text(total.toFixed(2));
@@ -113,6 +114,68 @@ $(document).ready(function() {
                 // $(".services-calc-wrap h2 span").text(total);
             });
   	
+
+
+
+
+
+
+
+
+
+          $(".service-1 ").on('keyup input', function(){
+                glebo = parseInt($(".quantity").first().val()) * 0.15;
+                total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
+                $(".services-calc-wrap h2 span").text(total.toFixed(2));
+                $(".form-price").attr("value", total.toFixed(2) +" zł");
+            });
+
+            $(".service-2 ").on('keyup input', function(){
+                koszenie = parseInt($(".quantity").eq(1).val());
+                total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
+                $(".services-calc-wrap h2 span").text(total.toFixed(2));
+                $(".form-price").attr("value",  total.toFixed(2) +" zł");
+            });
+
+            $(".service-3 ").on('keyup input', function(){
+                wertykulacja = parseInt($(".quantity").eq(2).val());
+                total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
+                $(".services-calc-wrap h2 span").text(total.toFixed(2));
+                $(".form-price").attr("value",  total.toFixed(2) +" zł");
+            });
+        
+            $(".service-4 ").on('keyup input', function(){
+                zrywanieDarni = parseInt($(".quantity").eq(3).val()); 
+                total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
+                $(".services-calc-wrap h2 span").text(total.toFixed(2));
+                $(".form-price").attr("value",  total.toFixed(2) +" zł");
+            });
+
+
+            $(".service-5 ").on('keyup input', function(){
+               sadzenieRoslin = parseInt($(".quantity").eq(4).val());
+               total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
+                $(".services-calc-wrap h2 span").text(total.toFixed(2));
+                $(".form-price").attr("value",  total.toFixed(2) +" zł");
+            });
+
+
+            $(".service-6 ").on(' keyup input', function(){
+               Podcinanie = parseInt($(".quantity").last().val());
+               total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
+                $(".services-calc-wrap h2 span").text(total.toFixed(2));
+                 $(".form-price").attr("value", total.toFixed(2) +" zł");
+            });
+
+            $(".quantity").on('blur ', function(){
+               if($(this).val()===" ") {
+                  $(this).val(+0);
+               }
+                  alert(typeof($(this).val()));
+                  // total = glebo + koszenie + wertykulacja + zrywanieDarni + sadzenieRoslin + Podcinanie;
+                  // $(".services-calc-wrap h2 span").text(total.toFixed(2));
+                  // $(".form-price").attr("value", total.toFixed(2) +" zł");
+            });
 });
 
 
