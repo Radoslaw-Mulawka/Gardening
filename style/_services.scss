@@ -103,3 +103,16 @@
 		}
 	}
 }
+.remodal {
+	p{
+		text-align: left;
+	}
+	ol, ul {
+		text-align: left !important;
+	    padding-left: 0;
+	    list-style-position: inside;
+	}
+	 ul {
+	     list-style-type: disc;
+	 }
+}

@@ -4,12 +4,13 @@
 	video {
 		width:100%;
 	}
-	span {
+	#motto {
 		position:absolute;
 		top:50%;
 		left:50%;
+		text-align: center;
 		transform:translate(-50%,-50%);
-		font-size: 10vw;
+		font-size: 7vw;
 		color:#f7f7f7;
 		text-transform: uppercase;
 		font-family: Merriweather, serif;
@@ -27,4 +28,7 @@
 			display:block;
 		}
 	}
+}
+#green {
+	// color: #b2ff7f;
 }

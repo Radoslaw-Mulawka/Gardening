@@ -8,9 +8,15 @@
 		justify-content: space-around;
 		.mission__desc {
 			width: 50%;
-			text-indent: 20px;
 			font-size:1.1em;
 			text-align: justify;
+			h4{
+				text-align: center;
+				font-size:25px;
+			}
+			p {
+				text-indent: 20px;
+			}
 		}
 		.mission__logo-button{
 			display:flex;
