@@ -465,8 +465,7 @@ footer {
     height: 500px;
     top: 50%;
     transform: translate(0, -50%);
-    width: 2px;
-    background-color: black; }
+    width: 2px; }
   @media screen and (max-width: 750px) {
     .services-calc-wrap:after {
       display: none; } }
@@ -615,5 +614,8 @@ h3 {
   height: 1px;
   margin: 0 auto;
   background-image: linear-gradient(to right, white, black, white); }
+
+.design-footer {
+  background-color: black !important; }
 
 /*# sourceMappingURL=style.css.map */

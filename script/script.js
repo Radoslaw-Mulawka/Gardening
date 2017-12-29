@@ -176,6 +176,8 @@ $(document).ready(function() {
                   // $(".services-calc-wrap h2 span").text(total.toFixed(2));
                   // $(".form-price").attr("value", total.toFixed(2) +" zł");
             });
+
+
 });
 
 

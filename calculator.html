@@ -75,7 +75,7 @@
         <div class="calculator-wrap">
             <div class="services-calc-wrap">
                 <div class="">
-                    <div class="service-1">
+                    <!-- <div class="service-1">
                         <h4>Glebogryzowanie</h4>
                         <div class="input-wrap">
                             <span>Wielkość terenu, m<sup>2</sup></span>
@@ -84,9 +84,10 @@
                                     <input class="quantity" type="number" name="quantity" value="0" min="0"/>
                                     <a class="incr-btn" data-action="increase" href="#">&plus;</a>
                                 </div>
-                        </div> <!--  .input-outer-wrap -->
-                    </div> <!--  .service-1 -->    
-                    <div class="service-2">
+                        </div> 
+                    </div>   -->
+
+                    <!-- <div class="service-2">
                         <h4>Koszenie</h4>
                         <div class="input-wrap">
                             <span>Wielkość terenu, m<sup>2</sup></span>
@@ -101,8 +102,9 @@
                                 <label ><input type="checkbox" />Traktorek</label>   
                             </div> 
                         </div> 
-                    </div>    
-                    <div class="service-3">
+                    </div>    --> 
+
+                    <!-- <div class="service-3">
                         <h4>Wertykulacja</h4>
                         <div class="input-wrap">
                             <span>Wielkość terenu, m<sup>2</sup></span>
@@ -116,10 +118,10 @@
                                 <label ><input type="checkbox" />Aeracja</label>
                             </div> 
                         </div> 
-                    </div>  
+                    </div>   -->
 
 
-                    <div class="service-4">
+                    <!-- <div class="service-4">
                         <h4>Zrywanie darni</h4>
                         <div class="input-wrap">
                             <span>Ilość mb.</span>
@@ -129,9 +131,9 @@
                                     <a class="incr-btn" data-action="increase" href="#">&plus;</a>
                                 </div>
                         </div> 
-                    </div>  
+                    </div>   -->
 
-                    <div class="service-5">
+                    <!-- <div class="service-5">
                         <h4>Sadzenie roślin wieloletnich: drzewa, krzewy</h4>
                         <div class="input-wrap">
                             <span>Wielkość sztuk</span>
@@ -141,10 +143,10 @@
                                     <a class="incr-btn" data-action="increase" href="#">&plus;</a>
                                 </div>
                         </div> 
-                    </div>  
+                    </div>   -->
 
 
-                    <div class="service-6">
+                    <!-- <div class="service-6">
                         <h4>Podcinanie żywopłotów</h4>
                         <div class="input-wrap">
                             <span>Ilość mb.</span>
@@ -155,10 +157,11 @@
                                 </div>
                         </div> 
                     </div>  
-                    <h2>Cena: <span></span></h2>  
+                    <h2>Cena: <span></span></h2>   -->
                     
-                </div> <!--  .col-xs-8 col-xs-offset-2 -->
-            </div> <!--  .services -->
+                    <div class="uCalc_80941"></div>
+                </div> 
+            </div> 
             
             
             <div class="contact-form">
@@ -190,20 +193,9 @@
                                     
                                     
                                     <input type="submit" id="btn" name="submit" class="btn btn-primary pull-right" value="Wyślij">
-                                    
+                                     
                         </form> 
-                        
-            <!-- <form  method="post" id="form">
-                 <p>Имя</p>
-                 <input placeholder="В. В. Путин"" name="name" type="text" >
-                 <p>Телефон</p>
-                 <input placeholder="+7 777 77 77 777" name="number" type="text" >
-                 <p>Email</p>
-                 <input placeholder="example@mail.com" name="email" type="text" >
-                 <p>Прикрепить файлы</p>
-                 <input type="file" name="userfile[]"" multiple id="userfile" class="w100" accept="image/*" >
-                 <p><input value="Отправить"" type="submit"></p>
-            </form> -->
+                        <p class="form-message"></p>   
                         
                     </div>
 
@@ -260,7 +252,15 @@
 <script src="bower_components/lightgallery/modules/lg-zoom.min.js"></script>
 <script src="bower_components/lightgallery/modules/lg-share.min.js"></script>
 
-
+<script> 
+    var widgetOptions80941 = { bg_color: "transparent" }; 
+    (function() { 
+        var a = document.createElement("script"), h = "head"; 
+        a.async = true; 
+        a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=80941&t="+Math.floor(new Date()/18e5); 
+        document.getElementsByTagName(h)[0].appendChild(a) 
+    })();
+</script>
 
 <script src="script/script.js"></script>
 
@@ -277,9 +277,10 @@ $('#form').on('submit', function(e){
  data: fd,
  success: function(msg){
 if(msg == 'ok') {
- $('.button').val('Отправлено'); 
+ $('#btn').val('Отправлено'); 
+ $(".form-message").text('Success').delay(2000).text('');
 } else {
- $(".button").val("Ошибка");
+ $("#btn").val("Ошибка");
  setTimeout(function() {$(".button").val("Отправить");}, 3000);
 }
  }
