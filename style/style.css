@@ -132,7 +132,8 @@
         text-align: center;
         font-size: 25px; }
       .mission .mission-content-wrap .mission__desc p {
-        text-indent: 20px; }
+        text-indent: 20px;
+        margin: 0; }
     .mission .mission-content-wrap .mission__logo-button {
       display: flex;
       flex-direction: column;
@@ -312,7 +313,7 @@ footer {
 #map {
   width: 100%;
   height: 500px;
-  background-color: black; }
+  background-color: white; }
 
 .services {
   width: 100%;
@@ -583,6 +584,12 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
   /* <-- Apparently some margin are still there even though it's hidden */ }
+
+.form-message {
+  text-align: center;
+  font-size: 3em;
+  color: #247f0b;
+  padding: 25px 0; }
 
 body {
   position: relative;

@@ -196,3 +196,10 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
+
+.form-message {
+	text-align: center;
+    font-size: 3em;
+    color: #247f0b;
+    padding: 25px 0;
+}

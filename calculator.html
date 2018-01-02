@@ -166,11 +166,11 @@
             
             <div class="contact-form">
                 <div id="panel">
-
                     <div class="form-area ">  
                        <form role="form" id="form"  action=""  method="post">
                             <br style="clear:both">
-                                    <h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>
+                                    <h3 style="margin-bottom: 25px; text-align: center;">   Contact Form
+                                    </h3>
                                     <div class="form-group">
                                         <input type="text" class="form-control" id="name" name="name" placeholder="Imię" required>
                                     </div>
@@ -187,20 +187,13 @@
                                         <input type="hidden" class="form-price form-control" id="price" name="price" placeholder="Cena"  value="" >
                                     </div>
                                     <div class="form-group">
-                                    <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Wiadomość" maxlength="600" rows="7"></textarea>
-                                           
+                                        <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Wiadomość" maxlength="600" rows="7"></textarea>       
                                     </div>
-                                    
-                                    
                                     <input type="submit" id="btn" name="submit" class="btn btn-primary pull-right" value="Wyślij">
-                                     
                         </form> 
-                        <p class="form-message"></p>   
-                        
+                        <div class="clearfix"></div> <!--  .clearfix -->
+                        <div class="form-message"></div>  
                     </div>
-
-
-
                 </div>
             </div> <!--  .contact-form -->
             <div class="gradient-line"></div> <!--  .gradient-line -->   
@@ -265,28 +258,35 @@
 <script src="script/script.js"></script>
 
 <script>
-$(function(){
-$('#form').on('submit', function(e){
- e.preventDefault();
- var fd = new FormData( this );
- $.ajax({
- url: 'send.php',
- type: 'POST',
- contentType: false, 
- processData: false, 
- data: fd,
- success: function(msg){
-if(msg == 'ok') {
- $('#btn').val('Отправлено'); 
- $(".form-message").text('Success').delay(2000).text('');
-} else {
- $("#btn").val("Ошибка");
- setTimeout(function() {$(".button").val("Отправить");}, 3000);
-}
- }
- });
- });
-});
+    $(function(){
+        $('#form').on('submit', function(e){
+            e.preventDefault();
+            var fd = new FormData( this );
+            $.ajax({
+                 url: 'send.php',
+                 type: 'POST',
+                 contentType: false, 
+                 processData: false, 
+                 data: fd,
+                 success: function(msg){
+                 if(msg == 'ok') {
+                   // $('#btn').val('Отправлено'); 
+                   $(".form-message").text('Wysłano!');
+                   setTimeout(function() {
+                      $(".form-message").text('');
+                      $(".form-message").fadeOut(1000);
+                   }, 4000);
+                   
+                   $(".form-message").show();
+                 } 
+                 else {
+                   $("#btn").val("Ошибка");
+                   setTimeout(function() {$(".button").val("Отправить");}, 3000);
+                  }
+             }
+            });
+         });
+    });
 </script>
 </body>
 </html>
