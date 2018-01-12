@@ -87,7 +87,7 @@ if(!is_object($inWidget->data)) die('<b style="color:red;">Cache file contains p
 		$i = 0;
 		$count = $inWidget->countAvailableImages($inWidget->data->images);
 		if($count>0) {
-			if($inWidget->config['imgRandom'] === true) shuffle($inWidget->data->images);
+			if($inWidget->config['imgRandom'] === false) shuffle($inWidget->data->images);
 			echo '<div id="widgetData" class="data">';
 				foreach ($inWidget->data->images as $key=>$item){
 					if($inWidget->isBannedUserId($item->authorId) === true) continue;
