@@ -73,9 +73,485 @@
         </div> 
 
         
-
+    <!-- <div class="count-input space-bottom">
+                                        <a class="incr-btn" data-action="decrease" href="#">–</a>
+                                        <input class="quantity" type="number" name="quantity" value="0" min="0"/>
+                                        <a class="incr-btn" data-action="increase" href="#">&plus;</a>
+                                    </div> -->
         <div class="calculator-wrap">
             <div class="services-calc-wrap col-md-6  text-center ">
+            
+                <div class="separate-service-set col-xs-12">
+                    <div class="service-set-name">
+                        <h2>Realizacja ogrodów</h2>
+                    </div> <!--  .service-set-name -->
+                    <div class="separate-service-set-wrap">
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Glebogryzowanie <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="5000" 
+                                                   step="10" 
+                                                   value="100" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>  
+
+                        <div class="col-xs-8 col-xs-offset-2 service-2">
+                            <h4>Odchwaszczenie działki <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="1000" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div> 
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Zakładanie trawnika z siewu<br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="5000" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div> 
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Zakładanie trawnika z rolki<br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="5000" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div> 
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Zrywanie darni<br> <small>Wielkość terenu, mb</small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="5000" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div> 
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Niwelacja terenu<br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="5000" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div> 
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Rozwiezienie ziemi taczkami<br> <small>Wielkość terenu, m<sup>3</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="100" 
+                                                   step="5" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div> 
+
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Ułożenie obrzeża z kostki granitowej<br> <small>Wielkość terenu, mb</small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="500" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div> 
+
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Ułożenie obrzeża Ekobord<br> <small>Wielkość terenu, mb</small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="500" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div> 
+
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Ułożenie obrzeża Rollborder<br> <small>Wielkość terenu, mb</small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="500" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>
+
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Ułożenie obrzeża falistego<br> <small>Wielkość terenu, mb</small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="500" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>
+
+
+
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Ścieżka ze żwiru<br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="1000" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>
+
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Ścieżka z luźno ułożonego kamienia<br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="1000" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>
+
+
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Ścieżka z kostki granitowej<br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="1000" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>
+
+
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Ułożenie agrotkaniny<br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="1000" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>
+
+
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Przekopanie ziemi glebogryzarką<br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="5000" 
+                                                   step="100" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Rozsypywanie kory (korowanie)<br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="1000" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>
+
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Rozsypywanie grysu<br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="1000" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Usuwanie starych roślin<br> <small>ilość szt.</small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="100" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>
+                        
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Ułożenie siatki przeciw kretom<br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="1000" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>
+
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Sadzenie cebul<br> <small>Ilość szt.</small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="100" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Sadzenie bylin<br> <small>Ilość szt.</small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="100" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>
+
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Sadzenie pnączy<br> <small>Ilość szt.</small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="100" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>
+
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Sadzenie krzewów<br> <small>Ilość szt.</small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="100" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>
+
+                        
+                        <div class="col-xs-8 col-xs-offset-2 service-3">
+                            <h4>Sadzenie drzew<br> <small>Ilość szt.</small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="100" 
+                                                   step="10" 
+                                                   value="0" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>
+
+
+                    </div> <!--  .separate-service-set-wrap -->
+                </div> <!--  .separate-service-set -->
+
+                <div class="separate-service-set col-xs-12">
+                    <div class="service-set-name">
+                        <h2>Pielęgnacja trawnika</h2>
+                    </div> <!--  .service-set-name -->
+                    <div class="separate-service-set-wrap">
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Wertykulacja <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="5000" 
+                                                   step="10" 
+                                                   value="100" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>  
+
+                        
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Koszenie kosiarką <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="5000" 
+                                                   step="10" 
+                                                   value="100" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>  
+
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Koszenie kosą spalinową <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="5000" 
+                                                   step="10" 
+                                                   value="100" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>  
+
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Nawożenie trawnika <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="5000" 
+                                                   step="10" 
+                                                   value="100" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>  
+
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Renowacja trawnika <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="5000" 
+                                                   step="10" 
+                                                   value="100" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>  
+
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Piaskowanie trawnika <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="5000" 
+                                                   step="10" 
+                                                   value="100" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>  
+
+                    </div> <!--  .separate-service-set-wrap -->
+                </div> <!--  .separate-service-set -->
+
+
 
                 <div class="separate-service-set col-xs-12">
                     <div class="service-set-name">
@@ -83,67 +559,152 @@
                     </div> <!--  .service-set-name -->
                     <div class="separate-service-set-wrap">
                         <div class="col-xs-8 col-xs-offset-2 service-1">
-                            <h4>Glebogryzowanie <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
-                            <div class="input-wrap">
-                                    <div class="count-input space-bottom">
-                                        <a class="incr-btn" data-action="decrease" href="#">–</a>
-                                        <input class="quantity" type="number" name="quantity" value="0" min="0"/>
-                                        <a class="incr-btn" data-action="increase" href="#">&plus;</a>
-                                    </div>
-                            </div> 
-                        </div> 
-
-                        <div class="col-xs-8 col-xs-offset-2 service-2">
-                            <h4>Glebogryzowanie <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <h4>Przycinanie drzew i krzewów ozdobnych <br> <small>Ilość szt.</small></h4>
                             <div class="input-wrap">
                                     <input type="range" 
-                                                   min="10" 
-                                                   max="1000" 
+                                                   min="0" 
+                                                   max="100" 
                                                    step="10" 
-                                                   value="300" 
+                                                   value="100" 
                                                    data-rangeslider
                                                    style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
                                                    >
                             </div> 
-                        </div>    
-                    </div> <!--  .separate-service-set-wrap -->
-                </div> <!--  .separate-service-set -->
+                        </div>  
 
-                
-
-                <div class="separate-service-set col-xs-12">
-                    <div class="service-set-name">
-                        <h2>Jakaś nazwa</h2>
-                    </div> <!--  .service-set-name -->
-                    <div class="separate-service-set-wrap">
                         <div class="col-xs-8 col-xs-offset-2 service-1">
-                            <h4>Glebogryzowanie <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
-                            <div class="input-wrap">
-                                    <div class="count-input space-bottom">
-                                        <a class="incr-btn" data-action="decrease" href="#">–</a>
-                                        <input class="quantity" type="number" name="quantity" value="0" min="0"/>
-                                        <a class="incr-btn" data-action="increase" href="#">&plus;</a>
-                                    </div>
-                            </div> 
-                        </div> 
-
-                        <div class="col-xs-8 col-xs-offset-2 service-2">
-                            <h4>Glebogryzowanie <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <h4>Przycinanie drzew i krzewów owocowych <br> <small>Ilość szt.</small></h4>
                             <div class="input-wrap">
                                     <input type="range" 
-                                                   min="10" 
-                                                   max="1000" 
+                                                   min="0" 
+                                                   max="100" 
                                                    step="10" 
-                                                   value="300" 
+                                                   value="100" 
                                                    data-rangeslider
                                                    style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
                                                    >
                             </div> 
-                        </div>    
+                        </div>  
+
+
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Przycinanie żywopłotów do 2mb <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="500" 
+                                                   step="10" 
+                                                   value="100" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>  
+
+
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Przycinanie żywopłotów powyżej 2m<br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="500" 
+                                                   step="10" 
+                                                   value="100" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div> 
+
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Formowanie żywopłotów <br> <small>Ilość szt.</small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="100" 
+                                                   step="10" 
+                                                   value="100" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div> 
+                         
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Formowanie drzew i krzewów <br> <small>Ilość szt.</small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="100" 
+                                                   step="10" 
+                                                   value="100" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div> 
+
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Nawożenie roślin<br> <small>Ilość szt.</small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="100" 
+                                                   step="10" 
+                                                   value="100" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div> 
+
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Pielenie rabat, klombów, grabienie liści <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="500" 
+                                                   step="10" 
+                                                   value="100" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div> 
+
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Wywóz odpadów organicznych  <br> <small>Ilość szt.</small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="100" 
+                                                   step="10" 
+                                                   value="100" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div> 
+
+
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Podlewanie ogrodu wężem <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="0" 
+                                                   max="5000" 
+                                                   step="10" 
+                                                   value="100" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div> 
+
+
+
                     </div> <!--  .separate-service-set-wrap -->
                 </div> <!--  .separate-service-set -->
-
-
 
                     <div class="clearfix"></div> <!--  .clearfix -->
                     <h2>Cena: <span></span></h2>   
