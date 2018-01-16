@@ -23,7 +23,9 @@
     <link type="text/css" rel="stylesheet" href="bower_components/lightgallery/dist/css/lightgallery.css" /> 
     <link rel="stylesheet" type="text/css" href="style/set1.css" />
     <link rel="stylesheet" type="text/css" href="style/set2.css" />
+    
 	<link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="bower_components/rangeslider.js/dist/rangeslider.css" />
 </head>
 <body>
 
@@ -73,99 +75,83 @@
         
 
         <div class="calculator-wrap">
-            <div class="services-calc-wrap">
-                <div class="">
-                    <!-- <div class="service-1">
-                        <h4>Glebogryzowanie</h4>
-                        <div class="input-wrap">
-                            <span>Wielkość terenu, m<sup>2</sup></span>
-                                <div class="count-input space-bottom">
-                                    <a class="incr-btn" data-action="decrease" href="#">–</a>
-                                    <input class="quantity" type="number" name="quantity" value="0" min="0"/>
-                                    <a class="incr-btn" data-action="increase" href="#">&plus;</a>
-                                </div>
-                        </div> 
-                    </div>   -->
+            <div class="services-calc-wrap col-md-6  text-center ">
 
-                    <!-- <div class="service-2">
-                        <h4>Koszenie</h4>
-                        <div class="input-wrap">
-                            <span>Wielkość terenu, m<sup>2</sup></span>
-                                <div class="count-input space-bottom">
-                                    <a class="incr-btn" data-action="decrease" href="#">–</a>
-                                    <input class="quantity" type="number" name="quantity" value="0"/>
-                                    <a class="incr-btn" data-action="increase" href="#">&plus;</a>
-                                </div>
-                            <div class="label-wrap">
-                                <label ><input type="checkbox" />Kosa</label>
-                                <label ><input type="checkbox" />Kosiarka</label>
-                                <label ><input type="checkbox" />Traktorek</label>   
+                <div class="separate-service-set col-xs-12">
+                    <div class="service-set-name">
+                        <h2>Pielęgnacja roślin</h2>
+                    </div> <!--  .service-set-name -->
+                    <div class="separate-service-set-wrap">
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Glebogryzowanie <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <div class="count-input space-bottom">
+                                        <a class="incr-btn" data-action="decrease" href="#">–</a>
+                                        <input class="quantity" type="number" name="quantity" value="0" min="0"/>
+                                        <a class="incr-btn" data-action="increase" href="#">&plus;</a>
+                                    </div>
                             </div> 
                         </div> 
-                    </div>    --> 
 
-                    <!-- <div class="service-3">
-                        <h4>Wertykulacja</h4>
-                        <div class="input-wrap">
-                            <span>Wielkość terenu, m<sup>2</sup></span>
-                                <div class="count-input space-bottom">
-                                    <a class="incr-btn" data-action="decrease" href="#">–</a>
-                                    <input class="quantity" type="number" name="quantity" value="0"/>
-                                    <a class="incr-btn" data-action="increase" href="#">&plus;</a>
-                                </div>
-                            <div class="label-wrap">
-                                <label ><input type="checkbox" />Coś tam trawy</label>
-                                <label ><input type="checkbox" />Aeracja</label>
+                        <div class="col-xs-8 col-xs-offset-2 service-2">
+                            <h4>Glebogryzowanie <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="10" 
+                                                   max="1000" 
+                                                   step="10" 
+                                                   value="300" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>    
+                    </div> <!--  .separate-service-set-wrap -->
+                </div> <!--  .separate-service-set -->
+
+                
+
+                <div class="separate-service-set col-xs-12">
+                    <div class="service-set-name">
+                        <h2>Jakaś nazwa</h2>
+                    </div> <!--  .service-set-name -->
+                    <div class="separate-service-set-wrap">
+                        <div class="col-xs-8 col-xs-offset-2 service-1">
+                            <h4>Glebogryzowanie <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <div class="count-input space-bottom">
+                                        <a class="incr-btn" data-action="decrease" href="#">–</a>
+                                        <input class="quantity" type="number" name="quantity" value="0" min="0"/>
+                                        <a class="incr-btn" data-action="increase" href="#">&plus;</a>
+                                    </div>
                             </div> 
                         </div> 
-                    </div>   -->
+
+                        <div class="col-xs-8 col-xs-offset-2 service-2">
+                            <h4>Glebogryzowanie <br> <small>Wielkość terenu, m<sup>2</sup></small></h4>
+                            <div class="input-wrap">
+                                    <input type="range" 
+                                                   min="10" 
+                                                   max="1000" 
+                                                   step="10" 
+                                                   value="300" 
+                                                   data-rangeslider
+                                                   style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;"
+                                                   >
+                            </div> 
+                        </div>    
+                    </div> <!--  .separate-service-set-wrap -->
+                </div> <!--  .separate-service-set -->
 
 
-                    <!-- <div class="service-4">
-                        <h4>Zrywanie darni</h4>
-                        <div class="input-wrap">
-                            <span>Ilość mb.</span>
-                                <div class="count-input space-bottom">
-                                    <a class="incr-btn" data-action="decrease" href="#">–</a>
-                                    <input class="quantity" type="number" name="quantity" value="0"/>
-                                    <a class="incr-btn" data-action="increase" href="#">&plus;</a>
-                                </div>
-                        </div> 
-                    </div>   -->
 
-                    <!-- <div class="service-5">
-                        <h4>Sadzenie roślin wieloletnich: drzewa, krzewy</h4>
-                        <div class="input-wrap">
-                            <span>Wielkość sztuk</span>
-                                <div class="count-input space-bottom">
-                                    <a class="incr-btn" data-action="decrease" href="#">–</a>
-                                    <input class="quantity" type="number" name="quantity" value="0"/>
-                                    <a class="incr-btn" data-action="increase" href="#">&plus;</a>
-                                </div>
-                        </div> 
-                    </div>   -->
-
-
-                    <!-- <div class="service-6">
-                        <h4>Podcinanie żywopłotów</h4>
-                        <div class="input-wrap">
-                            <span>Ilość mb.</span>
-                                <div class="count-input space-bottom">
-                                    <a class="incr-btn" data-action="decrease" href="#">–</a>
-                                    <input class="quantity" type="number" name="quantity" value="0"/>
-                                    <a class="incr-btn" data-action="increase" href="#">&plus;</a>
-                                </div>
-                        </div> 
-                    </div>  
-                    <h2>Cena: <span></span></h2>   -->
-                    
-                   <!--  <div class="uCalc_80941"></div> -->
-                </div> 
+                    <div class="clearfix"></div> <!--  .clearfix -->
+                    <h2>Cena: <span></span></h2>   
             </div> 
             
             
-            <div class="contact-form">
-                <div id="panel">
+            <div class="col-md-6  contact-form">
+                <div class="col-xs-10 col-xs-offset-1" id="panel">
                     <div class="form-area ">  
                        <form role="form" id="form"  action=""  method="post">
                             <br style="clear:both">
@@ -244,7 +230,22 @@
 <script src="bower_components/lightgallery/modules/lg-fullscreen.min.js"></script>
 <script src="bower_components/lightgallery/modules/lg-zoom.min.js"></script>
 <script src="bower_components/lightgallery/modules/lg-share.min.js"></script>
+<script src="bower_components/rangeslider.js/dist/rangeslider.min.js"></script>
+<script>
 
+    $('input[type="range"]').rangeslider({
+    polyfill : false,
+    onInit : function() {
+        this.output = $( '<div class="range-output" />' ).insertAfter( this.$range ).html( this.$element.val() );
+    },
+    onSlide : function( position, value ) {
+        this.output.html( value );
+    }
+});
+
+
+
+</script>
 <script> 
     var widgetOptions80941 = { bg_color: "transparent" }; 
     (function() { 
