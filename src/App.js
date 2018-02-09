@@ -10,6 +10,7 @@ import Gallery from './containers/Gallery';
 import Calculator from './containers/Calculator';
 import Contact from './containers/Contact';
 
+import 'animate.css';
 
 class App extends Component {
   render() {

@@ -35,7 +35,7 @@ class Navigation extends Component{
 								<span>+48 533 88 06 05</span>
 								<span>uslugi@greenpolis.pl</span>
 			                </div>
-			                <div className="nav-button">Zamów uslugę</div>
+			                <div className="nav-button ">Zamów uslugę</div>
 		                </div>
 		                <div className="nav-items">
 		                    <ul>
@@ -46,7 +46,7 @@ class Navigation extends Component{
 		                        <li><Link to={ '/contact'}>Kontakt</Link></li>
 		                    </ul>
 		                </div>
-		                <div className="hamburger">
+		                <div className="hamburger ">
 		                    <span></span>
 		                    <span></span>
 		                    <span></span>
@@ -62,7 +62,11 @@ class Navigation extends Component{
 								<span>+48 733 836 453</span>
 								<span>uslugi@greenpolis.pl</span>
 			                </div>
-			                <div className="nav-button" onClick={this.handleOpenModal}><span className="order-span">Zamów uslugę</span><i className="glyphicon glyphicon-envelope"></i></div>
+			                <div style={{
+								'animation-duration': '3s',
+								'animation-delay': '2s',
+								'animation-iteration-count': 'infinite'
+							}} className="nav-button asdasd animated infinite bounce" onClick={this.handleOpenModal}><span className="order-span">Zamów uslugę</span><i className="glyphicon glyphicon-envelope"></i></div>
 		                </div>
 		                <div className="hamburger">
 		                    <span></span>

@@ -52,9 +52,6 @@ class Contact extends Component{
 								<div style={{height:'100%'}}/>
 							}
 			            />
-
-
-
 			        </div> 
 
 			</GlobalContainer>
