@@ -29,8 +29,8 @@ const Footer = (props)=>{
 	                  <div>tel: +48 533 88 06 05</div>
 	                  <div className="footer-email">email: radoslaw.mulawka@gmail.com </div>
 	                  <div className="social-media">
-	                      <a href="www.facebook.com"><i className="fa fa-facebook" aria-hidden="true"></i></a> 
-	                      <a href="www.instagram.com"><i className="fa fa-instagram"></i></a>
+	                      <a href="www.facebook.com"><i className="fab fa-facebook-f" aria-hidden="true"></i></a> 
+	                      <a href="www.instagram.com"><i className="fab fa-instagram"></i></a>
 	                  </div>            
 	                </div>           
 	            </div>

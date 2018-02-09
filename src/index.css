@@ -288,15 +288,6 @@
   position: relative;
   margin: 0 15px; }
 
-.testimonial:before {
-  content: "\f10d";
-  font-family: 'FontAwesome';
-  position: absolute;
-  top: -5px;
-  left: 48.5%;
-  font-size: 40px;
-  color: #141414; }
-
 .testimonial .content {
   padding: 45px 35px;
   font-weight: bold;
@@ -387,7 +378,7 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 10px; }
-    footer .social-media i.fa {
+    footer .social-media svg {
       width: 30px;
       text-align: center;
       font-size: 2em;
@@ -445,12 +436,12 @@ footer {
     align-items: center;
     justify-content: space-around;
     margin-bottom: 100px; }
-    .contacts .contact-line i {
+    .contacts .contact-line svg {
       width: 40px;
       margin-right: 30px;
       font-size: 1.7em;
       position: relative; }
-      .contacts .contact-line i:after {
+      .contacts .contact-line svg:after {
         position: absolute;
         content: '';
         display: block;

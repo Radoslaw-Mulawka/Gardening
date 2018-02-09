@@ -77,7 +77,7 @@ const Main = (props) => {
 						</div>
 
 						<div>
-							<i class="far fa-money-bill-alt"></i><br/>
+							<i className="far fa-money-bill-alt"></i><br/>
 							<span> Bezpłatna
 													<br />
 								<span>wycena pracy</span>
@@ -102,6 +102,15 @@ const Main = (props) => {
 							<div className="col-md-12">
 								<div id="testimonial-slider" className="owl-carousel">
 									<div className="testimonial">
+									    <i className="fas fa-quote-left" style={
+										   {
+												position: 'absolute',
+												top: '-5px',
+												left:'48.5%',
+												fontSize: '40px',
+												color:'rgb(20, 20, 20)'
+										   }
+										}></i>
 										<div className="content">
 											<p className="description">
 												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae voluptas. Aliquam, amet aperiam assumenda aut dicta et excepturi exercitationem, maxime minima molestiae necessitatibus nulla odit possimus sunt voluptate voluptatibus!
@@ -113,6 +122,15 @@ const Main = (props) => {
 										</div>
 									</div>
 									<div className="testimonial">
+											<i className="fas fa-quote-left" style={
+											{
+													position: 'absolute',
+													top: '-5px',
+													left:'48.5%',
+													fontSize: '40px',
+													color:'rgb(20, 20, 20)'
+											}
+											}></i>
 										<div className="content">
 											<p className="description">
 												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae voluptas. Aliquam, amet aperiam assumenda aut dicta et excepturi exercitationem, maxime minima molestiae necessitatibus nulla odit possimus sunt voluptate voluptatibus!
@@ -124,6 +142,15 @@ const Main = (props) => {
 										</div>
 									</div>
 									<div className="testimonial">
+										<i className="fas fa-quote-left" style={
+										   {
+												position: 'absolute',
+												top: '-5px',
+												left:'48.5%',
+												fontSize: '40px',
+												color:'rgb(20, 20, 20)'
+										   }
+										}></i>
 										<div className="content">
 											<p className="description">
 												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae voluptas. Aliquam, amet aperiam assumenda aut dicta et excepturi exercitationem, maxime minima molestiae necessitatibus nulla odit possimus sunt voluptate voluptatibus!
