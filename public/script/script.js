@@ -37,21 +37,9 @@ $(document).ready(function() {
 
 
 
-    //  $('.separate-service-set-wrap').hide();
-    //  $(".separate-service-set").on('click',function(){
-    //     $(this).find('.separate-service-set-wrap').slideToggle(500);
-    //  });
             
 
-    $('input[type="range"]').rangeslider({
-        polyfill : false,
-        onInit : function() {
-            this.output = $('<div class="range-output" />' ).insertAfter( this.$range ).html( this.$element.val() );
-        },
-        onSlide : function( position, value ) {
-            this.output.html( value );
-        }
-    });
+    
 
 
 

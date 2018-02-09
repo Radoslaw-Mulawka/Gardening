@@ -1,9 +1,38 @@
 import React from 'react';
 import GlobalContainer from './GlobalContainer';
+import $ from 'jquery';
+import 'rangeslider.js';
+import 'rangeslider.js/dist/rangeslider.css';
 
 
 
-const Calculator = (props)=>{
+
+
+
+
+
+
+class Calculator extends React.Component {
+
+componentDidMount(){
+	$('input[type="range"]').rangeslider({
+        polyfill : false,
+        onInit : function() {
+            this.output = $('<div class="range-output" />' ).insertAfter( this.$range ).html( this.$element.val() );
+        },
+        onSlide : function( position, value ) {
+            this.output.html( value );
+        }
+	});
+	
+	
+	$('.separate-service-set-wrap').hide();
+	$(".separate-service-set").on('click',function(){
+	   $(this).find('.separate-service-set-wrap').slideToggle(500);
+	});
+}	
+
+ render(){
  return(
  		<GlobalContainer>
 			<div className='calc-wrap-for-title'>
@@ -683,6 +712,6 @@ const Calculator = (props)=>{
  		</GlobalContainer>
  	)
 }
-
+}
 
 export default Calculator;
