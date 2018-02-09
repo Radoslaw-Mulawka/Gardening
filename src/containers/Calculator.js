@@ -6,12 +6,6 @@ import 'rangeslider.js/dist/rangeslider.css';
 
 
 
-
-
-
-
-
-
 class Calculator extends React.Component {
 
 componentDidMount(){

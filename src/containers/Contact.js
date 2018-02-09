@@ -16,7 +16,7 @@ class Contact extends Component{
 			                    <i className="fa fa-mobile" aria-hidden="true"></i>
 			                    <div>
 			                        <span>
-			                            +48 733 836 453 - Mykhailo
+			                            +48 733 836 453 - Michał
 			                        </span>
 			                        <span>
 			                            +48 731 924 406 - Konstanty

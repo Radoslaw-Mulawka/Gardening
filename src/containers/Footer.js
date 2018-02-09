@@ -11,7 +11,7 @@ const Footer = (props)=>{
 	                <div>
 	                  <div>Polska</div>
 	                  <div>Dolnyśląsk</div>
-	                  <div>Legnica 59-220 ul.Paderewskiego 1/14</div>
+	                  <div>Wrocław</div>
 	                </div>
 	            </div>
 	            <div className="partners">
@@ -26,8 +26,8 @@ const Footer = (props)=>{
 	            <div className="footer-contacts">
 	                <strong>Contacts:</strong> 
 	                <div>
-	                  <div>tel: +48 533 88 06 05</div>
-	                  <div className="footer-email">email: radoslaw.mulawka@gmail.com </div>
+	                  <div>tel: +48 731 924 406</div>
+	                  <div className="footer-email">email: uslugi@greenpolis.pl </div>
 	                  <div className="social-media">
 	                      <a href="www.facebook.com"><i className="fab fa-facebook-f" aria-hidden="true"></i></a> 
 	                      <a href="www.instagram.com"><i className="fab fa-instagram"></i></a>

@@ -1,8 +1,12 @@
 import React from 'react';
 import GlobalContainer from './GlobalContainer';
 
+ 
+class Main extends React.Component{
 
-const Main = (props) => {
+	
+
+	render(){
 	return (
 		<GlobalContainer>
 			<div className="video-wrap">
@@ -45,50 +49,50 @@ const Main = (props) => {
 					<div className="our-pros">
 						<div>
 							<i className="fa fa-calculator"></i><br/>
-							<span> Bezpłatna
+							<span> Darmowa 
 								<br />
-								<span>wycena pracy</span>
+								<span>wycena roboty</span>
 							</span>
 						</div>
 
 
 						<div>
 							<i className="fa fa-cogs"></i><br/>
-							<span> Bezpłatna
+							<span> Profesjonalny
 										<br />
-								<span>wycena pracy</span>
+								<span>sprzęt</span>
 							</span>
 						</div>
 
 						<div>
 							<i className="fa fa-star"></i><br/>
-							<span> Bezpłatna
+							<span> Każda
 											<br />
-								<span>wycena pracy</span>
+								<span>złożoność pracy</span>
 							</span>
 						</div>
 
 						<div>
 							<i className="fa fa-rocket"></i><br/>
-							<span> Bezpłatna
+							<span> Szybkość
 												<br />
-								<span>wycena pracy</span>
+								<span>wykonania zleceń</span>
 							</span>
 						</div>
 
 						<div>
 							<i className="far fa-money-bill-alt"></i><br/>
-							<span> Bezpłatna
+							<span> Ceny 
 													<br />
-								<span>wycena pracy</span>
+								<span>do przyjęcia</span>
 							</span>
 						</div>
 
 						<div>
 							<i className="fas fa-thumbs-up"></i><br/>
-							<span> Bezpłatna
+							<span> Zniżki 
 														<br />
-								<span>wycena pracy</span>
+								<span>stałym klientom</span>
 							</span>
 						</div>
 					</div>
@@ -169,7 +173,7 @@ const Main = (props) => {
 			</main>
 		</GlobalContainer>
 	)
-}
+}}
 
 
 export default Main;
