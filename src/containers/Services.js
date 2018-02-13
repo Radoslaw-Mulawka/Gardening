@@ -40,7 +40,7 @@ class Services extends Component {
 					}}>
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
-						<h1>Projektowanie ogrodu i aranżacja</h1>
+						<h1 className="services-header">Projektowanie ogrodu i aranżacja</h1>
 						<p>
 							Wszystkie projekty wykonywane przez dyplomowanego fachowcy.
 							Czas realizacji projektu
@@ -67,7 +67,7 @@ class Services extends Component {
 					}}>
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
-						<h1>Zakładanie trawnika</h1>
+						<h1 className="services-header">Zakładanie trawnika</h1>
 						<div>
 							Zakładanie trawnika się składa z kilku etapów: <br />
 							<ol>
@@ -86,7 +86,11 @@ class Services extends Component {
 						</div>
 						<br />
 						<form>
-							<button data-remodal-action="confirm" className="remodal-confirm" >Zamów usługę !</button>
+							<button style={{
+								'animationDuration': '3s',
+								'animationDelay': '2s',
+								'animationIterationCount': 'infinite'
+							}} data-remodal-action="confirm" className="remodal-confirm  " >Zamów usługę !</button>
 						</form>
 					</div>
 				</ReactModal>
@@ -105,7 +109,7 @@ class Services extends Component {
 					}}>
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
-						<h1>Systemy nawadniające </h1>
+						<h1 className="services-header">Systemy nawadniające </h1>
 						<div>
 							Oferta automatycznego systemu nawadniania zawiera:
 							<ul>
@@ -135,7 +139,7 @@ class Services extends Component {
 					}}>
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
-						<h1>Architektura ogrodowa </h1>
+						<h1 className="services-header">Architektura ogrodowa </h1>
 						<div>
 							<ul>
 								<li>altany, domki, pergole, grille ogrodowe</li>
@@ -176,7 +180,7 @@ class Services extends Component {
 					}}>
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
-						<h1>Sezonowa opieka nad ogrodem: </h1>
+						<h1 className="services-header">Sezonowa opieka nad ogrodem: </h1>
 						<div>
 							<ul>
 								<li>przycinanie i formowanie krzewów, drzew i żywopłotów </li>
@@ -209,7 +213,7 @@ class Services extends Component {
 					}}>
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
-						<h1>Jednorazowe usługi ogrodnicze </h1>
+						<h1 className="services-header">Jednorazowe usługi ogrodnicze </h1>
 						<p>
 							<ol>
 								<li>Zakładanie trawnika z siewu </li>

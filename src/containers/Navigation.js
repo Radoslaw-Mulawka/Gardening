@@ -63,10 +63,10 @@ class Navigation extends Component{
 								<span>uslugi@greenpolis.pl</span>
 			                </div>
 			                <div style={{
-								'animation-duration': '3s',
-								'animation-delay': '2s',
-								'animation-iteration-count': 'infinite'
-							}} className="nav-button asdasd animated infinite bounce" onClick={this.handleOpenModal}><span className="order-span">Zamów uslugę</span><i className="glyphicon glyphicon-envelope"></i></div>
+								'animationDuration': '3s',
+								'animationDelay': '2s',
+								'animationIterationCount': 'infinite'
+							}} className="nav-button  animated infinite bounce" onClick={this.handleOpenModal}><span className="order-span">Zamów uslugę</span><i className="glyphicon glyphicon-envelope"></i></div>
 		                </div>
 		                <div className="hamburger">
 		                    <span></span>
@@ -92,7 +92,8 @@ class Navigation extends Component{
 					className = 'modal-itself'
 					style={{
 						overlay: {
-							backgroundColor: 'rgba(43, 46, 56, 0.9)'
+							backgroundColor: 'rgba(43, 46, 56, 0.9)',
+							zIndex: 2
 						  }
 					}}>
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>

@@ -1,131 +1,120 @@
 import React from 'react';
 import GlobalContainer from './GlobalContainer';
-
+import {Link} from 'react-router-dom';
  
 class Main extends React.Component{
-
-	
-
 	render(){
-	return (
-		<GlobalContainer>
-			<div className="video-wrap">
-				<video poster="images/video-image.jpg" playsInline autoPlay muted loop>
-					<source src="/video/videoplayback.mp4" type="video/mp4" />
-				</video>
-				<img src="images/video-image.jpg" alt="Leaves" className="img-responsive" />
-				<span id="motto">
-					Kreowanie <span id="green">zielonej</span> estetyki
-	            </span>
-			</div>
+		let newDate = new Date();
+		let currentMonth = typeof(newDate.getMonth() + 1);
+		let videoForSeason;
+		if(currentMonth == 9 || currentMonth == 10 || currentMonth == 11) {
+			videoForSeason = '/video/autumn.mp4';
+		}
+		else {
+			videoForSeason = '/video/spring.mp4';
+		}
+		
+		return (
+			<GlobalContainer>
+				<div className="video-wrap">
+					<video poster="images/video-image.jpg" playsInline autoPlay muted loop>
+						<source src={videoForSeason} type="video/mp4" />
+					</video>
+					<img src="images/video-image.jpg" alt="Leaves" className="img-responsive" />
+					<span id="motto">
+						Kreowanie <span id="green">zielonej</span> estetyki
+					</span>
+					<div className="weirdShadow"></div>
+				</div>
 
 
-			<main>
-				<section className="mission">
-					<h3>Projektowanie krajobrazu <br /> przez Greenpolis
-	               		<div></div>
-					</h3>
-					<div className="mission-content-wrap">
-						<div className="mission__desc">
-							<p>Tylko dzięki Państwa zaufaniu mamy możliwość realizować nasz najwyższy cel - kreowanie zielonej estetyki. Dziękując za Wasz wybór i zaufanie, perfekcyjnie wykonujemy powierzone nam zadanie. Misją firmy jest wprowadzenie najlepszych rozwiązań i tworzenie trendów w ogrodnictwie. Skupiamy się na innowacyjności, kreatywności. Kształcenie i nieustanne doskonalenie się jest naszym atutem. Wizja firmy - stworzenie maksymalnej dostępności w każdej części kraju do kompleksowych usług najwyższej jakości z zastosowaniem nowych technologii, w tym, przyjaznych dla środowiska środków.</p>
+				<main>
+					<section className="mission">
+						<h3>Projektowanie krajobrazu <br /> przez Greenpolis
+							<div></div>
+						</h3>
+						<div className="mission-content-wrap">
+							<div className="mission__desc">
+								<p>Tylko dzięki Państwa zaufaniu mamy możliwość realizować nasz najwyższy cel - kreowanie zielonej estetyki. Dziękując za Wasz wybór i zaufanie, perfekcyjnie wykonujemy powierzone nam zadanie. Misją firmy jest wprowadzenie najlepszych rozwiązań i tworzenie trendów w ogrodnictwie. Skupiamy się na innowacyjności, kreatywności. Kształcenie i nieustanne doskonalenie się jest naszym atutem. Wizja firmy - stworzenie maksymalnej dostępności w każdej części kraju do kompleksowych usług najwyższej jakości z zastosowaniem nowych technologii, w tym, przyjaznych dla środowiska środków.</p>
+							</div>
+							<div className="mission__logo-button">
+								<img className="img-responsive" src="images/Logo/green-logo-transparent2.png" alt="Logo" />
+								
+								<Link to={ '/calculator'} className="order">Zamów usługę !</Link>
+							</div>
 						</div>
-						<div className="mission__logo-button">
-							<img className="img-responsive" src="images/Logo/green-logo-transparent2.png" alt="Logo" />
-							<a href="calculator.html" className="order">Zamów usługę !</a>
-						</div>
-					</div>
-					<div className="gradient-line"></div>
-				</section>
+						<div className="gradient-line"></div>
+					</section>
 
 
 
-				<section className="testimonials">
-					<div className="quote-wrap">
-						<span>
-							Istnieje kilka sposobów na stworzenie  pięknego <br /> krajobrazu: "Najlepszy z nich to powierzyć tę sprawę specjalistą"
-						</span>
-					</div>
-
-					<div className="our-pros">
-						<div>
-							<i className="fa fa-calculator"></i><br/>
-							<span> Darmowa 
-								<br />
-								<span>wycena roboty</span>
+					<section className="testimonials">
+						<div className="quote-wrap">
+							<span>
+								Istnieje kilka sposobów na stworzenie  pięknego <br /> krajobrazu: "Najlepszy z nich to powierzyć tę sprawę specjalistą"
 							</span>
 						</div>
 
+						<div className="our-pros">
+							<div>
+								<i className="fa fa-calculator"></i><br/>
+								<span> Darmowa 
+									<br />
+									<span>wycena roboty</span>
+								</span>
+							</div>
 
-						<div>
-							<i className="fa fa-cogs"></i><br/>
-							<span> Profesjonalny
-										<br />
-								<span>sprzęt</span>
-							</span>
-						</div>
 
-						<div>
-							<i className="fa fa-star"></i><br/>
-							<span> Każda
+							<div>
+								<i className="fa fa-cogs"></i><br/>
+								<span> Profesjonalny
 											<br />
-								<span>złożoność pracy</span>
-							</span>
-						</div>
+									<span>sprzęt</span>
+								</span>
+							</div>
 
-						<div>
-							<i className="fa fa-rocket"></i><br/>
-							<span> Szybkość
+							<div>
+								<i className="fa fa-star"></i><br/>
+								<span> Każda
 												<br />
-								<span>wykonania zleceń</span>
-							</span>
-						</div>
+									<span>złożoność pracy</span>
+								</span>
+							</div>
 
-						<div>
-							<i className="far fa-money-bill-alt"></i><br/>
-							<span> Ceny 
+							<div>
+								<i className="fa fa-rocket"></i><br/>
+								<span> Szybkość
 													<br />
-								<span>do przyjęcia</span>
-							</span>
-						</div>
+									<span>wykonania zleceń</span>
+								</span>
+							</div>
 
-						<div>
-							<i className="fas fa-thumbs-up"></i><br/>
-							<span> Zniżki 
+							<div>
+								<i className="far fa-money-bill-alt"></i><br/>
+								<span> Ceny 
 														<br />
-								<span>stałym klientom</span>
-							</span>
-						</div>
-					</div>
+									<span>do przyjęcia</span>
+								</span>
+							</div>
 
-					<h3>
-						Opinie
-										<div></div>
-					</h3>
-					<div className="container-fluid">
-						<div className="row">
-							<div className="col-md-12">
-								<div id="testimonial-slider" className="owl-carousel">
-									<div className="testimonial">
-									    <i className="fas fa-quote-left" style={
-										   {
-												position: 'absolute',
-												top: '-5px',
-												left:'48.5%',
-												fontSize: '40px',
-												color:'rgb(20, 20, 20)'
-										   }
-										}></i>
-										<div className="content">
-											<p className="description">
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae voluptas. Aliquam, amet aperiam assumenda aut dicta et excepturi exercitationem, maxime minima molestiae necessitatibus nulla odit possimus sunt voluptate voluptatibus!
-																				</p>
-											<h3 className="testimonial-title">
-												williamson
-																						<small>Web Developer</small>
-											</h3>
-										</div>
-									</div>
-									<div className="testimonial">
+							<div>
+								<i className="fas fa-thumbs-up"></i><br/>
+								<span> Zniżki 
+															<br />
+									<span>stałym klientom</span>
+								</span>
+							</div>
+						</div>
+
+						<h3>
+							Opinie
+											<div></div>
+						</h3>
+						<div className="container-fluid">
+							<div className="row">
+								<div className="col-md-12">
+									<div id="testimonial-slider" className="owl-carousel">
+										<div className="testimonial">
 											<i className="fas fa-quote-left" style={
 											{
 													position: 'absolute',
@@ -135,44 +124,64 @@ class Main extends React.Component{
 													color:'rgb(20, 20, 20)'
 											}
 											}></i>
-										<div className="content">
-											<p className="description">
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae voluptas. Aliquam, amet aperiam assumenda aut dicta et excepturi exercitationem, maxime minima molestiae necessitatibus nulla odit possimus sunt voluptate voluptatibus!
-																				</p>
-											<h3 className="testimonial-title">
-												kristiana
-																						<small>Web Desginer</small>
-											</h3>
+											<div className="content">
+												<p className="description">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae voluptas. Aliquam, amet aperiam assumenda aut dicta et excepturi exercitationem, maxime minima molestiae necessitatibus nulla odit possimus sunt voluptate voluptatibus!
+																					</p>
+												<h3 className="testimonial-title">
+													williamson
+																							<small>Web Developer</small>
+												</h3>
+											</div>
 										</div>
-									</div>
-									<div className="testimonial">
-										<i className="fas fa-quote-left" style={
-										   {
-												position: 'absolute',
-												top: '-5px',
-												left:'48.5%',
-												fontSize: '40px',
-												color:'rgb(20, 20, 20)'
-										   }
-										}></i>
-										<div className="content">
-											<p className="description">
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae voluptas. Aliquam, amet aperiam assumenda aut dicta et excepturi exercitationem, maxime minima molestiae necessitatibus nulla odit possimus sunt voluptate voluptatibus!
-																				</p>
-											<h3 className="testimonial-title">
-												steve thomas
-																						<small>Web Desginer</small>
-											</h3>
+										<div className="testimonial">
+												<i className="fas fa-quote-left" style={
+												{
+														position: 'absolute',
+														top: '-5px',
+														left:'48.5%',
+														fontSize: '40px',
+														color:'rgb(20, 20, 20)'
+												}
+												}></i>
+											<div className="content">
+												<p className="description">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae voluptas. Aliquam, amet aperiam assumenda aut dicta et excepturi exercitationem, maxime minima molestiae necessitatibus nulla odit possimus sunt voluptate voluptatibus!
+																					</p>
+												<h3 className="testimonial-title">
+													kristiana
+																							<small>Web Desginer</small>
+												</h3>
+											</div>
+										</div>
+										<div className="testimonial">
+											<i className="fas fa-quote-left" style={
+											{
+													position: 'absolute',
+													top: '-5px',
+													left:'48.5%',
+													fontSize: '40px',
+													color:'rgb(20, 20, 20)'
+											}
+											}></i>
+											<div className="content">
+												<p className="description">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae voluptas. Aliquam, amet aperiam assumenda aut dicta et excepturi exercitationem, maxime minima molestiae necessitatibus nulla odit possimus sunt voluptate voluptatibus!
+																					</p>
+												<h3 className="testimonial-title">
+													steve thomas
+																							<small>Web Desginer</small>
+												</h3>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</section>
-			</main>
-		</GlobalContainer>
-	)
+					</section>
+				</main>
+			</GlobalContainer>
+		)
 }}
 
 
