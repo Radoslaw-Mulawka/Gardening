@@ -247,7 +247,7 @@ class Services extends Component {
 			<GlobalContainer>
 				<div className="services remodal-bg">
 					{newModal}
-					<h3>Usługi
+					<h3 id="servicesAnchor">Usługi
 	               		<div></div>
 					</h3>
 

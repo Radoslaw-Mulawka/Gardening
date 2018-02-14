@@ -16,6 +16,7 @@
     "react-remodal": "^1.0.3",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "react-router-hash-link": "^1.1.1",
     "react-scripts": "1.1.0",
     "remodal": "^1.1.1"
   },

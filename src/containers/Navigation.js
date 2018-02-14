@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import GlobalContainer from './GlobalContainer';
-import {Link} from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import ReactModal from 'react-modal';
 
@@ -90,11 +90,11 @@ class Navigation extends Component{
 
 		        <div className="hidden-nav">
 		            <ul>
-		                <li><Link to={ '/'}>Główna</Link></li>
-		                <li><Link to={ '/services'}>Usługi</Link></li>
-		                <li><Link to={ '/gallery'}>Galeria</Link></li>
-		                <li><Link to={ '/calculator'}>Kalkulator ogrodniczy</Link></li>
-		                <li><Link to={ '/contact'}>Kontakt</Link></li>
+		                <li><Link to={ '/#root'}>Główna</Link></li>
+		                <li><Link to={ '/services#root'}>Usługi</Link></li>
+		                <li><Link to={ '/gallery#root'}>Galeria</Link></li>
+		                <li><Link to={ '/calculator#root'}>Kalkulator ogrodniczy</Link></li>
+		                <li><Link to={ '/contact#root'}>Kontakt</Link></li>
 		            </ul>
 		        </div> 
 				<ReactModal 
