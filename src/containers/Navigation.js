@@ -69,17 +69,15 @@ class Navigation extends Component{
 										'animationDelay': '2s',
 										'animationIterationCount': 'infinite'
 									}} className="nav-button  animated infinite bounce" 
-									onClick={this.handleOpenModal}>
-									<span className="order-span">Zamów uslugę</span>
-									<i className="glyphicon glyphicon-envelope"></i>
-									</div>  :
+									onClick={this.handleOpenModal}> <span className="order-span">Zamów uslugę</span> <i className="glyphicon glyphicon-envelope"></i></div>
+									  :
 									<div  className="nav-button " 
-									onClick={this.handleOpenModal}>
-									<span className="order-span">Zamów uslugę</span>
-									<i className="glyphicon glyphicon-envelope"></i>
-									</div>
+									onClick={this.handleOpenModal}><span className="order-span">Zamów uslugę</span><i className="glyphicon glyphicon-envelope"></i></div>
 							}
-
+							<a href="tel:+48 731 924 406" class="mobile-phone">
+									<i class="fas fa-phone-volume"></i>
+							</a>
+							
 		                </div>
 		                <div className="hamburger">
 		                    <span></span>

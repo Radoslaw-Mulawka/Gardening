@@ -7,11 +7,11 @@ const Footer = (props)=>{
  		<GlobalContainer>
  			<footer>
 	            <div className="adress">
-	                <strong>Adres:</strong>
+	                <strong>Usługi:</strong>
 	                <div>
-	                  <div>ul.Jagiełły 15</div>
-	                  <div>55-100 Trzebnica</div>
-	                  <div>Dolnyśląsk</div>
+	                  <div>Pięlegnacja zieleni</div>
+	                  <div>zakładanie ogrodów</div>
+	                  <div>usługi ogrodnicze Wrocław i okolice</div>
 	                </div>
 	            </div>
 	            <div className="partners">

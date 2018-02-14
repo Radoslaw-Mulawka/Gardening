@@ -47,6 +47,7 @@
         &{
           position:fixed;
           top:120px;
+          left:0;
           background-color: rgb(15, 14, 14);
           padding:0;
           width:50px;
@@ -66,6 +67,31 @@
           }
         }
       }
+   }
+   .mobile-phone {
+     display:none;
+     @media screen and (max-width:500px){
+      &{
+        display:block;
+        position:fixed;
+        top:200px;
+        left:0;
+        background-color: rgb(15, 14, 14);
+        padding:0;
+        width:50px;
+        height:50px;
+        border-radius:50%;
+        svg {
+          display:inline;
+          color:white;
+          font-size:2em;
+          position:absolute;
+          top:50%;
+          left:50%;
+          transform:translate(-50%,-50%);
+        }
+      }
+    }
    }
    .visible-wrap{
      width:100%;

@@ -42,13 +42,7 @@ class Contact extends Component{
 			                </div> 
 			            </div> 
 			        </div> 
-			        <div>
-						<p style={{
-							textAlign:'center',
-							fontSize:'20px',
-							marginBottom:'20px'
-						}}> Pracujemy na terenie całego wojewódstwa Dolnośląskiego</p>
-					</div>
+			        
 			        <div id="map">
 			            <MyMapComponent  isMarkerShown 
 							containerElement={
