@@ -62,11 +62,24 @@ class Navigation extends Component{
 								<span>+48 733 836 453</span>
 								<span>uslugi@greenpolis.pl</span>
 			                </div>
-			                <div style={{
-								'animationDuration': '3s',
-								'animationDelay': '2s',
-								'animationIterationCount': 'infinite'
-							}} className="nav-button  animated infinite bounce" onClick={this.handleOpenModal}><span className="order-span">Zamów uslugę</span><i className="glyphicon glyphicon-envelope"></i></div>
+							{
+								window.innerWidth>620 ? 
+									<div style={{
+										'animationDuration': '3s',
+										'animationDelay': '2s',
+										'animationIterationCount': 'infinite'
+									}} className="nav-button  animated infinite bounce" 
+									onClick={this.handleOpenModal}>
+									<span className="order-span">Zamów uslugę</span>
+									<i className="glyphicon glyphicon-envelope"></i>
+									</div>  :
+									<div  className="nav-button " 
+									onClick={this.handleOpenModal}>
+									<span className="order-span">Zamów uslugę</span>
+									<i className="glyphicon glyphicon-envelope"></i>
+									</div>
+							}
+
 		                </div>
 		                <div className="hamburger">
 		                    <span></span>
@@ -89,7 +102,7 @@ class Navigation extends Component{
 				<ReactModal 
 					isOpen={this.state.showModal}
            			contentLabel="Minimal Modal Example"
-					className = 'modal-itself'
+					className = 'modal-itself-main-page'
 					style={{
 						overlay: {
 							backgroundColor: 'rgba(43, 46, 56, 0.9)',
@@ -103,8 +116,8 @@ class Navigation extends Component{
 									<div className="form-area ">  
 									<form id="form2"  action=""  method="post">
 											<br style={{clear:'both'}}/>
-													<h3 style={{marginBottom:'25px', textAlign:'center'}}>   Skontaktuj się z nami !
-													</h3>
+													<p>   Skontaktuj się z nami !
+													</p>
 													<div className="form-group">
 														<input type="text" className="form-control" id="name" name="name" placeholder="Imię" required/>
 													</div>

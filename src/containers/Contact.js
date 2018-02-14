@@ -27,10 +27,10 @@ class Contact extends Component{
 			                    <i className="fa fa-location-arrow" aria-hidden="true"></i>
 			                    <div>
 			                        <span>
-			                            ul.Kopernika 221b
+										ul.Jagiełły 15
 			                        </span>
 			                        <span>
-			                            Wroclaw, Polska 666-66
+										55-100 Trzebnica
 			                        </span>
 			                    </div>
 			                </div> 
@@ -42,7 +42,13 @@ class Contact extends Component{
 			                </div> 
 			            </div> 
 			        </div> 
-			        
+			        <div>
+						<p style={{
+							textAlign:'center',
+							fontSize:'20px',
+							marginBottom:'20px'
+						}}> Pracujemy na terenie całego wojewódstwa Dolnośląskiego</p>
+					</div>
 			        <div id="map">
 			            <MyMapComponent  isMarkerShown 
 							containerElement={

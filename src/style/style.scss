@@ -110,14 +110,65 @@ h3 {
   width: 80%;
   max-width:700px;
   transform: translate(-50%, 0%);
-  padding:20px 30px 60px;
+  padding:30px 30px 50px;
+  font-size:20px;
+  @media screen and (max-width:800px){
+    font-size: 18px;
+  }
+  @media screen and (max-width:620px){
+    top:70px;
+  }
+  @media screen and (max-width:330px){
+    font-size: 17px;
+  }
   &:focus {
     border:none;
     outline:none;
   }
-  h3 {
+  p.modal-header{
+    font-size:25px;
+    margin-bottom:20px;
+  }
+  p.modal-header {
+    @media screen and (max-width:620px){
+      font-size: 20px;
+    }
+    @media screen and (max-width:330px){
+      font-size: 17px;
+    }
+  }
+}
+
+.modal-itself-main-page {
+  position: fixed;
+  z-index: 10000;
+  top: 100px;
+  right: 0;
+  left: 50%;
+  text-align: center;
+  color: #2b2e38;
+  background: #fff;
+  // height: 80%;
+  width: 80%;
+  max-width:700px;
+  transform: translate(-50%, 0%);
+  padding:20px 30px 0px;
+  & {
     @media screen and (max-width:650px){
-      font-size: 2em;
+      padding:20px 0px 0px;
+    }
+  }
+  &:focus {
+    border:none;
+    outline:none;
+  }
+  p{
+    font-size:20px;
+    margin-bottom:30px;
+  }
+  p {
+    @media screen and (max-width:330px){
+      font-size: 17px;
     }
   }
 }
@@ -131,4 +182,24 @@ h3 {
   bottom: 10px;
   left: 50%;
   transform: translate(-50%,0);
+  background-image: linear-gradient(45deg, #48d37b, #3dbb7c);
+	border-radius:5px;
+	border:none;
+	padding:5px 20px;
+	color:white !important;
+  font-size: 1em;
+  text-decoration:none !important;
+  &:hover {
+    background-image: linear-gradient(45deg, #48d37b, #175536);
+  }
+  @media screen and (max-width:430px){
+    &>span {
+      display:none;
+    }
+  }
+}
+
+
+body {
+  min-width:360px;
 }

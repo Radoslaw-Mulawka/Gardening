@@ -606,15 +606,17 @@ ul, ol {
     width: 100%; }
     .service-item .buttons-wrap a, .service-item .buttons-wrap button {
       background-color: #165900;
+      background-image: linear-gradient(45deg, #48d37b, #3dbb7c);
       margin-bottom: 5px;
       border: none;
       padding: 10px 20px;
       color: white !important;
       border-radius: 3px;
       text-transform: uppercase;
-      text-align: center; }
+      text-align: center;
+      transition: all 3s ease; }
       .service-item .buttons-wrap a:hover, .service-item .buttons-wrap button:hover {
-        background-color: #515151; }
+        background-image: linear-gradient(45deg, #48d37b, #175536); }
 
 .remodal p {
   text-align: left; }
@@ -626,17 +628,6 @@ ul, ol {
   list-style-type: disc;
   list-style-position: outside;
   padding-left: 30px; }
-
-.services-header {
-  margin-bottom: 30px; }
-
-.remodal-confirm {
-  background-image: linear-gradient(45deg, #48d37b, #3dbb7c);
-  border-radius: 5px;
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  font-size: 1.3em; }
 
 .calc-wrap-for-title {
   padding-top: 110px;
@@ -811,13 +802,55 @@ h3 {
   width: 80%;
   max-width: 700px;
   transform: translate(-50%, 0%);
-  padding: 20px 30px 60px; }
+  padding: 30px 30px 50px;
+  font-size: 20px; }
+  @media screen and (max-width: 800px) {
+    .modal-itself {
+      font-size: 18px; } }
+  @media screen and (max-width: 620px) {
+    .modal-itself {
+      top: 70px; } }
+  @media screen and (max-width: 330px) {
+    .modal-itself {
+      font-size: 17px; } }
   .modal-itself:focus {
     border: none;
     outline: none; }
+  .modal-itself p.modal-header {
+    font-size: 25px;
+    margin-bottom: 20px; }
+  @media screen and (max-width: 620px) {
+    .modal-itself p.modal-header {
+      font-size: 20px; } }
+  @media screen and (max-width: 330px) {
+    .modal-itself p.modal-header {
+      font-size: 17px; } }
+
+.modal-itself-main-page {
+  position: fixed;
+  z-index: 10000;
+  top: 100px;
+  right: 0;
+  left: 50%;
+  text-align: center;
+  color: #2b2e38;
+  background: #fff;
+  width: 80%;
+  max-width: 700px;
+  transform: translate(-50%, 0%);
+  padding: 20px 30px 0px; }
   @media screen and (max-width: 650px) {
-    .modal-itself h3 {
-      font-size: 2em; } }
+    .modal-itself-main-page {
+      padding: 20px 0px 0px; } }
+  .modal-itself-main-page:focus {
+    border: none;
+    outline: none; }
+  .modal-itself-main-page p {
+    font-size: 20px;
+    margin-bottom: 30px; }
+  @media screen and (max-width: 330px) {
+    .modal-itself-main-page p {
+      font-size: 17px; } }
 
 .modal-around {
   background-color: rgba(43, 46, 56, 0.9); }
@@ -826,6 +859,21 @@ h3 {
   position: absolute;
   bottom: 10px;
   left: 50%;
-  transform: translate(-50%, 0); }
+  transform: translate(-50%, 0);
+  background-image: linear-gradient(45deg, #48d37b, #3dbb7c);
+  border-radius: 5px;
+  border: none;
+  padding: 5px 20px;
+  color: white !important;
+  font-size: 1em;
+  text-decoration: none !important; }
+  .remodal-confirm:hover, .remodal-cancel:hover {
+    background-image: linear-gradient(45deg, #48d37b, #175536); }
+  @media screen and (max-width: 430px) {
+    .remodal-confirm > span, .remodal-cancel > span {
+      display: none; } }
+
+body {
+  min-width: 360px; }
 
 /*# sourceMappingURL=index.css.map */

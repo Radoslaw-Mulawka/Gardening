@@ -40,7 +40,7 @@ class Services extends Component {
 					}}>
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
-						<h1 className="services-header">Projektowanie ogrodu i aranżacja</h1>
+						<p className="modal-header">Projektowanie ogrodu i aranżacja</p >
 						<p>
 							Wszystkie projekty wykonywane przez dyplomowanego fachowcy.
 							Czas realizacji projektu
@@ -48,7 +48,7 @@ class Services extends Component {
 						</p>
 						<br />
 						<form>
-							<button data-remodal-action="confirm" className="remodal-confirm">Zamów usługę !</button>
+							<Link to="/calculator" data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
 						</form>
 					</div>
 				</ReactModal>
@@ -67,7 +67,7 @@ class Services extends Component {
 					}}>
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
-						<h1 className="services-header">Zakładanie trawnika</h1>
+						<p className="modal-header">Zakładanie trawnika</p >
 						<div>
 							Zakładanie trawnika się składa z kilku etapów: <br />
 							<ol>
@@ -90,7 +90,7 @@ class Services extends Component {
 								'animationDuration': '3s',
 								'animationDelay': '2s',
 								'animationIterationCount': 'infinite'
-							}} data-remodal-action="confirm" className="remodal-confirm  " >Zamów usługę !</button>
+							}} data-remodal-action="confirm" className="remodal-confirm  " >Zamów <span>usługę </span> !</button>
 						</form>
 					</div>
 				</ReactModal>
@@ -109,7 +109,7 @@ class Services extends Component {
 					}}>
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
-						<h1 className="services-header">Systemy nawadniające </h1>
+						<p className="modal-header">Systemy nawadniające </p >
 						<div>
 							Oferta automatycznego systemu nawadniania zawiera:
 							<ul>
@@ -120,7 +120,7 @@ class Services extends Component {
 						</div>
 						<br />
 						<form>
-							<button data-remodal-action="confirm" className="remodal-confirm" >Zamów usługę !</button>
+							<Link to="/calculator" data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
 						</form>
 					</div>
 				</ReactModal>
@@ -139,7 +139,7 @@ class Services extends Component {
 					}}>
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
-						<h1 className="services-header">Architektura ogrodowa </h1>
+						<p className="modal-header">Architektura ogrodowa </p >
 						<div>
 							<ul>
 								<li>altany, domki, pergole, grille ogrodowe</li>
@@ -161,7 +161,7 @@ class Services extends Component {
 						</div>
 						<br />
 						<form>
-							<button data-remodal-action="confirm" className="remodal-confirm" >Zamów usługę !</button>
+							<Link to="/calculator" data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
 						</form>
 					</div>
 				</ReactModal>
@@ -180,7 +180,7 @@ class Services extends Component {
 					}}>
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
-						<h1 className="services-header">Sezonowa opieka nad ogrodem: </h1>
+						<p className="modal-header">Sezonowa opieka nad ogrodem: </p >
 						<div>
 							<ul>
 								<li>przycinanie i formowanie krzewów, drzew i żywopłotów </li>
@@ -194,7 +194,7 @@ class Services extends Component {
 						</div>
 						<br />
 						<form>
-							<button data-remodal-action="confirm" className="remodal-confirm" >Zamów usługę !</button>
+							<Link to="/calculator" data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
 						</form>
 					</div>
 				</ReactModal>
@@ -213,7 +213,7 @@ class Services extends Component {
 					}}>
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
-						<h1 className="services-header">Jednorazowe usługi ogrodnicze </h1>
+						<p className="modal-header">Jednorazowe usługi ogrodnicze </p >
 						<p>
 							<ol>
 								<li>Zakładanie trawnika z siewu </li>
@@ -234,7 +234,7 @@ class Services extends Component {
 						</p>
 						<br />
 						<form>
-							<button data-remodal-action="confirm" className="remodal-confirm">Zamów usługę !</button>
+							<Link to="/calculator" data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
 						</form>
 					</div>
 				</ReactModal>

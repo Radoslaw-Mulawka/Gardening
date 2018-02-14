@@ -1,26 +1,30 @@
 import React from 'react';
 import GlobalContainer from './GlobalContainer';
-import {Link} from 'react-router-dom';
- 
-class Main extends React.Component{
-	render(){
+import { Link } from 'react-router-dom';
+
+class Main extends React.Component {
+	render() {
 		let newDate = new Date();
-		let currentMonth = typeof(newDate.getMonth() + 1);
+		let currentMonth = typeof (newDate.getMonth() + 1);
 		let videoForSeason;
-		if(currentMonth == 9 || currentMonth == 10 || currentMonth == 11) {
+		let videoImage;
+		if (currentMonth == 9 || currentMonth == 10 || currentMonth == 11) {
 			videoForSeason = '/video/autumn.mp4';
+			videoImage = "images/video-image.jpg";
 		}
 		else {
 			videoForSeason = '/video/spring.mp4';
+			videoImage = "images/video-image2.jpg";
 		}
-		
+
 		return (
 			<GlobalContainer>
 				<div className="video-wrap">
 					<video poster="images/video-image.jpg" playsInline autoPlay muted loop>
 						<source src={videoForSeason} type="video/mp4" />
 					</video>
-					<img src="images/video-image.jpg" alt="Leaves" className="img-responsive" />
+
+					<img src={videoImage} alt="Leaves" className="img-responsive" />
 					<span id="motto">
 						Kreowanie <span id="green">zielonej</span> estetyki
 					</span>
@@ -39,8 +43,8 @@ class Main extends React.Component{
 							</div>
 							<div className="mission__logo-button">
 								<img className="img-responsive" src="images/Logo/green-logo-transparent2.png" alt="Logo" />
-								
-								<Link to={ '/calculator'} className="order">Zamów usługę !</Link>
+
+								<Link to={'/calculator'} className="order">Zamów usługę !</Link>
 							</div>
 						</div>
 						<div className="gradient-line"></div>
@@ -57,16 +61,16 @@ class Main extends React.Component{
 
 						<div className="our-pros">
 							<div>
-								<i className="fa fa-calculator"></i><br/>
-								<span> Darmowa 
+								<i className="fa fa-calculator"></i><br />
+								<span> Darmowa
 									<br />
-									<span>wycena roboty</span>
+									<span>wycena pracy</span>
 								</span>
 							</div>
 
 
 							<div>
-								<i className="fa fa-cogs"></i><br/>
+								<i className="fa fa-cogs"></i><br />
 								<span> Profesjonalny
 											<br />
 									<span>sprzęt</span>
@@ -74,15 +78,15 @@ class Main extends React.Component{
 							</div>
 
 							<div>
-								<i className="fa fa-star"></i><br/>
-								<span> Każda
+								<i className="fa fa-star"></i><br />
+								<span> Jakakolwiek
 												<br />
 									<span>złożoność pracy</span>
 								</span>
 							</div>
 
 							<div>
-								<i className="fa fa-rocket"></i><br/>
+								<i className="fa fa-rocket"></i><br />
 								<span> Szybkość
 													<br />
 									<span>wykonania zleceń</span>
@@ -90,16 +94,16 @@ class Main extends React.Component{
 							</div>
 
 							<div>
-								<i className="far fa-money-bill-alt"></i><br/>
-								<span> Ceny 
+								<i className="far fa-money-bill-alt"></i><br />
+								<span> Wyrozumiałe
 														<br />
-									<span>do przyjęcia</span>
+									<span>ceny</span>
 								</span>
 							</div>
 
 							<div>
-								<i className="fas fa-thumbs-up"></i><br/>
-								<span> Zniżki 
+								<i className="fas fa-thumbs-up"></i><br />
+								<span> Zniżki
 															<br />
 									<span>stałym klientom</span>
 								</span>
@@ -116,53 +120,55 @@ class Main extends React.Component{
 									<div id="testimonial-slider" className="owl-carousel">
 										<div className="testimonial">
 											<i className="fas fa-quote-left" style={
-											{
+												{
 													position: 'absolute',
 													top: '-5px',
-													left:'48.5%',
+													left: '50%',
 													fontSize: '40px',
-													color:'rgb(20, 20, 20)'
-											}
+													color: 'rgb(20, 20, 20)',
+													transform: 'translate(-50%,0)'
+												}
 											}></i>
 											<div className="content">
 												<p className="description">
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae voluptas. Aliquam, amet aperiam assumenda aut dicta et excepturi exercitationem, maxime minima molestiae necessitatibus nulla odit possimus sunt voluptate voluptatibus!
+													Zleciłem pracę nad renowacją swojego ogrodu przydomowego. Działania przebiegały sprawnie, według wszystkich moich oczekiwań i zaleceń. Liczę na dalszą i owocną współpracę.
 																					</p>
 												<h3 className="testimonial-title">
-													williamson
-																							<small>Web Developer</small>
-												</h3>
-											</div>
-										</div>
-										<div className="testimonial">
-												<i className="fas fa-quote-left" style={
-												{
-														position: 'absolute',
-														top: '-5px',
-														left:'48.5%',
-														fontSize: '40px',
-														color:'rgb(20, 20, 20)'
-												}
-												}></i>
-											<div className="content">
-												<p className="description">
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae voluptas. Aliquam, amet aperiam assumenda aut dicta et excepturi exercitationem, maxime minima molestiae necessitatibus nulla odit possimus sunt voluptate voluptatibus!
-																					</p>
-												<h3 className="testimonial-title">
-													kristiana
-																							<small>Web Desginer</small>
+													Juliusz Syty
+																							{/* <small>Web Developer</small> */}
 												</h3>
 											</div>
 										</div>
 										<div className="testimonial">
 											<i className="fas fa-quote-left" style={
-											{
+												{
 													position: 'absolute',
 													top: '-5px',
-													left:'48.5%',
+													left: '48.5%',
 													fontSize: '40px',
-													color:'rgb(20, 20, 20)'
-											}
+													color: 'rgb(20, 20, 20)'
+												}
+											}></i>
+											<div className="content">
+												<p className="description">
+													Panowie posiadają niezbędną wiedzę i doświadczenie w zakresie swojej działalności. Zadanie wykonali z należytą dokładnością, w umówionym czasie i za rozsądną, wcześniej ustaloną cenę.
+Zamierzam nadal korzystać z usług tej firmy i z czystym sercem mogę ją polecić innym.
+																					</p>
+												<h3 className="testimonial-title">
+													Dagmara Grenik
+																							{/* <small>Web Desginer</small> */}
+												</h3>
+											</div>
+										</div>
+										<div className="testimonial">
+											<i className="fas fa-quote-left" style={
+												{
+													position: 'absolute',
+													top: '-5px',
+													left: '48.5%',
+													fontSize: '40px',
+													color: 'rgb(20, 20, 20)'
+												}
 											}></i>
 											<div className="content">
 												<p className="description">
@@ -182,7 +188,8 @@ class Main extends React.Component{
 				</main>
 			</GlobalContainer>
 		)
-}}
+	}
+}
 
 
 export default Main;

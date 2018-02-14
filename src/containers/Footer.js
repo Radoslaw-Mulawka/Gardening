@@ -9,9 +9,9 @@ const Footer = (props)=>{
 	            <div className="adress">
 	                <strong>Adres:</strong>
 	                <div>
-	                  <div>Polska</div>
+	                  <div>ul.Jagiełły 15</div>
+	                  <div>55-100 Trzebnica</div>
 	                  <div>Dolnyśląsk</div>
-	                  <div>Wrocław</div>
 	                </div>
 	            </div>
 	            <div className="partners">
