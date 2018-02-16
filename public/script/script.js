@@ -38,7 +38,7 @@ $(document).ready(function() {
         itemsDesktopSmall:[979,1],
         itemsTablet:[768,1],
         pagination: true,
-        autoPlay:false
+        autoPlay:true
     });
     
 

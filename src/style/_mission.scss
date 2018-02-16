@@ -84,19 +84,41 @@
 	background-repeat:no-repeat;
 	background-size:cover;
 	padding:0 20px;
-	span{
+	span:first-child{
 		position:absolute;
 		top:50%;
 		transform:translate(0%,-50%);
 		font-size:5em;
 		color:white;
 		font-family: 'Italianno', cursive;
+		z-index:10;
 	}
 	@media screen and (max-width: 980px) {
 			background-attachment: scroll;
-			&>span {
-				font-size:4em;
+			&>span:first-child {
+				font-size:3.5em;
 			}
+	}
+	@media screen and (max-width: 630px) {
+		&>span:first-child {
+			font-size:3.0em;
+		}
+	}
+	.autor-name{
+		position:absolute;
+		top:80%;
+		right:50px;
+		transform:translate(0%,-80%);
+		font-size:5em;
+		color:white;
+		font-family: 'Italianno', cursive;
+		z-index:10;
+		@media screen and (max-width: 980px) {
+				font-size:3.7em;
+		}
+		@media screen and (max-width: 630px) {
+				font-size:3.2em;
+		}
 	}
 }
 .our-pros {

@@ -6,29 +6,11 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
-  <loc>http://greenpolis.pl/</loc>
-  <lastmod>2017-12-07T14:29:15+00:00</lastmod>
-  <priority>1.00</priority>
+  <loc>http://greenpolis.pl/#/</loc>
+  <lastmod>2018-02-16T09:49:48+00:00</lastmod>
 </url>
-<url>
-  <loc>http://greenpolis.pl/index.html</loc>
-  <lastmod>2017-12-07T14:29:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://greenpolis.pl/services.html</loc>
-  <lastmod>2017-12-07T14:10:54+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://greenpolis.pl/gallery.html</loc>
-  <lastmod>2017-12-07T14:10:54+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://greenpolis.pl/contact.html</loc>
-  <lastmod>2017-12-07T14:10:54+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+
+
 </urlset>

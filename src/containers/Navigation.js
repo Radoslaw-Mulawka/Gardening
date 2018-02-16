@@ -54,9 +54,13 @@ class Navigation extends Component{
 		            </div> 
 		            <div className="hidden-wrap">
 		            	<div className="logo-contact-wrap">
+							
 			                <div className="nav-logo">
-			                    <img className="img-responsive" src="images/Logo/transparent_logo_grey.png" alt="Logo" />
+								
+			                    	<img className="img-responsive" src="images/Logo/transparent_logo_grey.png" alt="Logo" />
+								
 			                </div>
+							
 			                <div className="nav-contacts">
 								<span>+48 731 924 406</span>
 								<span>+48 733 836 453</span>
