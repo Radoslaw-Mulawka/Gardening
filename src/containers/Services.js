@@ -40,12 +40,16 @@ class Services extends Component {
 					}}>
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
-						<p className="modal-header">Projektowanie ogrodu i aranżacja</p >
-						<p>
-							Wszystkie projekty wykonywane przez dyplomowanego fachowcy.
-							Czas realizacji projektu
-							(картинка kroki realizacji zlecenia - darmowe spotkanie z projektantem - koncepcja ogrodu - projekt ogrodu - kosztorys - wykonanie zamówienia)
-						</p>
+						<p className="modal-header">Projektowanie ogrodu i aranżacja</p>
+							Wszystkie projekty wykonywane przez dyplomowanego fachowca. 
+							Szczegółowy plan realizacji zlecenia : 
+							<ul>
+								<li>darmowe spotkanie z projektantem.</li>
+								<li>koncepcja ogrodu.</li>
+								<li>projekt ogrodu.</li>
+								<li>kosztorys.</li>
+								<li>wykonanie zamówienia.</li>
+							</ul>
 						<br />
 						<form>
 							<Link to="/calculator" data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
@@ -68,22 +72,29 @@ class Services extends Component {
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
 						<p className="modal-header">Zakładanie trawnika</p >
-						<div>
-							Zakładanie trawnika się składa z kilku etapów: <br />
+							Zakładanie trawnika się składa z kilku etapów: 
 							<ol>
-								<li>wybór mieszanki nasion który powinien odpowiadać przeznaczeniu trawnika i warunkom naturalnym oraz dokładne przemierzenie terenu. </li>
-								<li>przygotowanie podłoża:
+							   <li>
+								   Trawnik z siewu:
+								   <ul>
+									 <li>Wybór mieszanki nasion </li>
+									 <li>Przygotowanie podłoża (usuwanie istniejącej roślinności, wyrównywanie terenu oraz zastosowanie substancji użyźniających</li>
+									 <li>Przekopanie ziemi</li>
+									 <li>Niewelacja powierzchni</li>
+									 <li>Bronowanie </li>
+									 <li>Ostateczne wyrównywanie terenu </li>
+									 <li>Wałowanie i wysianie trawy </li>
+								   </ul>
+								</li>
+								<li>Trawnik z rolki:
 									<ul>
-										<li>usuwanie istniejącej roślinności, wyrównywanie terenu oraz zastosowanie substancji użyźniających lub nawozów organicznych. </li>
-										<li>Przekopanie ziemi na głębokość 30 cm odpowiednim sprzętem. Zaleca się bronowanie w celu zgniecenia grud i dokładnego wyrównania powierzchni. </li>
-										<li>Zniwelować powierzchnie, rozbijając bryły ziemi, a także usuwając resztki roślin i kamieni. </li>
-										<li>przeprowadzenie bronowania w celu zgniecenia grud i dokładnego wyrównania powierzchni. </li>
-										<li>Ostateczne wyrównywanie terenu powinno się robić ręcznie, przy użyciu grabi, potem zwałowanie, bo trawa potrzebuje zwartego podłoża. Grudy zbitej ziemi powinny być rozdrobnione, a pozostałości roślin, w tym kłącza i korzenie – usunięte.</li>
-										<li>Wygrabienie pozostałości z luźnej, przekopanej ziemi. Dopiero na tym etapie gleba jest prawie gotowa do siewu lub zakładania trawnika z rolki. </li>
-									</ul>
+										<li>Przygotowanie glęby pod trawnik</li>
+										<li>Zakup darni</li>
+										<li>Zakładanie darni</li>
+										<li>Prace końcowe - wałowanie, podlewanie</li>
+								   </ul>
 								</li>
 							</ol>
-						</div>
 						<br />
 						<form>
 							<button style={{
@@ -110,14 +121,12 @@ class Services extends Component {
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
 						<p className="modal-header">Systemy nawadniające </p >
-						<div>
 							Oferta automatycznego systemu nawadniania zawiera:
 							<ul>
 								<li>projekt</li>
 								<li>montaż</li>
 								<li>serwis</li>
 							</ul>
-						</div>
 						<br />
 						<form>
 							<Link to="/calculator" data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
@@ -140,7 +149,6 @@ class Services extends Component {
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
 						<p className="modal-header">Architektura ogrodowa </p >
-						<div>
 							<ul>
 								<li>altany, domki, pergole, grille ogrodowe</li>
 								<li>systemy oświetlenia ogrodowego</li>
@@ -158,7 +166,6 @@ class Services extends Component {
 								<li>agrowłóknina</li>
 								<li>korowanie</li>
 							</ul>
-						</div>
 						<br />
 						<form>
 							<Link to="/calculator" data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
@@ -181,7 +188,6 @@ class Services extends Component {
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
 						<p className="modal-header">Sezonowa opieka nad ogrodem: </p >
-						<div>
 							<ul>
 								<li>przycinanie i formowanie krzewów, drzew i żywopłotów </li>
 								<li>koszenie trawników </li>
@@ -191,7 +197,6 @@ class Services extends Component {
 								<li>oprysk</li>
 								<li>utrzymanie w czystości: zbieranie liści, wywóz odpadów</li>
 							</ul>
-						</div>
 						<br />
 						<form>
 							<Link to="/calculator" data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
@@ -214,8 +219,7 @@ class Services extends Component {
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
 					<div >
 						<p className="modal-header">Jednorazowe usługi ogrodnicze </p >
-						<p>
-							<ol>
+							<ul>
 								<li>Zakładanie trawnika z siewu </li>
 								<li>Zakładanie trawnika z rolki </li>
 								<li>Koszenie trawy </li>
@@ -230,8 +234,7 @@ class Services extends Component {
 								<li>Piaskownice</li>
 								<li>Odchwaszczanie (ręczne i chemiczne) </li>
 								<li>Nawożenie roślin</li>
-							</ol>
-						</p>
+							</ul>
 						<br />
 						<form>
 							<Link to="/calculator" data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
@@ -253,7 +256,6 @@ class Services extends Component {
 
 
 					<div className="pair-wrap">
-
 						<div className="first-two">
 							<div className="service-item">
 								<div className="hover-wrap">
@@ -349,7 +351,7 @@ class Services extends Component {
 							<div className="service-item">
 								<div className="hover-wrap">
 									<div>
-										<img src="images/icons/lightbulb-outline.png" alt="watering" />
+										<img src="images/icons/shovel-agriculture-equipment-tool-in-vertical-position.png" alt="watering" />
 									</div>
 									<span>
 										Jednorazowe usługi ogrodnicze

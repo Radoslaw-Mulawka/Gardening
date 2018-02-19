@@ -28,7 +28,9 @@ class Navigation extends Component{
 		            <div className="visible-wrap">
 		            	<div className="logo-contact-wrap">
 			                <div className="nav-logo">
-			                    <img className="img-responsive" src="images/Logo/transparent_logo_grey.png" alt="Logo" />
+			                  <Link to={"/"}>  
+							  	<img className="img-responsive" src="images/Logo/transparent_logo_grey.png" alt="Logo" /> 
+							 </Link>
 			                </div>
 			                <div className="nav-contacts">
 								<span>+48 533 88 06 05</span>
@@ -56,9 +58,9 @@ class Navigation extends Component{
 		            	<div className="logo-contact-wrap">
 							
 			                <div className="nav-logo">
-								
+								<Link to={"/#root"}>  
 			                    	<img className="img-responsive" src="images/Logo/transparent_logo_grey.png" alt="Logo" />
-								
+								</Link>
 			                </div>
 							
 			                <div className="nav-contacts">
@@ -78,8 +80,8 @@ class Navigation extends Component{
 									<div  className="nav-button " 
 									onClick={this.handleOpenModal}><span className="order-span">Zamów uslugę</span><i className="glyphicon glyphicon-envelope"></i></div>
 							}
-							<a href="tel:+48 731 924 406" class="mobile-phone">
-									<i class="fas fa-phone-volume"></i>
+							<a href="tel:+48 731 924 406" className="mobile-phone">
+									<i className="fas fa-phone-volume"></i>
 							</a>
 							
 		                </div>

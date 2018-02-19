@@ -98,28 +98,27 @@ h3 {
 }
 
 .modal-itself {
-  position: fixed;
-  z-index: 10000;
+  position: absolute;
   top: 120px;
-  right: 0;
   left: 50%;
-  text-align: center;
   color: #2b2e38;
   background: #fff;
-  // height: 80%;
   width: 80%;
+  min-width:295px;
   max-width:700px;
   transform: translate(-50%, 0%);
   padding:30px 30px 50px;
-  font-size:20px;
-  @media screen and (max-width:800px){
-    font-size: 18px;
+  font-size:16px;
+  max-height:70vh;
+  overflow-y:auto;
+  @media screen and (max-width:500px){
+    padding:30px 10px 50px;
+    ul,ol {
+      padding-left:10px !important;
+    }
   }
-  @media screen and (max-width:620px){
-    top:70px;
-  }
-  @media screen and (max-width:330px){
-    font-size: 17px;
+  @media screen and (max-width:500px){
+    font-size: 14px;
   }
   &:focus {
     border:none;
@@ -145,9 +144,9 @@ h3 {
   top: 100px;
   right: 0;
   left: 50%;
-  text-align: center;
   color: #2b2e38;
   background: #fff;
+  text-align: center;
   // height: 80%;
   width: 80%;
   max-width:700px;
@@ -179,7 +178,6 @@ h3 {
 
 .remodal-confirm, .remodal-cancel {
   position: absolute;
-  bottom: 10px;
   left: 50%;
   transform: translate(-50%,0);
   background-image: linear-gradient(45deg, #48d37b, #3dbb7c);

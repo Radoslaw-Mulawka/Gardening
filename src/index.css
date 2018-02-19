@@ -9,7 +9,7 @@
     height: 100%; }
     @media screen and (max-width: 400px) {
       .top-navigation .nav-logo img {
-        height: 70%; } }
+        height: 100%; } }
 .top-navigation .logo-contact-wrap {
   height: 100%;
   display: flex;
@@ -114,6 +114,8 @@
   @media screen and (max-width: 620px) {
     .top-navigation .hidden-wrap {
       height: 50px; } }
+  .top-navigation .hidden-wrap .nav-logo a {
+    height: 100%; }
 @media screen and (max-width: 900px) {
   .top-navigation .visible-wrap .nav-items {
     display: none; } }
@@ -545,8 +547,8 @@ footer {
       margin-top: 5px;
       background-color: black; }
 
-ul, ol {
-  padding-left: 0; }
+ul {
+  list-style: disc; }
 
 .pair-wrap {
   display: flex;
@@ -658,17 +660,6 @@ ul, ol {
       transition: all 3s ease; }
       .service-item .buttons-wrap a:hover, .service-item .buttons-wrap button:hover {
         background-image: linear-gradient(45deg, #48d37b, #175536); }
-
-.remodal p {
-  text-align: left; }
-.remodal ol, .remodal ul {
-  text-align: left !important;
-  padding-left: 0;
-  list-style-position: inside; }
-.remodal ul {
-  list-style-type: disc;
-  list-style-position: outside;
-  padding-left: 30px; }
 
 .calc-wrap-for-title {
   padding-top: 110px;
@@ -832,28 +823,27 @@ h3 {
     color: #2b2e38; }
 
 .modal-itself {
-  position: fixed;
-  z-index: 10000;
+  position: absolute;
   top: 120px;
-  right: 0;
   left: 50%;
-  text-align: center;
   color: #2b2e38;
   background: #fff;
   width: 80%;
+  min-width: 295px;
   max-width: 700px;
   transform: translate(-50%, 0%);
   padding: 30px 30px 50px;
-  font-size: 20px; }
-  @media screen and (max-width: 800px) {
+  font-size: 16px;
+  max-height: 70vh;
+  overflow-y: auto; }
+  @media screen and (max-width: 500px) {
     .modal-itself {
-      font-size: 18px; } }
-  @media screen and (max-width: 620px) {
+      padding: 30px 10px 50px; }
+      .modal-itself ul, .modal-itself ol {
+        padding-left: 10px !important; } }
+  @media screen and (max-width: 500px) {
     .modal-itself {
-      top: 70px; } }
-  @media screen and (max-width: 330px) {
-    .modal-itself {
-      font-size: 17px; } }
+      font-size: 14px; } }
   .modal-itself:focus {
     border: none;
     outline: none; }
@@ -873,9 +863,9 @@ h3 {
   top: 100px;
   right: 0;
   left: 50%;
-  text-align: center;
   color: #2b2e38;
   background: #fff;
+  text-align: center;
   width: 80%;
   max-width: 700px;
   transform: translate(-50%, 0%);
@@ -898,7 +888,6 @@ h3 {
 
 .remodal-confirm, .remodal-cancel {
   position: absolute;
-  bottom: 10px;
   left: 50%;
   transform: translate(-50%, 0);
   background-image: linear-gradient(45deg, #48d37b, #3dbb7c);

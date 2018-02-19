@@ -29,8 +29,8 @@ const Footer = (props)=>{
 	                  <div>tel: +48 731 924 406</div>
 	                  <div className="footer-email">email: uslugi@greenpolis.pl </div>
 	                  <div className="social-media">
-	                      <a href="www.facebook.com"><i className="fab fa-facebook-f" aria-hidden="true"></i></a> 
-	                      <a href="www.instagram.com"><i className="fab fa-instagram"></i></a>
+	                      <a href="http://www.facebook.com"><i className="fab fa-facebook-f" aria-hidden="true"></i></a> 
+	                      <a href="http://www.instagram.com"><i className="fab fa-instagram"></i></a>
 	                  </div>            
 	                </div>           
 	            </div>
