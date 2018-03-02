@@ -2,8 +2,18 @@ import React, { Component } from 'react';
 import GlobalContainer from './GlobalContainer';
 import { Route, Link } from 'react-router-dom';
 import ReactModal from 'react-modal';
-
+import $ from 'jquery';
 class Services extends Component {
+
+
+	componentDidMount(){
+		$('.ReactModal__Overlay').on('click',(e)=>{
+			console.log(e.target);
+			this.setState({
+				showModal:false
+			})
+		})
+	}
 
 	state = {
 		currentId: null,

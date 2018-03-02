@@ -411,6 +411,22 @@
   .testimonial:before {
     font-size: 30px;
     top: 0; } }
+.owl-dots {
+  display: flex;
+  justify-content: center; }
+  .owl-dots > div {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 30px;
+    margin: 10px;
+    background-color: transparent;
+    border: 1px solid black; }
+
+.owl-dot.active {
+  background-color: #e74c3c !important;
+  border: none; }
+
 footer {
   position: absolute;
   bottom: 0px;

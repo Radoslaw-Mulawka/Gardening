@@ -1,10 +1,29 @@
 import React, {Component} from 'react';
-
+import $ from 'jquery';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel';
 
 class Testimonials extends Component {
+
+    componentDidMount(){
+        $("#testimonial-slider").owlCarousel({
+			items:1,
+			itemsDesktop:[1000,1],
+			itemsDesktopSmall:[979,1],
+			itemsTablet:[768,1],
+            autoplay:true,
+            autoplay:100,
+            autoplayTimeout:11000,
+            autoplaySpeed:1000,  // скорость прокрутки
+            
+            rewind: true,
+            dots:true
+		});
+    }
+
     render(){
         return (
-            <div id="testimonial-slider" className="owl-carousel">
+            <div id="testimonial-slider" className="owl-carousel owl-theme">
                 <div className="testimonial">
                     <i className="fas fa-quote-left" style={
                         {
