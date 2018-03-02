@@ -9,6 +9,51 @@ $email = $_POST['email'];
 $price = $_POST['price'];
 $message = $_POST['message'];
 $phone = $_POST['phone'];
+
+
+
+if(!empty($_POST["name"])){
+    $name = $_POST['name'];
+}
+else {
+    $name = 'defaultName';
+}
+
+if(!empty($_POST["address"])){
+    $address = $_POST['address'];
+}
+else {
+    $address = 'defaultAddress';
+}
+
+if(!empty($_POST["email"])){
+    $email = $_POST['email'];
+}
+else {
+    $email = 'defaultEmail';
+}
+
+if(!empty($_POST["price"])){
+    $price = $_POST['price'];
+}
+else {
+    $price = 'defaultPrice';
+}
+
+if(!empty($_POST["message"])){
+    $message = $_POST['message'];
+}
+else {
+    $message = 'defaultMessage';
+}
+
+if(!empty($_POST["phone"])){
+    $phone = $_POST['phone'];
+}
+else {
+    $phone = 'defaultPhone';
+}
+
 // Настройки
 $mail = new PHPMailer;
 

@@ -141,7 +141,7 @@ h3 {
 .modal-itself-main-page {
   position: fixed;
   z-index: 10000;
-  top: 100px;
+  top: 88px;
   right: 0;
   left: 50%;
   color: #2b2e38;
@@ -151,10 +151,13 @@ h3 {
   width: 80%;
   max-width:700px;
   transform: translate(-50%, 0%);
-  padding:20px 30px 0px;
+  padding:20px 30px 10px;
+  @media screen and (max-width: 620px){
+    top:60px;
+  }
   & {
     @media screen and (max-width:650px){
-      padding:20px 0px 0px;
+      padding:20px 0px 10px;
     }
   }
   &:focus {
@@ -163,9 +166,12 @@ h3 {
   }
   p{
     font-size:20px;
-    margin-bottom:30px;
+    margin-bottom:10px;
   }
   p {
+    @media screen and (max-width:620px){
+      font-size: 17px;
+    }
     @media screen and (max-width:330px){
       font-size: 17px;
     }

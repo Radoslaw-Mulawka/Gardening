@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import GlobalContainer from './GlobalContainer';
 import { HashLink as Link } from 'react-router-hash-link';
-
+import $ from 'jquery';
 import ReactModal from 'react-modal';
 
 
@@ -12,6 +12,61 @@ class Navigation extends Component{
 	}
 	winWidth = window.innerWidth; 
 
+	componentDidMount(){
+		$('#form2').on('submit', function(e){
+			e.preventDefault();
+			var fd = new FormData( this );
+			$.ajax({
+			  url: 'send.php',
+			  type: 'POST',
+			  contentType: false, 
+			  processData: false, 
+			  data: fd,
+			  success: function(msg){
+			   if(msg == 'ok') {
+				 $('.formButton1').val('Dzięki ;)'); 
+			   } else {
+				 $(".formButton1").val("Bląd");
+				 setTimeout(function() {$(".button").val("Отправить");}, 3000);
+			   }
+			  }
+			});
+		 });
+		
+		 
+	}
+
+
+	componentDidUpdate(){
+		$('#form2').on('submit', function(e){
+			e.preventDefault();
+			var fd = new FormData( this );
+			$.ajax({
+			  url: 'send.php',
+			  type: 'POST',
+			  contentType: false, 
+			  processData: false, 
+			  data: fd,
+			  success: function(msg){
+				if(msg == 'ok') {
+					$('.formButton1').val('Dzięki ;)'); 
+					$('.formButton1').css('background-color','green'); 
+					setTimeout(function() {
+						$(".formButton1").val("Wyślij");
+						$(".formButton1").removeAttr('style');
+					}, 3000);
+				  } else {
+					$(".formButton1").val("Bląd");
+					$('.formButton1').css('background-color','red'); 
+					setTimeout(function() {
+						$(".formButton1").val("Wyślij");
+						$(".formButton1").removeAttr('style');
+					}, 3000);
+				  }
+			  }
+			});
+		 });
+	}
 
 	handleOpenModal = () => {
 		this.setState({ showModal: true });
@@ -20,6 +75,20 @@ class Navigation extends Component{
 	  handleCloseModal = () => {
 		this.setState({ showModal: false });
 	  }
+
+	navSlideHandler = ()=>{
+		if($(".hidden-nav").css("display") == "none") {
+			$(".hidden-nav").slideDown();
+		  }
+		else {
+			$(".hidden-nav").slideUp();
+		}
+		if( $('.hidden-nav').css('display')=='block' ){
+		   $('.row').children(":not('.hidden-nav')").on('click',function(){
+			   $('.hidden-nav').slideUp();
+		   });
+		}
+	}
 
 	render(){
 	 return(
@@ -71,10 +140,10 @@ class Navigation extends Component{
 							{
 								window.innerWidth>620 ? 
 									<div style={{
-										'animationDuration': '3s',
-										'animationDelay': '2s',
+										'animationDuration': '2s',
+										'animationDelay': '1s',
 										'animationIterationCount': 'infinite'
-									}} className="nav-button  animated infinite bounce" 
+									}} className="nav-button  animated infinite pulse" 
 									onClick={this.handleOpenModal}> <span className="order-span">Zamów uslugę</span> <i className="glyphicon glyphicon-envelope"></i></div>
 									  :
 									<div  className="nav-button " 
@@ -85,7 +154,7 @@ class Navigation extends Component{
 							</a>
 							
 		                </div>
-		                <div className="hamburger">
+		                <div className="hamburger" onClick={this.navSlideHandler}>
 		                    <span></span>
 		                    <span></span>
 		                    <span></span>
@@ -110,7 +179,7 @@ class Navigation extends Component{
 					style={{
 						overlay: {
 							backgroundColor: 'rgba(43, 46, 56, 0.9)',
-							zIndex: 2
+							zIndex: 10
 						  }
 					}}>
 					<button onClick={this.handleCloseModal} className="remodal-close-btn"><i className="fa fa-times"></i></button>
@@ -126,21 +195,18 @@ class Navigation extends Component{
 														<input type="text" className="form-control" id="name" name="name" placeholder="Imię" required/>
 													</div>
 													<div className="form-group">
-														<input type="text" className="form-control" id="email" name="email" placeholder="Email" required/>
+														<input type="email" className="form-control" id="email" name="email" placeholder="Email" required/>
 													</div>
 													<div className="form-group">
-														<input type="text" className="form-control" id="address" name="address" placeholder="Adres" required/>
+														<input type="text" className="form-control" id="address" name="address" placeholder="Adres"/>
 													</div>
 													<div className="form-group">
-														<input type="text" className="form-control" id="phone" name="phone" placeholder="Numer tel." required/>
+														<input type="number" className="form-control" id="phone" name="phone" placeholder="Numer tel. bez znaka +" required/>
 													</div>
-													<div className="form-group">
-														<input type="hidden" className="form-price form-control" id="price" name="price" placeholder="Cena"  defaultValue="" />
-													</div>
-													<input type="submit" id="btn" name="submit" className="btn btn-primary pull-right" defaultValue="Wyślij"/>
+													<input type="submit" id="btn" name="submit" className="formButton1 btn btn-primary pull-right" defaultValue="Wyślij"/>
 										</form> 
-										<div className="clearfix"></div> 
-										<div className="form-message"></div>  
+										{/* <div className="clearfix"></div> 
+										<div className="form-message"></div>   */}
 									
 							</div> 
 						</div>

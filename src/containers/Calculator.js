@@ -9,7 +9,62 @@ import 'rangeslider.js/dist/rangeslider.css';
 class Calculator extends React.Component {
 
 
+	componentDidUpdate(){
+		$('#form').on('submit', function(e){
+			e.preventDefault();
+			var fd = new FormData( this );
+			$.ajax({
+			  url: 'send.php',
+			  type: 'POST',
+			  contentType: false, 
+			  processData: false, 
+			  data: fd,
+			  success: function(msg){
+				if(msg == 'ok') {
+					$('.formButton2').val('Dzięki ;)'); 
+				  } else {
+					$(".formButton2").val("Bląd");
+					setTimeout(function() {$(".button").val("Отправить");}, 3000);
+				  }
+			  }
+			});
+		 });
+	}
+
+
+
 componentDidMount(){
+
+	$('#form').on('submit', function(e){
+		e.preventDefault();
+		var fd = new FormData( this );
+		$.ajax({
+		  url: 'send.php',
+		  type: 'POST',
+		  contentType: false, 
+		  processData: false, 
+		  data: fd,
+		  success: function(msg){
+			if(msg == 'ok') {
+				$('.formButton2').val('Dzięki ;)'); 
+				$('.formButton2').css('background-color','green'); 
+				setTimeout(function() {
+					$(".formButton2").val("Wyślij");
+					$(".formButton2").removeAttr('style');
+				}, 3000);
+			  } else {
+				$(".formButton2").val("Bląd");
+				$('.formButton2').css('background-color','red'); 
+				setTimeout(function() {
+					$(".formButton2").val("Wyślij");
+					$(".formButton2").removeAttr('style');
+				}, 3000);
+			  }
+		  }
+		});
+	 });
+
+
 	$('input[type="range"]').rangeslider({
         polyfill : false,
         onInit : function() {
@@ -25,6 +80,7 @@ componentDidMount(){
 	$(".separate-service-set").on('click',function(){
 	   $(this).find('.separate-service-set-wrap').slideToggle(500);
 	});
+
 }	
 
  render(){
@@ -679,13 +735,13 @@ componentDidMount(){
 	                                        <input type="text" className="form-control" id="name" name="name" placeholder="Imię" required/>
 	                                    </div>
 	                                    <div className="form-group">
-	                                        <input type="text" className="form-control" id="email" name="email" placeholder="Email" required/>
+	                                        <input type="email" className="form-control" id="email" name="email" placeholder="Email" required/>
 	                                    </div>
 	                                    <div className="form-group">
-	                                        <input type="text" className="form-control" id="address" name="address" placeholder="Adres" required/>
+	                                        <input type="text" className="form-control" id="address" name="address" placeholder="Adres" />
 	                                    </div>
 	                                    <div className="form-group">
-	                                        <input type="text" className="form-control" id="phone" name="phone" placeholder="Numer tel." required/>
+	                                        <input type="number" className="form-control" id="phone" name="phone" placeholder="Numer tel. bez znaka +" required/>
 	                                    </div>
 	                                    <div className="form-group">
 	                                        <input type="hidden" className="form-price form-control" id="price" name="price" placeholder="Cena"  defaultValue="" />
@@ -693,7 +749,7 @@ componentDidMount(){
 	                                    <div className="form-group">
 	                                        <textarea className="form-control" type="textarea" id="message" name="message" placeholder="Wiadomość" maxLength="600" rows="7"></textarea>       
 	                                    </div>
-	                                    <input type="submit" id="btn" name="submit" className="btn btn-primary pull-right" defaultValue="Wyślij"/>
+	                                    <input type="submit" id="btn" name="submit" className="btn formButton2 btn-primary pull-right" defaultValue="Wyślij"/>
 	                        </form> 
 	                        <div className="clearfix"></div> 
 	                        <div className="form-message"></div>  
