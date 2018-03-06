@@ -1,24 +1,19 @@
 import React, { Component } from 'react';
 import GlobalContainer from './GlobalContainer';
-import { Route, Link } from 'react-router-dom';
+import { Route} from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import ReactModal from 'react-modal';
 import $ from 'jquery';
 class Services extends Component {
 
 
-	componentDidMount(){
-		$('.ReactModal__Overlay').on('click',(e)=>{
-			console.log(e.target);
-			this.setState({
-				showModal:false
-			})
-		})
-	}
+
 
 	state = {
 		currentId: null,
 		showModal: false
 	}
+
 
 
 	onClickHandler = (id) => {
@@ -42,6 +37,7 @@ class Services extends Component {
 				<ReactModal
 					isOpen={this.state.showModal}
 					contentLabel="Minimal Modal Example"
+					onRequestClose={this.handleCloseModal}
 					className='modal-itself'
 					style={{
 						overlay: {
@@ -62,7 +58,7 @@ class Services extends Component {
 							</ul>
 						<br />
 						<form>
-							<Link to="/calculator" data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
+							<Link to='/contact#root' data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
 						</form>
 					</div>
 				</ReactModal>
@@ -73,6 +69,7 @@ class Services extends Component {
 				<ReactModal
 					isOpen={this.state.showModal}
 					contentLabel="Minimal Modal Example"
+					onRequestClose={this.handleCloseModal}
 					className='modal-itself'
 					style={{
 						overlay: {
@@ -107,11 +104,7 @@ class Services extends Component {
 							</ol>
 						<br />
 						<form>
-							<button style={{
-								'animationDuration': '3s',
-								'animationDelay': '2s',
-								'animationIterationCount': 'infinite'
-							}} data-remodal-action="confirm" className="remodal-confirm  " >Zamów <span>usługę </span> !</button>
+							<Link to='/contact#root' data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
 						</form>
 					</div>
 				</ReactModal>
@@ -122,6 +115,7 @@ class Services extends Component {
 				<ReactModal
 					isOpen={this.state.showModal}
 					contentLabel="Minimal Modal Example"
+					onRequestClose={this.handleCloseModal}
 					className='modal-itself water-systems'
 					style={{
 						overlay: {
@@ -139,7 +133,7 @@ class Services extends Component {
 							</ul>
 						<br />
 						<form>
-							<Link to="/calculator" data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
+							<Link to='/contact#root' data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
 						</form>
 					</div>
 				</ReactModal>
@@ -150,6 +144,7 @@ class Services extends Component {
 				<ReactModal
 					isOpen={this.state.showModal}
 					contentLabel="Minimal Modal Example"
+					onRequestClose={this.handleCloseModal}
 					className='modal-itself'
 					style={{
 						overlay: {
@@ -178,7 +173,7 @@ class Services extends Component {
 							</ul>
 						<br />
 						<form>
-							<Link to="/calculator" data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
+							<Link to='/contact#root' data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
 						</form>
 					</div>
 				</ReactModal>
@@ -189,6 +184,7 @@ class Services extends Component {
 				<ReactModal
 					isOpen={this.state.showModal}
 					contentLabel="Minimal Modal Example"
+					onRequestClose={this.handleCloseModal}
 					className='modal-itself'
 					style={{
 						overlay: {
@@ -209,7 +205,7 @@ class Services extends Component {
 							</ul>
 						<br />
 						<form>
-							<Link to="/calculator" data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
+							<Link to='/contact#root' data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
 						</form>
 					</div>
 				</ReactModal>
@@ -220,6 +216,7 @@ class Services extends Component {
 				<ReactModal
 					isOpen={this.state.showModal}
 					contentLabel="Minimal Modal Example"
+					onRequestClose={this.handleCloseModal}
 					className='modal-itself'
 					style={{
 						overlay: {
@@ -247,7 +244,7 @@ class Services extends Component {
 							</ul>
 						<br />
 						<form>
-							<Link to="/calculator" data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
+							<Link to='/contact#root' data-remodal-action="confirm" className="remodal-confirm">Zamów <span>usługę </span> !</Link>
 						</form>
 					</div>
 				</ReactModal>

@@ -87,6 +87,8 @@ componentDidMount(){
  return(
  		<GlobalContainer>
 			<div className='calc-wrap-for-title'>
+				<h3 style={{color:'red'}}>!!!!STRONA W TRAKCIE PRZEBUDOWY!!!
+	        	</h3>
 			 	<h3>Kalkulator ogrodniczy
 	               	<div></div>
 	        	</h3>
@@ -724,7 +726,7 @@ componentDidMount(){
 	            </div> 
 	            
 	            
-	            <div className="col-md-6  contact-form">
+	            {/* <div className="col-md-6  contact-form">
 	                <div className="col-xs-10 col-xs-offset-1" id="panel">
 	                    <div className="form-area ">  
 	                       <form id="form"  action=""  method="post">
@@ -755,7 +757,7 @@ componentDidMount(){
 	                        <div className="form-message"></div>  
 	                    </div>
 	                </div>
-	            </div> 
+	            </div>  */}
 	            <div className="gradient-line"></div> 
 	        </div> 
 			</div>

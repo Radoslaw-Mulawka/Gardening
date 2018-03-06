@@ -1,6 +1,6 @@
 import React from 'react';
 import GlobalContainer from './GlobalContainer';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import Testimonials from './Testimonials';
 class Main extends React.Component {
 
@@ -46,7 +46,7 @@ class Main extends React.Component {
 							<div className="mission__logo-button">
 								<img className="img-responsive" src="images/Logo/green-logo-transparent2.png" alt="Logo" />
 
-								<Link to={'/calculator'} className="order">Zamów usługę !</Link>
+								<Link to={'/contact#root'} className="order">Zamów usługę !</Link>
 							</div>
 						</div>
 						<div className="gradient-line"></div>

@@ -113,7 +113,7 @@ class Navigation extends Component{
 		                        <li><Link to={ '/'}>Główna</Link></li>
 		                        <li><Link to={ '/services'}>Usługi</Link></li>
 		                        <li><Link to={ '/gallery'}>Galeria</Link></li>
-		                        <li><Link to={ '/calculator'}>Kalkulator ogrodniczy</Link></li>
+		                        {/* <li><Link to={ '/calculator'}>Kalkulator ogrodniczy</Link></li> */}
 		                        <li><Link to={ '/contact'}>Kontakt</Link></li>
 		                    </ul>
 		                </div>
@@ -168,7 +168,7 @@ class Navigation extends Component{
 		                <li><Link to={ '/#root'}>Główna</Link></li>
 		                <li><Link to={ '/services#root'}>Usługi</Link></li>
 		                <li><Link to={ '/gallery#root'}>Galeria</Link></li>
-		                <li><Link to={ '/calculator#root'}>Kalkulator ogrodniczy</Link></li>
+		                {/* <li><Link to={ '/calculator#root'}>Kalkulator ogrodniczy</Link></li> */}
 		                <li><Link to={ '/contact#root'}>Kontakt</Link></li>
 		            </ul>
 		        </div> 
