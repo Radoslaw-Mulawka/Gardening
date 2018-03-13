@@ -10,8 +10,8 @@ const Footer = (props)=>{
 	                <strong>Usługi:</strong>
 	                <div>
 	                  <div>Pięlegnacja zieleni</div>
-	                  <div>zakładanie ogrodów</div>
-	                  <div>usługi ogrodnicze Wrocław i okolice</div>
+	                  <div>Zakładanie ogrodów</div>
+	                  <div>Usługi ogrodnicze Wrocław i okolice</div>
 	                </div>
 	            </div>
 	            <div className="partners">

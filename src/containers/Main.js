@@ -2,8 +2,13 @@ import React from 'react';
 import GlobalContainer from './GlobalContainer';
 import { HashLink as Link } from 'react-router-hash-link';
 import Testimonials from './Testimonials';
+import $ from 'jquery';
 class Main extends React.Component {
 
+	componentDidMount(){
+		$('#motto').hide();
+		$('#motto').fadeIn(1500);
+	}
 
 	render() {
 		let newDate = new Date();
