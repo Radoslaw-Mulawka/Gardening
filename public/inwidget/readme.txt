@@ -8,7 +8,7 @@
  *
  * @link http://inwidget.ru
  * @author Alexandr Kazarmshchikov
- * @version 1.1.8
+ * @version 1.2.2
  * @package inWidget
  *
  */
@@ -45,7 +45,9 @@
 
 * LOGIN – логин аккаунта в инстаграм из которого будут транслироваться фотографии.
 * HASHTAG – хэш-теги через запятую (например: girl, man). Если вы хотите транслировать фотографии других пользователей, либо вывести фотографии с очень специфичным тегом, используйте эту опцию. Выборка фотографий будет производиться со всего мира в порядке того, как фотографии были отмечены искомым тегом. Обратите внимание, что тулбар с аватаркой и статистикой будет автоматически скрыт.
-* bannedLogins - логины заблокированных пользователей через запятую (например: mark18, kitty45). Фотографии перечисленных пользователей не будут выводиться в виджете при использовании поиска по хештегам.
+* ACCESS_TOKEN -  хэш-ключ выданный приложением, которому вы разрешили доступ к своему профилю. Поле НЕ является обязательным. Если вы заполните его, то запросы начнут автоматически отправляться через endpoints API (https://www.instagram.com/developer/). При этом, виджет будет обладать только теми правами и лимитами на выборку данных, которыми обладает само приложение. О том, как самостоятельно получить токен смотрите здесь: http://inwidget.ru/#token
+* tagsBannedLogins - логины заблокированных пользователей через запятую (например: mark18, kitty45). Фотографии перечисленных пользователей не будут выводиться в виджете при использовании поиска по хештегам.
+* tagsFromAccountOnly - искать фотографии с тегами только в аккаунте пользователя [ true / false ]. Виджету придётся сначала получить фотографии из вашего профиля, а затем перебором искать снимки с тегами, перечисленными в опции HASHTAG. Чтобы поиск был более результативным рекомендуется увеличить значение опции imgCount.
 * imgRandom - выводить фотографии в случайном порядке [ true / false ]
 * imgCount – сколько фотографий запрашивать из Instagram. Влияет на размер кэша.
 * cacheExpiration – через сколько часов обновлять кэш.
@@ -55,6 +57,7 @@
 * skinPath - путь к деректории со скинами
 * langDefault - язык виджета по умолчанию [ ru / en ]
 * langAuto - автоматически определять язык пользователя [ true / false ]
+* langPath - путь к деректории с локализациями
 
 Внимание! Если после первичной настройки вы решите изменить LOGIN или HASHTAG,
 изменения вступят в силу только после удаления файла с кэшем или после того, как кэш устареет. 
@@ -123,61 +126,91 @@ adaptive - адаптивный режим (значения true / false, по 
 Возможность актуальна для версии >= 1.1.4 
 
 // ----------------------------------------
+// Видеоинструкция по получению ACCESS TOKEN:
+// ----------------------------------------
+
+https://www.youtube.com/watch?v=_O669Dx3djw
+
+Виджет может работать с двумя видами API (недокументированное и endpoints). 
+По умолчанию используется недокументированное. Для его работы токен не требуется. 
+Указание ACCESS TOKEN в настройках виджета переводит его на режим работы с Endpoints API (https://www.instagram.com/developer/). 
+Если вы хотите создать собственное приложение в Instagram, то воспользуйтесь видеоинструкцией выше. 
+Имейте ввиду, что ваше приложение сначала попадёт в «песочницу» со следующими лимитами: 
+
+20 – максимальное количество фотографий, которое можно получить в запросе.
+500 – максимальное количество запросов в час. 
+И самое главное - фотографии можно получить только из своего аккаунта. Тоже самое касается выборки по тегам. 
+
+Имейте ввиду, что Instagram объявил о прекращении поддержки endpoints API к 2020 году. 
+Узнать подробнее: https://developers.facebook.com/blog/post/2018/01/30/instagram-graph-api-updates/
+
+// ----------------------------------------
 // Разработчикам плагинов и приложений:
 // ----------------------------------------
 
 Вы можете подключить код виджета и задать параметры через конструктор класса.
-При использовании примера ниже будьте внимательны с путями к файлам.
+При использовании примера ниже будьте внимательны с путями к файлам. Классы поддерживают автозагрузку. 
 
-require_once 'inwidget/plugins/autoload.php';
-require_once 'inwidget/plugins/InstagramScraper.php';
-require_once 'inwidget/plugins/unirest-php/Unirest.php';
-require_once 'inwidget/inwidget.php';
+По умолчанию используется недокументированное API с помощью библиотеки instagram-php-scraper.
+Для переключения на endpoint API нужно указать ACCESS_TOKEN в config.php или аргументах конструктора.
 
-$config = array(
-	'LOGIN' => 'fotokto_ru',
-	'HASHTAG' => '',
-	'bannedLogins' => '',
-	'imgRandom' => true,
-	'imgCount' => 30,
-	'cacheExpiration' => 6,
-	'cacheSkip' => false,
-	'cachePath' =>  $_SERVER['DOCUMENT_ROOT'].'/inwidget/cache/',
-	'skinDefault' => 'default',
-	'skinPath'=> '/inwidget/skins/',
-	'langDefault' => 'ru',
-	'langAuto' => false,
-);
-$inWidget = new inWidget($config);
-$inWidget->getData();
+#require_once 'inwidget/classes/Autoload.php';
+require_once 'inwidget/classes/InstagramScraper.php';
+require_once 'inwidget/classes/Unirest.php';
+require_once 'inwidget/classes/InWidget.php';
 
-/* You may change default values of properties */
-/*
-$inWidget->width = 800;
-$inWidget->inline = 6;
-$inWidget->view = 18;
-$inWidget->toolbar = false;
-$inWidget->preview = 'large';
-$inWidget->adaptive = false;
-$inWidget->skipGET = true; 	// skip GET variables to avoid name conflicts
-$inWidget->setOptions(); 	// apply new values
-*/
+try {
+	
+	// Options may change through class constructor. For example:
+	
+	$config = array(
+		'LOGIN' => 'fotokto_ru',
+		'HASHTAG' => '',
+		'ACCESS_TOKEN' => '',
+		'tagsBannedLogins' => '',
+		'tagsFromAccountOnly' => false,
+		'imgRandom' => true,
+		'imgCount' => 30,
+		'cacheExpiration' => 6,
+		'cacheSkip' => false,
+		'cachePath' =>  $_SERVER['DOCUMENT_ROOT'].'/inwidget/cache/',
+		'skinDefault' => 'default',
+		'skinPath'=> '/inwidget/skins/',
+		'langDefault' => 'ru',
+		'langAuto' => false,
+		'langPath' => $_SERVER['DOCUMENT_ROOT'].'/inwidget/langs/',
+	);
+	
+	$inWidget = new \inWidget\Core($config);
+	
+	// Also, you may change default values of properties
 
-include 'inwidget/template.php';
+	/*
+	$inWidget->width = 800;			// widget width in pixels
+	$inWidget->inline = 6;			// number of images in single line
+	$inWidget->view = 18;			// number of images in widget
+	$inWidget->toolbar = false;		// show profile avatar, statistic and action button
+	$inWidget->preview = 'large';	// quality of images: small, large, fullsize
+	$inWidget->adaptive = false;	// enable adaptive mode
+	$inWidget->skipGET = true; 		// skip GET variables to avoid name conflicts
+	$inWidget->setOptions(); 		// apply new values
+	*/
+	
+	$inWidget->getData();
+	include 'inwidget/template.php';
+	
+	// Also, you may use API methods directly
+	
+	// $account = $inWidget->api->getAccountByLogin($config['LOGIN'], $config['ACCESS_TOKEN']);
+	// $mediasByLogin = $inWidget->api->getMediasByLogin($config['LOGIN'], $config['ACCESS_TOKEN'], $config['imgCount']);
+	// $mediasByTag = $inWidget->api->getMediasByTag('aiktag', $config['ACCESS_TOKEN'], $config['imgCount']);
+
+}
+catch (\Exception $e) {
+	echo $e->getMessage();
+}
 
 Кроме того, вы можете переопределить в коде значение большинства свойств, которые по умолчанию передаются через GET переменные.
-
-Обратите внимание, что:
-
-* $inWidget->skipGET - отключает переопределение свойст класса через GET переменные (по умолчанию false)
-* $inWidget->setOptions() - применяет новые значения свойст класса, если бы они были заданы в коде
-
-Имейте ввиду, что отправка запросов и получение ответов от сервера Instagram занимает время. 
-Кроме того, большая часть ошибок останавливает работу скрипта, а не бросает исключения. 
-По этой причине код должен выполняться параллельно логике основного приложения, вызываясь через iframe или javascript.
-
-Я крайне не советую включать виджет непосредственно в движки сайтов и приложения с бизнес-логикой, 
-т.к. их работа может быть замедленна или полностью остановлена в следствии ошибки или неожиданного ответа от сервера Instagram.
 
 // ----------------------------------------
 // Коды ошибок:
@@ -197,12 +230,42 @@ include 'inwidget/template.php';
 
 [*] ERROR #500 - Неизвестная ошибка
 
-Для выяснения деталей смотрите, что было записано в кэш. Данная ошибка сгенерированна библиотекой instagram-php-scraper и в большинстве случаев означает проблемы при отправке или получении данных запроса от сервера Instagram.
+Для выяснения деталей смотрите, что было записано в кэш. Данная ошибка сгенерированна официальным API, либо библиотекой instagram-php-scraper.
+В большинстве случаев означает проблемы при отправке или получении данных запроса от сервера Instagram.
 Чтобы виджет попытался отправить запрос ещё раз, удалите файл с кэшем и обновите страницу на которой выводится виджет.
 
 // ----------------------------------------
 // История версий:
 // ----------------------------------------
+
+inWidget-1.2.2
+Дата: 14 марта 2018 г.
+
+* Исправлена ошибка, из-за которой нельзя было извлечь более 12 фото из аккаунта при использовании недокументированного API.
+
+inWidget-1.2.1
+Дата: 14 марта 2018 г.
+
+* Исправлена ошибка 500: Account with this username does not exist при использовании недокументированного API. Была связана с тем, что Instagram внёс изменения. 
+* В данной версии нельзя извлечь более 12 фото из аккаунта при использовании недокументированного API (при поиске по тегам можно). Решение в процессе поиска.
+* Добавлен украинский язык
+* Добавлен учёт внешних отступов для внутреннего контейнера в адаптивном режиме 
+
+inWidget-1.2.0
+Дата: 25 января 2018 г.
+
+* Добавлена поддержка официального API Instagram. Чтобы использовать его укажите ACCESS TOKEN в config.php
+* Добавлена возможность выбирать фотографии по тегам только из аккаунта. Для этого используйте опцию "tagsFromAccountOnly" в config.php
+* Переработана структура классов для поддержки нескольких API одновременно
+
+inWidget-1.1.9
+Дата: 17 января 2018 г.
+
+* Переработан механизм ошибок. Теперь виджет бросает исключения вместо остановки работы с помощью die()
+* Убрана необходимость использовать autoloader совместно с instagram-php-scraper
+* Изменился путь к библиотеке Unirest
+* Изменилось название директории с языками
+* Обновлена библиотека instagram-php-scraper до версии 0.8.11.
 
 inWidget-1.1.8
 Дата: 07 января 2018 г.

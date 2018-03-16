@@ -10,13 +10,14 @@
  * @link http://inwidget.ru
  * @copyright 2014-2018 Alexandr Kazarmshchikov
  * @author Alexandr Kazarmshchikov
- * @version 1.1.8
+ * @version 1.2.2
  * @package inWidget
  *
  */
 
-if(!$inWidget) die('inWidget object was not initialised.');
-if(!is_object($inWidget->data)) die('<b style="color:red;">Cache file contains plain text:</b><br />'.$inWidget->data);
+if(!$inWidget instanceof \inWidget\Core) {
+	throw new \Exception('inWidget object was not initialised.');
+}
 
 ?>
 <!DOCTYPE html> 
@@ -30,18 +31,18 @@ if(!is_object($inWidget->data)) die('<b style="color:red;">Cache file contains p
 		<?php if($inWidget->adaptive === false): ?>
 			<style type='text/css'>
 				.widget {
-					width:<?= $inWidget->width; ?>px;
+					width:<?= $inWidget->width ?>px;
 				}
 				.widget .data a.image:link, .widget .data a.image:visited {
-					width:<?= $inWidget->imgWidth; ?>px;
-					height:<?= $inWidget->imgWidth; ?>px;
+					width:<?= $inWidget->imgWidth ?>px;
+					height:<?= $inWidget->imgWidth ?>px;
 				}
 				.widget .data .image span {
-					width:<?= $inWidget->imgWidth; ?>px;
-					height:<?= $inWidget->imgWidth; ?>px;
+					width:<?= $inWidget->imgWidth ?>px;
+					height:<?= $inWidget->imgWidth ?>px;
 				}
 				.copyright {
-					width:<?= $inWidget->width; ?>px;
+					width:<?= $inWidget->width ?>px;
 				}
 			</style>
 		<?php 
@@ -51,11 +52,6 @@ if(!is_object($inWidget->data)) die('<b style="color:red;">Cache file contains p
 	</head>
 <body>
 <div id="widget" class="widget">
-	<!-- <a href="http://instagram.com/<?= $inWidget->data->username ?>" target="_blank" class="title">
-		<div class="icon">&nbsp;</div>
-		<div class="text"><?= $inWidget->lang['title'] ?></div>
-		<div class="clear">&nbsp;</div>
-	</a> -->
 	<?php if($inWidget->toolbar == true): ?>
 		<table class="profile">
 			<tr>
@@ -101,27 +97,12 @@ if(!is_object($inWidget->data)) die('<b style="color:red;">Cache file contains p
 						default:
 							$thumbnail = $item->small;
 					}
-					// '<a href="'.$item->link.'" class="image" target="_blank"><span style="background-image:url('.$thumbnail.');">&nbsp;</span></a>';
+
 					echo 
-
-					'<a href="'.$item->link.'" target="_blank" class="image">
-
-                    <figure class="imageFigure" style="background-image:url('.$thumbnail.');">
-                        
-                        
-                                 
-                    </figure>
-                    </a>';
-
-
-
-
-
-
-
-
-
-
+						'<a href="'.$item->link.'" target="_blank" class="image">
+							<figure class="imageFigure" style="background-image:url('.$thumbnail.');">			
+							</figure>
+						</a>';
 					$i++;
 					if($i >= $inWidget->view) break;
 				}
@@ -141,13 +122,5 @@ if(!is_object($inWidget->data)) die('<b style="color:red;">Cache file contains p
 		}
 	?>
 </div>
-<!-- <div class='copyright'>
-	&copy; <a href='http://inwidget.ru' target='_blank' title='Free Instagram widget for your site!'>inwidget.ru</a>
-</div> -->
 </body>
 </html>
-<!-- 
-	inWidget - free Instagram widget for your site!
-	http://inwidget.ru
-	© Alexandr Kazarmshchikov
--->

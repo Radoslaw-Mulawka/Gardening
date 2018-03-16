@@ -13,6 +13,7 @@ class Navigation extends Component{
 	winWidth = window.innerWidth; 
 
 	componentDidMount(){
+
 		$('#form2').on('submit', function(e){
 			e.preventDefault();
 			var fd = new FormData( this );

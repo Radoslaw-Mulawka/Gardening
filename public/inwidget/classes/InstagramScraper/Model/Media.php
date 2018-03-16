@@ -63,6 +63,11 @@ class Media extends AbstractModel
     /**
      * @var array
      */
+    protected $squareThumbnailsUrl = [];
+
+    /**
+     * @var array
+     */
     protected $carouselMedia = [];
 
     /**
@@ -129,6 +134,11 @@ class Media extends AbstractModel
      * @var string
      */
     protected $commentsCount = 0;
+
+    /**
+     * @var Media[]|array
+     */
+    protected $sidecarMedias = [];
 
     /**
      * @param string $code
@@ -248,6 +258,15 @@ class Media extends AbstractModel
         return $this->imageHighResolutionUrl;
     }
 
+
+    /**
+     * @return array
+     */
+    public function getSquareThumbnailsUrl() {
+        return $this->squareThumbnailsUrl;
+    }
+
+
     /**
      * @return array
      */
@@ -353,6 +372,14 @@ class Media extends AbstractModel
     }
 
     /**
+     * @return Media[]|array
+     */
+    public function getSidecarMedias()
+    {
+        return $this->sidecarMedias;
+    }
+
+    /**
      * @param $value
      * @param $prop
      */
@@ -387,6 +414,13 @@ class Media extends AbstractModel
                 $this->imageThumbnailUrl = $images['thumbnail'];
                 $this->imageStandardResolutionUrl = $images['standard'];
                 $this->imageHighResolutionUrl = $images['high'];
+                break;
+            case 'thumbnail_resources':
+                $thumbnailsUrl = [];
+                foreach( $value as $thumbnail ) {
+                    $thumbnailsUrl[] = $thumbnail['src'];
+                }
+                $this->squareThumbnailsUrl = $thumbnailsUrl;
                 break;
             case 'carousel_media':
                 $this->type = self::TYPE_CAROUSEL;
@@ -454,6 +488,9 @@ class Media extends AbstractModel
             case 'edge_media_preview_like':
                 $this->likesCount = $arr[$prop]['count'];
                 break;
+            case 'edge_liked_by':
+            	$this->likesCount = $arr[$prop]['count'];
+                break;
             case 'display_url':
                 $images = self::getImageUrls($arr[$prop]);
                 $this->imageStandardResolutionUrl = $images['standard'];
@@ -469,6 +506,19 @@ class Media extends AbstractModel
                             $this->caption = $arr[$prop]['edges'][0]['node']['text'];
                         }
                     }
+                }
+                break;
+            case 'edge_sidecar_to_children':
+                if (!is_array($arr[$prop]['edges'])) {
+                    break;
+                }
+
+                foreach ($arr[$prop]['edges'] as $edge) {
+                    if (!isset($edge['node'])) {
+                        continue;
+                    }
+
+                    $this->sidecarMedias[] = static::create($edge['node']);
                 }
                 break;
             case 'owner':

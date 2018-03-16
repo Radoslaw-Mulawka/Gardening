@@ -1,4 +1,5 @@
 <?php 
+
 /**
  * Project:     inWidget: show pictures from instagram.com on your site!
  * File:        index.php
@@ -10,7 +11,7 @@
  * @link http://inwidget.ru
  * @copyright 2014-2018 Alexandr Kazarmshchikov
  * @author Alexandr Kazarmshchikov
- * @version 1.1.8
+ * @version 1.2.2
  * @package inWidget
  * 
  */
@@ -22,15 +23,75 @@ header('Content-type: text/html; charset=utf-8');
 if(phpversion() < "5.4.0") 		die('inWidget required PHP >= <b>5.4.0</b>. Your version: '.phpversion());
 if(!extension_loaded('curl')) 	die('inWidget required <b>cURL PHP extension</b>. Please, install it or ask your hosting provider.');
 
-require_once 'plugins/autoload.php';
-require_once 'plugins/InstagramScraper.php';
-require_once 'plugins/unirest-php/Unirest.php';
-require_once 'inwidget.php';
+#require_once 'classes/Autoload.php';
+require_once 'classes/InstagramScraper.php';
+require_once 'classes/Unirest.php';
+require_once 'classes/InWidget.php';
 
-// Options may change through class constructor. For example: 
-// $inWidget = new inWidget($config);
+/* -----------------------------------------------------------
+	Native initialization
+ ------------------------------------------------------------*/
 
-$inWidget = new inWidget();
-$inWidget->getData();
+try {
+	$inWidget = new \inWidget\Core;
+	$inWidget->getData();
+	include 'template.php';
+}
+catch (\Exception $e) {
+	echo $e->getMessage();
+}
 
-require_once 'template.php';
+/* -----------------------------------------------------------
+	Custom initialization
+------------------------------------------------------------*/
+
+/*
+try {
+
+	// Options may change through class constructor. For example:
+	
+	$config = array(
+		'LOGIN' => 'radoslaw_mulawka',
+		'HASHTAG' => '',
+		'ACCESS_TOKEN' => '1289367986.7c66875.940f969c6842492dbe1c5077a1d67978',
+		'tagsBannedLogins' => '',
+		'tagsFromAccountOnly' => false,
+		'imgRandom' => false,
+		'imgCount' => 30,
+		'cacheExpiration' => 6,
+		'cacheSkip' => false,
+		'cachePath' =>  __DIR__.'/cache/',
+		'skinDefault' => 'default',
+		'skinPath'=> 'skins/',
+		'langDefault' => 'ru',
+		'langAuto' => false,
+		'langPath' => __DIR__.'/langs/',
+	);
+	
+	$inWidget = new \inWidget\Core($config);
+	
+	// Also, you may change default values of properties
+	
+	$inWidget->width = 800;			// widget width in pixels
+	$inWidget->inline = 6;			// number of images in single line
+	$inWidget->view = 18;			// number of images in widget
+	$inWidget->toolbar = false;		// show profile avatar, statistic and action button
+	$inWidget->preview = 'large';	// quality of images: small, large, fullsize
+	$inWidget->adaptive = false;	// enable adaptive mode
+	$inWidget->skipGET = true; 		// skip GET variables to avoid name conflicts
+	$inWidget->setOptions(); 		// apply new values
+
+	$inWidget->getData();
+	include 'template.php';
+	
+	// Also, you may use API methods directly
+	
+	// $account = $inWidget->api->getAccountByLogin($config['LOGIN'], $config['ACCESS_TOKEN'], $config['imgCount']);
+	// $mediasByLogin = $inWidget->api->getMediasByLogin($config['LOGIN'], $config['ACCESS_TOKEN'], $config['imgCount']);
+	// $mediasByTag = $inWidget->api->getMediasByTag('girl', $config['ACCESS_TOKEN'], $config['imgCount']);
+
+}
+catch (\Exception $e) {
+	echo $e->getMessage();
+}
+*/
