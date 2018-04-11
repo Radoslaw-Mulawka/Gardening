@@ -25,10 +25,10 @@ class Navigation extends Component{
 			  data: fd,
 			  success: function(msg){
 			   if(msg == 'ok') {
-				 $('.formButton1').val('Dzięki ;)'); 
+				 $('.formButton1').val('Wysłano!'); 
 			   } else {
 				 $(".formButton1").val("Bląd");
-				 setTimeout(function() {$(".button").val("Отправить");}, 3000);
+				 setTimeout(function() { $(".button").val("Wyślij"); }, 3000);
 			   }
 			  }
 			});
@@ -50,7 +50,7 @@ class Navigation extends Component{
 			  data: fd,
 			  success: function(msg){
 				if(msg == 'ok') {
-					$('.formButton1').val('Dzięki ;)'); 
+					$('.formButton1').val('Wysłano!'); 
 					$('.formButton1').css('background-color','green'); 
 					setTimeout(function() {
 						$(".formButton1").val("Wyślij");
@@ -95,35 +95,7 @@ class Navigation extends Component{
 	 return(
 	 		<GlobalContainer>
 	 			<nav className="top-navigation">
-		            <div className="visible-wrap">
-		            	<div className="logo-contact-wrap">
-			                <div className="nav-logo">
-			                  <Link to={"/"}>  
-							  	<img className="img-responsive" src="images/Logo/transparent_logo_grey.png" alt="Logo" /> 
-							 </Link>
-			                </div>
-			                <div className="nav-contacts">
-								<span>+48 533 88 06 05</span>
-								<span>+48 533 88 06 05</span>
-								<span>uslugi@greenpolis.pl</span>
-			                </div>
-			                <div className="nav-button ">Zamów uslugę</div>
-		                </div>
-		                <div className="nav-items">
-		                    <ul>
-		                        <li><Link to={ '/'}>Główna</Link></li>
-		                        <li><Link to={ '/services'}>Usługi</Link></li>
-		                        <li><Link to={ '/gallery'}>Galeria</Link></li>
-		                        {/* <li><Link to={ '/calculator'}>Kalkulator ogrodniczy</Link></li> */}
-		                        <li><Link to={ '/contact'}>Kontakt</Link></li>
-		                    </ul>
-		                </div>
-		                <div className="hamburger ">
-		                    <span></span>
-		                    <span></span>
-		                    <span></span>
-		                </div> 
-		            </div> 
+		            
 		            <div className="hidden-wrap">
 		            	<div className="logo-contact-wrap">
 							

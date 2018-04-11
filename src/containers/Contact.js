@@ -17,10 +17,10 @@ componentDidUpdate(){
 			  data: fd,
 			  success: function(msg){
 				if(msg == 'ok') {
-					$('.formButton2').val('Dzięki ;)'); 
+					$('.formButton2').val('Wysłano!'); 
 				  } else {
 					$(".formButton2").val("Bląd");
-					setTimeout(function() {$(".button").val("Отправить");}, 3000);
+					setTimeout(function() {$(".button").val("Wyślij");}, 3000);
 				  }
 			  }
 			});
@@ -41,7 +41,7 @@ componentDidMount(){
 		  data: fd,
 		  success: function(msg){
 			if(msg == 'ok') {
-				$('.formButton2').val('Dzięki ;)'); 
+				$('.formButton2').val('Wysłano!'); 
 				$('.formButton2').css('background-color','green'); 
 				setTimeout(function() {
 					$(".formButton2").val("Wyślij");

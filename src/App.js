@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {HashRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 
 import GlobalContainer from './containers/GlobalContainer';
 import Navigation from './containers/Navigation';
@@ -18,7 +18,7 @@ class App extends Component {
 
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <GlobalContainer>
           <Navigation/>
           <Route path={ '/'}  exact component={Main}/>
@@ -28,7 +28,7 @@ class App extends Component {
           <Route path={ '/contact'} exact component={Contact}/>
           <Footer/>
         </GlobalContainer>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
