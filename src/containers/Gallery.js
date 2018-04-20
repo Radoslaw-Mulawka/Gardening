@@ -28,7 +28,7 @@ class Gallery extends Component{
 					</div>
 						{/* <iframe id="myIframe" src='/inwidget/index.php?inline=2&view=8&toolbar=false&preview=large&adaptive=true' data-inwidget scrolling='no' frameBorder='no' style={{border:'none',overflow:'hidden'}}></iframe>  */}
 						{/* <iframe id="myIframe" src="//lightwidget.com/widgets/f4ef466fa702576cae39f71d03441c99.html" scrolling="no" allowtransparency="true" className="lightwidget-widget" style={{width: "100%", border: 0, overflow: "hidden"}}></iframe> */}
-						<iframe id="myIframe" src="//lightwidget.com/widgets/1bc6f7b681ec5e0a9023f10645464899.html" scrolling="no" allowtransparency="true" className="lightwidget-widget" style={{width: "100%", border: 0, overflow: "hidden"}}></iframe>
+						<iframe id="myIframe" src="//lightwidget.com/widgets/2b23f74d62eb5c869711ac198420313c.html" scrolling="no" allowtransparency="true" className="lightwidget-widget" style={{width: "100%", border: 0, overflow: "hidden"}}></iframe>
 
 				  </div>      
 				  <div className="gradient-line"></div>   
